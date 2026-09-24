@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.029-4 Digit Roller (Setting) — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10029.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.029-4 Digit Roller (Setting) — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.029</code>, <em>Ziffernrolle</em> (digit roller (setting)), drawing <code>10.029-4</code>, current; replaces 10.029-3. Identity verified against <span class="ref">Drawing-Index.md</span>: page 44 is <code>10.029-4</code>, and the sheet's own
+  title block agrees. Scale 1:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 44 / <a href="../viewer.html?page=44&status=All&section=All">drawing-viewer page 44</a>, rasterized at 400–700 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.212 Complete Setting Axle; 8 per machine (1 per 10.212). <strong>Material:</strong> Anticorodal B Ø6.5 bar; black anodized. <strong>General tolerance:</strong> ±50 µm; angles none. <strong>Runout:</strong> 0.02 mm marked; unmarked radial 40 µm (as read). <strong>Drawn:</strong> 5.12.49. <strong>Revisions:</strong> index 3→4 (change 140, 26.10.50).</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286</h2>
+<p>No ISO fit code is printed on this sheet, and none is assigned: the limits are explicit ± or +/− micron values.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside diameter</td>
+<td style="text-align: right;">Ø6.2 mm</td>
+<td style="text-align: right;">±30 µm</td>
+<td style="text-align: right;">Ø6.170–6.230 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bore (explicit deviations)</td>
+<td style="text-align: right;">Ø2.5 mm</td>
+<td style="text-align: right;">−9/−23 µm (a 14 µm zone; no ISO code)</td>
+<td style="text-align: right;">Ø2.477–2.491 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Length</td>
+<td style="text-align: right;">5 mm</td>
+<td style="text-align: right;">±200 µm</td>
+<td style="text-align: right;">4.800–5.200 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bore countersink depth</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>0,1</code>, 90° included angle</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Countersink included angle</td>
+<td style="text-align: right;">90°</td>
+<td>none; angles blank</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
+<h2>Fit with the setting axle <code>10.061</code> (Derived)</h2>
+<p>The bore is Ø2.5 −0.009/−0.023 mm (2.477–2.491) and the setting axle <code>10.061</code> is Ø2.5 <code>h6</code> (0/−7 µm on its sheet; ISO −6): 2.493–2.500. Both parts are listed on the complete setting axle <code>10.212</code> (Confirmed), so the pairing is supported by the assembly, though the interface is not printed:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum interference</td>
+<td>axle min − bore max = 2.493 − 2.491</td>
+<td style="text-align: right;">2 µm</td>
+</tr>
+<tr>
+<td>Maximum interference</td>
+<td>axle max − bore min = 2.500 − 2.477</td>
+<td style="text-align: right;">23 µm</td>
+</tr>
+<tr>
+<td>Character</td>
+<td>interference in every case</td>
+<td style="text-align: right;">a light press fit</td>
+</tr>
+</tbody>
+</table>
+<p>So the digit roller is pressed onto the axle rather than rotating on it, and turning the axle turns the digit. The explicit −9/−23 zone is the same width as an IT8 zone (14 µm) shifted below nominal; it is not a standard letter fit.</p>
+<h2>Notes</h2>
+<p>Eight rollers per machine, one per setting slider position. The sheet shows no digit engraving; the numbers on the setting display are a separate feature of the setting axle assembly (<code>10.212</code>) or the housing (<code>10.002</code>), not dimensioned here. Machine-Facts §4 already gives the material as Anticorodal Ø6.5; the sheet and BOM agree.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general
+tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size; a scaled nominal exactly on a size-step boundary belongs to the lower step.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside diameter</td>
+<td style="text-align: right;">Ø18.6 mm</td>
+<td style="text-align: right;">simply scaled -90/+90 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Bore (explicit deviations)</td>
+<td style="text-align: right;">Ø7.5 mm</td>
+<td style="text-align: right;">simply scaled -69/-27 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Length</td>
+<td style="text-align: right;">15 mm</td>
+<td style="text-align: right;">simply scaled -600/+600 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Bore countersink depth</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

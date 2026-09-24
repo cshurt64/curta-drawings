@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.017-2 Guide Sleeve — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10017.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.017-2 Guide Sleeve — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.017</code>, <em>Führungshülse</em> (guide sleeve), drawing revision <code>10.017-2</code></li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  28 / <a href="../viewer.html?page=28&status=All&section=All">drawing-viewer page 28</a>
+  (<code>p028_10017-2.webp</code>)</li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong> from the current drawing and title block</li>
+<li><strong>ISO limits:</strong> <strong>Derived</strong> from the stated fit designation using ISO 286-1
+  (system and basic hole/shaft rules) and ISO 286-2 (standard tolerance grades
+  and limit-deviation tables)</li>
+<li><strong>3× values:</strong> <strong>Derived project references</strong>, not dimensions printed on the
+  factory drawing and not fabrication acceptance criteria by themselves</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a>
+and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">ISO size step</th>
+<th style="text-align: right;">IT width / deviations</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upper outside diameter</td>
+<td style="text-align: right;">Ø2.700 mm</td>
+<td style="text-align: right;"><code>h11</code></td>
+<td style="text-align: right;">over 1 through 3 mm</td>
+<td style="text-align: right;">IT11 = 60 µm; <code>es = 0</code>, <code>ei = -60 µm</code></td>
+<td style="text-align: right;">Ø2.640–2.700 mm</td>
+<td>Confirmed callout; Derived ISO limits</td>
+</tr>
+<tr>
+<td>Bore</td>
+<td style="text-align: right;">Ø2.000 mm</td>
+<td style="text-align: right;"><code>H8</code></td>
+<td style="text-align: right;">over 1 through 3 mm</td>
+<td style="text-align: right;">IT8 = 14 µm; <code>EI = 0</code>, <code>ES = +14 µm</code></td>
+<td style="text-align: right;">Ø2.000–2.014 mm</td>
+<td>Confirmed callout; Derived ISO limits</td>
+</tr>
+<tr>
+<td>Lower outside diameter</td>
+<td style="text-align: right;">Ø2.300 mm</td>
+<td style="text-align: right;"><code>h7</code></td>
+<td style="text-align: right;">over 1 through 3 mm</td>
+<td style="text-align: right;">IT7 = 10 µm; <code>es = 0</code>, <code>ei = -10 µm</code></td>
+<td style="text-align: right;">Ø2.290–2.300 mm</td>
+<td>Confirmed callout; Derived ISO limits</td>
+</tr>
+<tr>
+<td>Lower axial length</td>
+<td style="text-align: right;">2.700 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−100/+100 µm</td>
+<td style="text-align: right;">2.600–2.800 mm</td>
+<td>Confirmed callout and title-block tolerance</td>
+</tr>
+<tr>
+<td>Overall axial length</td>
+<td style="text-align: right;">4.700 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−100/+100 µm</td>
+<td style="text-align: right;">4.600–4.800 mm</td>
+<td>Confirmed callout and title-block tolerance</td>
+</tr>
+</tbody>
+</table>
+<p>Lowercase <code>h</code> is a shaft/external-feature zone with zero upper deviation, so
+its limits are below nominal. Uppercase <code>H</code> is a hole zone with zero lower
+deviation, so its limits are above nominal.</p>
+<h2>Project 3× dimensions with ISO grades recalculated</h2>
+<p>These values triple the nominal geometry, then recalculate the same ISO letter
+and grade at the new basic-size step. They do <strong>not</strong> triple the original IT
+width. Per the requested working convention, the two non-ISO axial dimensions
+retain the drawing's ±100 µm general tolerance; that convention remains a
+project choice rather than a factory specification.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Applied tolerance</th>
+<th style="text-align: right;">ISO size step</th>
+<th style="text-align: right;">IT width / deviations</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upper outside diameter</td>
+<td style="text-align: right;">Ø8.100 mm</td>
+<td style="text-align: right;"><code>h11</code></td>
+<td style="text-align: right;">over 6 through 10 mm</td>
+<td style="text-align: right;">IT11 = 90 µm; <code>es = 0</code>, <code>ei = -90 µm</code></td>
+<td style="text-align: right;">Ø8.010–8.100 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Bore</td>
+<td style="text-align: right;">Ø6.000 mm</td>
+<td style="text-align: right;"><code>H8</code></td>
+<td style="text-align: right;">over 3 through 6 mm</td>
+<td style="text-align: right;">IT8 = 18 µm; <code>EI = 0</code>, <code>ES = +18 µm</code></td>
+<td style="text-align: right;">Ø6.000–6.018 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Lower outside diameter</td>
+<td style="text-align: right;">Ø6.900 mm</td>
+<td style="text-align: right;"><code>h7</code></td>
+<td style="text-align: right;">over 6 through 10 mm</td>
+<td style="text-align: right;">IT7 = 15 µm; <code>es = 0</code>, <code>ei = -15 µm</code></td>
+<td style="text-align: right;">Ø6.885–6.900 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Lower axial length</td>
+<td style="text-align: right;">8.100 mm</td>
+<td style="text-align: right;">retained general ±100 µm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−100/+100 µm</td>
+<td style="text-align: right;">8.000–8.200 mm</td>
+<td>Derived nominal; project tolerance convention</td>
+</tr>
+<tr>
+<td>Overall axial length</td>
+<td style="text-align: right;">14.100 mm</td>
+<td style="text-align: right;">retained general ±100 µm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">−100/+100 µm</td>
+<td style="text-align: right;">14.000–14.200 mm</td>
+<td>Derived nominal; project tolerance convention</td>
+</tr>
+</tbody>
+</table>
+<p>The exact boundary matters: Ø6.000 mm remains in ISO 286's “over 3 through 6
+mm” step, while Ø6.900 and Ø8.100 mm use “over 6 through 10 mm.”</p>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notch/detail linear dimension</td>
+<td style="text-align: right;">0.61 mm, subject to general ±0.100 mm</td>
+<td style="text-align: right;">1.83 mm nominal; tolerance strategy not yet established</td>
+<td>Confirmed nominal; scaled value Derived</td>
+</tr>
+<tr>
+<td>Notch angle</td>
+<td style="text-align: right;">90° ±10′</td>
+<td style="text-align: right;">90° ±10′ (angle is not multiplied by scale)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Detail radius/edge limit</td>
+<td style="text-align: right;">max 0.15 mm</td>
+<td style="text-align: right;">0.45 mm geometric scale; acceptance limit not yet established</td>
+<td>Confirmed original; scaled value Derived</td>
+</tr>
+<tr>
+<td>Detail radius/edge limit</td>
+<td style="text-align: right;">max 0.05 mm</td>
+<td style="text-align: right;">0.15 mm geometric scale; acceptance limit not yet established</td>
+<td>Confirmed original; scaled value Derived</td>
+</tr>
+<tr>
+<td>Notch centering/location</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">Scaling convention not yet established</td>
+<td>Confirmed original</td>
+</tr>
+<tr>
+<td>Non-toleranced linear dimensions</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">Retained as ±100 µm in the working table above</td>
+<td>Confirmed original; scaled use is a project convention</td>
+</tr>
+<tr>
+<td>Runout</td>
+<td style="text-align: right;">max 20 µm</td>
+<td style="text-align: right;">Scaling convention not yet established</td>
+<td>Confirmed original</td>
+</tr>
+<tr>
+<td>Lateral runout</td>
+<td style="text-align: right;">max 20 µm</td>
+<td style="text-align: right;">Scaling convention not yet established</td>
+<td>Confirmed original</td>
+</tr>
+<tr>
+<td>Uncontrolled runout/lateral runout</td>
+<td style="text-align: right;">max 50 µm</td>
+<td style="text-align: right;">Scaling convention not yet established</td>
+<td>Confirmed original</td>
+</tr>
+</tbody>
+</table>
+<p>The title block does not establish a blanket ±1° general angular tolerance for
+this part; the notch's explicit 90° ±10′ control governs that feature.</p>
+<h2>Assembly relevance</h2>
+<p>Drawing <code>10.217-2</code> uses <code>10.017</code> in the complete setting wheel. For an assembly
+dimension audit, the 14.100 mm overall and 8.100 mm lower length above are
+inherited component dimensions, not direct <code>10.217</code> assembly callouts. They
+must be combined with the separately sourced <code>10.038</code> drive-wheel and <code>10.041</code>
+spacer dimensions to validate the axial stack; no stack result should be
+presented as factory-specified unless the assembly drawing directly controls it.</p>
+</main>
+</body>
+</html>

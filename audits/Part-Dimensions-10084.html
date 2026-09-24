@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.084-3 Tooth Segment (4 Teeth, RW) — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10084.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.084-3 Tooth Segment (4 Teeth, RW) — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.084</code>, <em>Zahnsegment (4 Zähne) für Resultatzählwerk</em> (tooth segment (4 Teeth, RW)), drawing <code>10.084-3</code>, current; replaces 10.084-2. Identity verified against <span class="ref">Drawing-Index.md</span>: page 109 is <code>10.084-3</code>, and the sheet's own
+  title block agrees. Scale 5:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 109 / <a href="../viewer.html?page=109&status=All&section=All">drawing-viewer page 109</a>, rasterized at 200–400 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.213 Complete Step Drum; 6 per machine (Type I; all in 10.213). <strong>Material:</strong> Nickel silver (Neusilber) 0.5 mm, hard-rolled, Brinell 230–240. <strong>General tolerance:</strong> ±50 µm; angles none. <strong>Runout:</strong> 20 µm marked radial and side; none marked. <strong>Drawn:</strong> 17.1.50. <strong>Revisions:</strong> none recorded (empty revision table; index 3).</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286</h2>
+<p>No ISO fit code is printed on this sheet, and none is assigned: the limits are explicit ± or +/− micron values.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Land (tooth-root) radius</td>
+<td style="text-align: right;">10.9 mm</td>
+<td style="text-align: right;">general ±50 µm (none printed; <code>10,9r</code>)</td>
+<td style="text-align: right;">10.850–10.950 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Plate thickness (title-block material line)</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;">0/−20 µm as read (<code>0,5 −0/−20</code>)</td>
+<td style="text-align: right;">0.480–0.500 mm</td>
+<td>Confirmed callout; differs from the master's −20/−40</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blank arc before the first tooth</td>
+<td style="text-align: right;">67°30′</td>
+<td>none printed; = 6 × 11°15′ (Derived)</td>
+</tr>
+<tr>
+<td>Tooth pitch (inherited from 10.076-4)</td>
+<td style="text-align: right;">11°15′</td>
+<td>±15′ on the master; not repeated here (Unverified whether it applies)</td>
+</tr>
+<tr>
+<td>Angular general tolerance</td>
+<td style="text-align: right;">—</td>
+<td>none stated (dash)</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
+<h2>Blank-arc rule (Derived)</h2>
+<p>The one angle on this sheet, 67°30′, is the toothless arc: 6 × 11°15′ = 67.5°. The other 4 of the segment's 10 pitches carry the 4 teeth. The rule and the 125° span of the master are in <span class="ref">Drum-Assembly-10213.md</span> §2; this sheet is one of its nine instances. The arithmetic here is <code>Derived</code>; the printed value is <code>Confirmed</code>.</p>
+<h2>Plate thickness conflicts with the current master</h2>
+<p>This sheet's material line reads <code>0,5 −0/−20</code>: <strong>0.480–0.500 mm</strong>. The current master <code>10.076-4</code> reads <code>0,5 −20/−40</code>: <strong>0.460–0.480 mm</strong>. The master's revision table records <code>Index 3 in 4 geändert</code>, change 139, 26.10.50; every derived sheet is dated 13.1.50 or 17.1.50, cites <code>Aus 10.076-3 angefertigt</code> and shows an empty revision table. The likeliest reading is that change 139 shifted the thickness tolerance and the derived sheets were not reissued (<code>Inferred</code>; no sheet states what change 139 altered). The two ranges do not overlap except at 0.480 mm. It matters because the drum stack in <span class="ref">Drum-Assembly-10213.md</span> §5 builds the axial stations from 0.5 mm plates; check the station arithmetic against both ranges before adopting either. The parts list agrees with the derived sheets: 10.210 sheets 4 and 5 give all twelve segments (the master included) as 0.5 −0.02/0 or +0/−0.02, so <code>10.076-4</code> is the outlier; with −0.020/−0.040 the 37-plate stack could not reach the stations on <code>10.213-2</code> (see <a href="Part-Dimensions-10213.html">Part-Dimensions-10213.md</a>).</p>
+<h2>Where-used</h2>
+<p>The sheet's <code>Kompl. Nr.</code> names <code>10.213</code> and its <code>Stück</code> reads 6, both <code>Confirmed</code>; <span class="ref">Assembly-Links.csv</span> already records <code>10.213 → 10.084</code> with quantity 6.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general
+tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size; a scaled nominal exactly on a size-step boundary belongs to the lower step.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Land (tooth-root) radius</td>
+<td style="text-align: right;">32.7 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Plate thickness (title-block material line)</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">simply scaled -60/+0 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

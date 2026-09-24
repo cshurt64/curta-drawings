@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.225-2 Complete Zero-Buffer Lever — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10225.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.225-2 Complete Zero-Buffer Lever — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.225</code>, <em>Kompl. Nullpufferhebel</em> (complete zero-buffer lever), current
+  drawing <code>10.225-2</code>, <code>Ersatz für 10.225-1</code> (the superseded sheet is p230). Identity
+  agrees with <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog
+  page 231 (<a href="../viewer.html?page=231&status=All&section=All">viewer page 231</a>). Scale
+  10:1; <code>Abmaße in μ = 1/1000 mm</code> in the title block. Drawn 9.11.1950 (initials as read
+  <code>schär.</code>); change entry no. <strong>306</strong>, <em>Index 1 in 2 geändert</em>, 9.11.1950, with the
+  fit-table line <code>2,5-H9 +25/0</code>. Read at 300 dpi on 2026-09-23.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.246</code> (<em>Kompl. Nullpuffer</em>, complete zero
+  buffer); <code>Stück p.Masch. 1</code>; one per machine (<code>10.210</code> sheet 11).</li>
+<li><strong>Views:</strong> a half-section elevation and a plan view of the lever.</li>
+<li><strong>Assembly fields:</strong> general linear tolerance <strong>±50 µ</strong>; general angular tolerance
+  <strong>±1°</strong>; radial and side runout <strong>20 µ</strong> (marked); unmarked runout <code>—</code>; material <code>—</code>;
+  finish <code>—</code>; <strong>surface treatment <code>farblos eloxiert / hart</code></strong> (colourless hard
+  anodized); heat treatment <code>—</code>. Type I, group <code>Grundkörper</code>. Edges deburred and broken
+  up to 0.1 mm.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; child-sheet dimensions <strong>Confirmed</strong> at
+  their stated revisions; arithmetic and ISO recalculation <strong>Derived</strong>; unresolved
+  readings <strong>Unverified</strong>; readings resting on a judgment <strong>Inferred</strong>. 3× values are
+  geometric references, not factory specifications.</li>
+</ul>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore through the bushing</td>
+<td><strong>Ø2.5 H9</strong> (fit table <code>+25/0</code>)</td>
+<td>Ø2.500–2.525</td>
+<td>Confirmed; ISO agrees (below)</td>
+</tr>
+<tr>
+<td>Bushing height</td>
+<td><strong>5.9, 0/−50 µ</strong></td>
+<td>5.850–5.900</td>
+<td>Confirmed; meaning <strong>Inferred</strong></td>
+</tr>
+<tr>
+<td>Small step at the bottom</td>
+<td>0.15 (general ±50 µ)</td>
+<td>0.100–0.200</td>
+<td>Confirmed value; feature <strong>Unverified</strong></td>
+</tr>
+<tr>
+<td>Countersink angle</td>
+<td>90° (general ±1°)</td>
+<td>89°–91°</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Centre distance</td>
+<td>11.2 (general ±50 µ)</td>
+<td>11.150–11.250</td>
+<td>Confirmed; agrees with <code>10.114-3</code></td>
+</tr>
+<tr>
+<td>Arc radius</td>
+<td><code>r 3 ±500</code> as read</td>
+<td>—</td>
+<td>Confirmed as read; <code>10.114-3</code> gives r3 <strong>±100</strong> (<strong>Unverified</strong> conflict)</td>
+</tr>
+<tr>
+<td>Arc note</td>
+<td><code>nur bei entsprechendem Toleranzfall</code> (only in the corresponding tolerance case)</td>
+<td>—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Surface treatment</td>
+<td><code>farblos eloxiert / hart</code></td>
+<td>—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General tolerance, runout, material, finish, heat treatment</td>
+<td>±50 µ; ±1°; 20 µ marked, unmarked —; rest <code>—</code></td>
+<td>—</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h3>The Ø2.5 H9 bore (ISO 286-1 system, ISO 286-2 deviations)</h3>
+<p>2.5 mm lies in the <strong>up to 3 mm</strong> step: IT9 = <strong>25 µm</strong>, <code>EI = 0</code> (a hole <code>H</code>), zone
+above nominal ⇒ <strong>Ø2.500–2.525</strong>, matching the sheet's <code>+25/0</code> (<strong>Derived</strong>, agrees). The
+bushing's own sheet dimensions only a Ø2.1 +50/0 relief; the Ø2.5 bore is therefore
+<strong>finished in the assembly</strong> (the drawing shows it as the through-bore) — <strong>Inferred</strong>.</p>
+<h2>Component callouts and factory count</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th style="text-align: right;">Per assembly</th>
+<th>Evidence</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.114</code></td>
+<td>Zero-buffer lever (<em>Nullpufferhebel</em>), Anticorodal sheet B 1 mm</td>
+<td style="text-align: right;">1</td>
+<td>leader p231; own sheet <code>10.114-3</code> (p142) <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.225</code>; Machine-Facts §4 total 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.125</code></td>
+<td>Bushing for the zero-buffer lever (<em>Büchse zu Nullpufferhebel</em>), Decoltal Ø5</td>
+<td style="text-align: right;">1</td>
+<td>leader p231; own sheet <code>10.125-1</code> (p155) <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.225</code>; BOM sheet 6 (p208) 1</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h2>Inherited component dimensions and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Inherited dimension or control</th>
+<th>Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.114-3</code>, p142</td>
+<td>bore <strong>Ø3.3 H8</strong> (<code>+18/0</code>), <strong>Ø0.8</strong>, <strong>Ø1.7 H8</strong> (<code>+14/0</code>); thickness 1; 0.3 countersink at 90°; 0.15 step; 2.9; <strong>11.2</strong>; 16.2 <code>Richtmass</code> (gauging dimension); r3 ±100, r2 ±100; changes 2→3 (no. 302, 9.11.1950)</td>
+<td>The lever</td>
+</tr>
+<tr>
+<td><code>10.125-1</code>, p155</td>
+<td>body <strong>Ø4.5</strong>; stem <strong>Ø3.3 p9</strong> (fit table <code>+34/+9</code>); Ø2.1 +50/0 relief; length <strong>6.2</strong>, <strong>4.9 0/−50</strong>; 0.2/45°; Decoltal Ø5; change: number to index 1 (no. 305)</td>
+<td>The bushing</td>
+</tr>
+</tbody>
+</table>
+<h3>Fits and stacks derived</h3>
+<p>3.3 mm is over 3 mm, so the <strong>3–6 mm</strong> step applies: IT8 = 18 µm, IT9 = 30 µm; ISO <code>p</code>
+has lower deviation <code>+12</code>, so <code>p9</code> = <code>+12/+42</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lever bore Ø3.3 H8 on bushing stem Ø3.3 p9</td>
+<td>ISO: H8 Ø3.300–3.318 on p9 Ø3.312–3.342 ⇒ <strong>−6 (clearance) to +42 (interference) µm</strong>. Sheet p9 (<code>+9/+34</code>): −9 to +34</td>
+<td>Derived; transition to interference; secured by staking; pairing Inferred. Sheet p9 sits 3–8 µm below ISO</td>
+</tr>
+<tr>
+<td>Staked height 5.9</td>
+<td>body 4.9 (0/−50) + lever 1.0 (±20) = <strong>5.9</strong> (range 5.83–5.92)</td>
+<td>Derived; <strong>Inferred</strong> that 5.9 is body plus lever</td>
+</tr>
+<tr>
+<td>Stem protrusion</td>
+<td>6.2 − 4.9 = 1.3 stem; − 1.0 lever = <strong>0.3 proud</strong>, the depth of the 0.3 countersink</td>
+<td>Derived; Inferred</td>
+</tr>
+</tbody>
+</table>
+<p>The same construction — bushing staked into a 90° countersink 0.3 deep — appears on
+the locking pawl <a href="Part-Dimensions-10224.html"><code>10.224</code></a>.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<p>The two stacks above are the only ones the sheets support.</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lever bore 3.3 H8</td>
+<td><code>+18/0</code></td>
+<td>Ø9.900</td>
+<td><code>+54/0</code></td>
+<td>6–10 mm step, IT8 = 22 µm ⇒ Ø9.900–9.922</td>
+</tr>
+<tr>
+<td>Bushing stem 3.3 p9</td>
+<td>sheet <code>+9/+34</code>; ISO <code>+12/+42</code></td>
+<td>Ø9.900</td>
+<td>—</td>
+<td><strong>not recalculated</strong>: p9 at 6–10 mm needs the ISO 286-2 table — <strong>Unverified</strong></td>
+</tr>
+<tr>
+<td>Bore Ø2.5 H9</td>
+<td><code>+25/0</code></td>
+<td>Ø7.500</td>
+<td><code>+75/0</code></td>
+<td>6–10 mm step, IT9 = 36 µm ⇒ Ø7.500–7.536</td>
+</tr>
+<tr>
+<td>5.9; 11.2</td>
+<td>0/−50; general</td>
+<td>17.7; 33.6</td>
+<td>—</td>
+<td>not scaled</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, except where marked. A 3× table is not a factory specification. See
+the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong>r3 ±500 vs ±100 (<code>Unverified</code>).</strong> Rotated small print; the lever sheet says ±100.</li>
+<li><strong>The dashed arc and its note (<code>Inferred</code>).</strong> Probably an optional relief.</li>
+<li><strong>0.15 (<code>Unverified</code>).</strong></li>
+<li><strong>Sheet p9 vs ISO p9 (<code>Derived</code> discrepancy).</strong></li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.246</code> complete zero buffer, 1 per machine</td>
+<td><code>Confirmed</code>: <code>Kompl. Nr.</code> on this sheet; <code>Stück p.Masch. 1</code>; leader on p255</td>
+</tr>
+<tr>
+<td>Children</td>
+<td><code>10.114</code> ×1, <code>10.125</code> ×1</td>
+<td><code>Confirmed</code>: each child's own sheet</td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p231_10225-2.webp">drawing 10.225-2</a>, page 231.</p>
+</main>
+</body>
+</html>

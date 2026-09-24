@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.203-1 Complete Number Roll I — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10203.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.203-1 Complete Number Roll I — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.203</code>, <em>Kompl. Zahlenrolle I</em> (complete number roll I),
+  drawing revision <code>10.203-1</code>, current. Identity verified against
+  <span class="ref">Drawing-Index.md</span>: page 193 is <code>10.203‑1 Kompl. Zahlenrolle I</code>,
+  and the sheet's own title block agrees.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  193 / <a href="../viewer.html?page=193&status=All&section=All">drawing-viewer page 193</a>,
+  rasterized at 300 and 400 dpi. Dimensions are in µm unless stated
+  (<code>Abmasse in μ = 1/1000 mm</code>); the sheet scale is 10:1.</li>
+<li><strong>Child sources:</strong> <code>10.043-6</code> Number roll I (page 60,
+  <a href="Part-Dimensions-10043.html">audit</a>) and <code>10.021-4</code> <em>Zahlenrollenstift</em>, the
+  number-roll pin (page 33).</li>
+<li><strong>Labels:</strong> each value below is one of <em>direct assembly callout</em> (printed on
+  <code>10.203-1</code>), <em>inherited component dimension</em> (printed on a child sheet), or
+  <em>calculated / inferred stack-up</em>. Facts are <strong>Confirmed</strong>, recalculated
+  values <strong>Derived</strong>, unresolved readings <strong>Unverified</strong>, judgement calls
+  <strong>Inferred</strong>.</li>
+<li><strong>ISO limits:</strong> <strong>Derived</strong> from ISO 286-1 (system) and ISO 286-2 (tables).</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a>
+and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>Direct assembly callouts on 10.203-1</h2>
+<p>The assembly sheet carries very little dimensional information.</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin projection</td>
+<td><code>4 ±50</code> µm (3.950–4.050 mm) in the front view, from the pin's projecting end down to the digit-end face level</td>
+<td>Direct assembly callout, Confirmed; which face the lower extension line reaches is Inferred (read as the 10 mm digit-end face)</td>
+</tr>
+<tr>
+<td>Face rotation</td>
+<td><code>Max. Verdrehung der Fläche ± 8°</code> — maximum rotation of the digit face; the leader ends at the pin</td>
+<td>Direct assembly callout, Confirmed</td>
+</tr>
+<tr>
+<td>Sheet scale</td>
+<td>10:1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Pieces per machine</td>
+<td>4 (<code>Stück p.Masch.</code>), Type I</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Untoleranced linear / angular limit</td>
+<td>none (<code>—</code>)</td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Radial and side runout, marked and unmarked</td>
+<td>none (<code>—</code>)</td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Surface finish, surface treatment, heat treatment, material</td>
+<td>none (<code>—</code>)</td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Fit / change table</td>
+<td>empty</td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Digits</td>
+<td><code>23</code> in the front view is an illustrative sample; Section A–A shows positions 0–9</td>
+<td>Confirmed; no dimensions attached</td>
+</tr>
+</tbody>
+</table>
+<p>Because the general-tolerance, runout and material fields are blank, the
+assembly imposes no general tolerance of its own. The <code>±50 µm</code> general
+tolerance printed on <code>10.043-6</code> and <code>10.021-4</code> belongs to those sheets and is
+not assumed to apply to the assembly-level <code>4 ±50</code> beyond what that callout
+states.</p>
+<h2>Component callouts on 10.203-1</h2>
+<table>
+<thead>
+<tr>
+<th>Leader</th>
+<th>Component</th>
+<th style="text-align: right;">Per assembly</th>
+<th style="text-align: right;">Per machine</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10'043</code></td>
+<td>Number roll I (<code>10.043-6</code>)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td>Confirmed; single leader on p193</td>
+</tr>
+<tr>
+<td><code>10'021</code></td>
+<td>Number-roll pin (<code>10.021-4</code>)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4 (15 across <code>10.203</code> and <code>10.205</code>)</td>
+<td>Confirmed; single leader on p193</td>
+</tr>
+</tbody>
+</table>
+<p>The pin total reconciles: <code>10.021-4</code> states <code>Stück</code> 15 and <code>Kompl. Nr.
+10.203/205</code>; 1 pin × 4 assemblies of <code>10.203</code> + 1 pin × 11 assemblies of
+<code>10.205</code> = 15. The where-used edge quantities were previously entered as 4 and
+11 per assembly, which the generator multiplied into 16 and 121 pins per
+machine; both are corrected to 1.</p>
+<h2>Inherited component dimensions</h2>
+<p><strong>From <code>10.021-4</code> (page 33), the pin:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin diameter</td>
+<td style="text-align: right;">Ø0.8 mm</td>
+<td style="text-align: right;"><code>h8</code>; fit table <code>0,8-h8</code>, <code>0/−14</code> µm</td>
+<td style="text-align: right;">Ø0.7860–0.8000 mm</td>
+<td>Confirmed callout; Derived ISO limits (see below); the fit-table value matches ISO</td>
+</tr>
+<tr>
+<td>Overall length</td>
+<td style="text-align: right;">3.9 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">3.850–3.950 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Ground-end length</td>
+<td style="text-align: right;">1.1 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.050–1.150 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Fillet at the ground-end shoulder</td>
+<td style="text-align: right;">max 0.4 mm radius</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">≤0.4 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Ground-end section, both directions</td>
+<td style="text-align: right;">0.4 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">0.380–0.420 mm</td>
+<td>Confirmed callouts (<code>angeschliffen</code>, ground); the section left is a quadrant, Inferred</td>
+</tr>
+<tr>
+<td>Surface</td>
+<td style="text-align: right;">ground (<code>geschliffen</code>), ▽▽ predominant grade</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Material</td>
+<td style="text-align: right;">stainless spring-steel wire, Sandvik 2R2</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Runout (marked <code>*</code> / diamond)</td>
+<td style="text-align: right;">max 20 µm each</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed title-block limit</td>
+</tr>
+<tr>
+<td>Revision</td>
+<td style="text-align: right;">index 3→4 (change 163, 1.5.1950); replaces <code>10.021-2</code></td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed as read</td>
+</tr>
+</tbody>
+</table>
+<p><strong>From <code>10.043-6</code> (page 60), the roll</strong> (full audit in
+<a href="Part-Dimensions-10043.html">Part-Dimensions-10043.md</a>); only the assembly-relevant
+values:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin bore</td>
+<td style="text-align: right;">Ø0.8 mm</td>
+<td style="text-align: right;"><code>P7</code>; fit table <code>−7/−16</code> µm</td>
+<td style="text-align: right;">Ø0.7840–0.7940 mm (ISO)</td>
+<td>Confirmed callout; Derived ISO limits; fit-table reading Unverified</td>
+</tr>
+<tr>
+<td>Pin-bore centerline distance from axis</td>
+<td style="text-align: right;">2.6 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">2.580–2.620 mm</td>
+<td>Confirmed callout; meaning Inferred</td>
+</tr>
+<tr>
+<td>Digit-disc outside diameter</td>
+<td style="text-align: right;">Ø6.3 mm</td>
+<td style="text-align: right;"><code>+50/0</code> µm</td>
+<td style="text-align: right;">Ø6.300–6.350 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Digit-disc body</td>
+<td style="text-align: right;">7→10 mm from the left end</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Overall length incl. boss</td>
+<td style="text-align: right;">10.3 mm</td>
+<td style="text-align: right;"><code>0/−40</code> µm</td>
+<td style="text-align: right;">10.260–10.300 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Bore-to-flank position</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed note</td>
+</tr>
+<tr>
+<td>Digit-to-flank position</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">±30 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed note</td>
+</tr>
+</tbody>
+</table>
+<h2>ISO 286 fit cases</h2>
+<p>Both fall in the first ISO 286 size step, "up to 3 mm". Neither nominal sits on
+a step boundary.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Calculation</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin (shaft)</td>
+<td style="text-align: right;">Ø0.800 mm</td>
+<td><code>h8</code></td>
+<td>IT8 = 14 µm; <code>es = 0</code>, <code>ei = −14 µm</code></td>
+<td style="text-align: right;">Ø0.7860–0.8000 mm</td>
+<td><code>10.021-4</code></td>
+</tr>
+<tr>
+<td>Pin bore (hole)</td>
+<td style="text-align: right;">Ø0.800 mm</td>
+<td><code>P7</code></td>
+<td>IT7 = 10 µm; <code>ES = −6</code>, <code>EI = −16 µm</code></td>
+<td style="text-align: right;">Ø0.7840–0.7940 mm</td>
+<td><code>10.043-6</code></td>
+</tr>
+</tbody>
+</table>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for <code>P</code> (a hole), <code>ES &lt; 0</code>
+and the zone also lies below nominal.</p>
+<p><strong>The assembly sheet specifies no fit.</strong> Each component sheet states a zone for
+its own feature, and the <code>10'021</code> leader on <code>10.203-1</code> identifies the pin as
+seating in the roll. Pairing the two zones is therefore a <strong>Derived</strong>
+combination of two Confirmed callouts, not a fit printed anywhere:</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum clearance</td>
+<td>hole max − shaft min = 0.7940 − 0.7860</td>
+<td style="text-align: right;">+8 µm</td>
+</tr>
+<tr>
+<td>Maximum interference</td>
+<td>shaft max − hole min = 0.8000 − 0.7840</td>
+<td style="text-align: right;">16 µm</td>
+</tr>
+<tr>
+<td>Character</td>
+<td>clearance possible and interference possible</td>
+<td style="text-align: right;">transition</td>
+</tr>
+</tbody>
+</table>
+<p>Using the sheet's own fit-table reading for the hole (<code>−7/−16</code>, Ø0.7840–0.7930)
+the maximum clearance becomes +7 µm (<code>Unverified</code> reading). A transition fit
+means an individual pin can seat loosely or tightly, so this is not a
+guaranteed press fit even though <code>P7</code> is normally a press-fit hole class.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin projection above the 7 mm disc face, per assembly callout</td>
+<td>4.0 − 3.0 (pin flush with the 10 mm face)</td>
+<td style="text-align: right;">1.0 mm</td>
+<td>Derived; face identity Inferred</td>
+</tr>
+<tr>
+<td>Same, per the pin sheet's length</td>
+<td>3.9 − 3.0</td>
+<td style="text-align: right;">0.9 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Assembly callout vs pin length</td>
+<td>4.000 ±0.050 (3.950–4.050) vs 3.9 ±0.050 (3.850–3.950)</td>
+<td style="text-align: right;">0.1 mm nominal apart; ranges touch only at 3.950</td>
+<td>Derived; see below</td>
+</tr>
+<tr>
+<td>Ground end vs projection</td>
+<td>1.1 − (0.9 to 1.0)</td>
+<td style="text-align: right;">0.1–0.2 mm of the ground end lies inside the bore</td>
+<td>Derived; assumes the ground end is at the projecting tip</td>
+</tr>
+<tr>
+<td>Radial wall, pin bore to disc outside diameter</td>
+<td>6.3 / 2 − 2.6 − 0.8 / 2</td>
+<td style="text-align: right;">0.15 mm nominal</td>
+<td>Derived; depends on the Inferred bore-centerline reading</td>
+</tr>
+<tr>
+<td>Same wall, worst case</td>
+<td>6.300 / 2 − 2.620 − 0.794 / 2</td>
+<td style="text-align: right;">≈0.133 mm</td>
+<td>Derived; ignores form and runout</td>
+</tr>
+<tr>
+<td>Hub wall</td>
+<td>(2.6 − 2.0) / 2</td>
+<td style="text-align: right;">0.30 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Face-rotation allowance in arc, at the pin's radius</td>
+<td>2.6 × 8° × π/180</td>
+<td style="text-align: right;">±0.363 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Face-rotation allowance in arc, at the disc rim</td>
+<td>3.15 × 8° × π/180</td>
+<td style="text-align: right;">±0.440 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Rotation allowance as a share of the digit pitch</td>
+<td>8° / 36°</td>
+<td style="text-align: right;">±22%</td>
+<td>Derived</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The 4 mm callout and the 3.9 mm pin do not quite agree.</strong> They differ by
+0.1 mm and only touch at the extreme of both tolerances. Dates offer an
+explanation but not a proof: <code>10.203-1</code> was drawn on 23.2.50 with no revision
+index, while <code>10.021-4</code> was revised on 1.5.1950 (index 3→4, change 163). If the
+earlier pin index was 4.0 mm long, the assembly callout may simply predate the
+change. <code>Unverified</code>; the pin sheet is the later, more specific source for the
+pin's own length.</p>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotation of the digit face</td>
+<td style="text-align: right;">±8°</td>
+<td style="text-align: right;">angles do not scale; the arc allowance does</td>
+<td>Confirmed; Derived arc</td>
+</tr>
+<tr>
+<td>Assembly quantity</td>
+<td style="text-align: right;">4 per machine</td>
+<td style="text-align: right;">does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Pin quantity</td>
+<td style="text-align: right;">1 per assembly; 15 per machine</td>
+<td style="text-align: right;">does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Parent</td>
+<td style="text-align: right;"><code>10.243</code> Counter assembly, stage I (<code>Kompl. Nr. 10.243</code>; two independent edge sources)</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Replaces</td>
+<td style="text-align: right;">an earlier <code>10.203</code> with no index shown</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed as read</td>
+</tr>
+</tbody>
+</table>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy
+(a project decision) ties tolerance to the manufacturing process, not to the
+3× factor. The "simply scaled tolerance" column is a comparison only and is
+not adopted for any process. A 3× table is not a factory specification.
+Where a callout carries an ISO fit code, the code is re-applied at the scaled
+basic size and the limits recalculated, matching the <code>10.041</code> audit.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin projection callout</td>
+<td style="text-align: right;">12.000 mm</td>
+<td style="text-align: right;">±150 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Pin diameter</td>
+<td style="text-align: right;">Ø2.400 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>h8</code>, up to 3 mm: <code>es 0</code>, <code>ei −14</code> µm → Ø2.386–2.400 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Pin bore</td>
+<td style="text-align: right;">Ø2.400 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>P7</code>, up to 3 mm: <code>ES −6</code>, <code>EI −16</code> µm → Ø2.384–2.394 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Pin length</td>
+<td style="text-align: right;">11.700 mm</td>
+<td style="text-align: right;">general ±150 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived nominal</td>
+</tr>
+<tr>
+<td>Ground-end length</td>
+<td style="text-align: right;">3.300 mm</td>
+<td style="text-align: right;">general ±150 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived nominal</td>
+</tr>
+<tr>
+<td>Ground-end section</td>
+<td style="text-align: right;">1.200 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Fillet radius</td>
+<td style="text-align: right;">≤1.2 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Face-rotation allowance</td>
+<td style="text-align: right;">±8°</td>
+<td style="text-align: right;">unchanged (angle)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; arc at the Ø18.9 rim ≈ ±1.32 mm</td>
+</tr>
+<tr>
+<td>Wall, pin bore to disc outside diameter</td>
+<td style="text-align: right;">0.45 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Derived; about one FDM perimeter</td>
+</tr>
+</tbody>
+</table>
+<p>Both scaled diameters stay in the same ISO size step as the originals, so the
+derived transition band (+8 µm clearance to 16 µm interference) is unchanged at
+3×. A printed FDM roll cannot hold it; per the project's tolerance decision printed prototype fits come
+from measurement, and a machined or ground roll and pin would hold near the
+factory absolute band.</p>
+<h2>Open items</h2>
+<ol>
+<li>Resolve the 4 mm callout against the 3.9 mm pin length (an earlier pin index
+   would settle it).</li>
+<li>Confirm the ground end's cross-section (quadrant versus other) and what it
+   engages; the sheets do not say what the pin drives.</li>
+<li>Confirm which face the <code>4 ±50</code> lower extension line reaches.</li>
+<li>Read the <code>10.043-6</code> fit-table entry (<code>−7/−16</code>) against an original 1950
+   table, as flagged in the <code>10.043</code> audit.</li>
+</ol>
+</main>
+</body>
+</html>

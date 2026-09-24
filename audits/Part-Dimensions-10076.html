@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.076-4 Tooth Segment (10 Teeth, RW) — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10076.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.076-4 Tooth Segment (10 Teeth, RW) — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.076</code>, <em>Zahnsegment (10 Zähne) für Resultatzählwerk</em> (tooth segment (10 Teeth, RW)), drawing <code>10.076-4</code>, current; replaces 10.076-3. Identity verified against <span class="ref">Drawing-Index.md</span>: page 100 is <code>10.076-4</code>, and the sheet's own
+  title block agrees. Scale 5:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 100 / <a href="../viewer.html?page=100&status=All&section=All">drawing-viewer page 100</a>, rasterized at 200–400 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.213 Complete Step Drum; 1 per machine (Type I; the master of the RW family). <strong>Material:</strong> Nickel silver (Neusilber) 0.5 −20/−40 mm, hard-rolled, Brinell 230–240. <strong>General tolerance:</strong> ±50 µm, ±30′. <strong>Runout:</strong> 20 µm marked radial and side; none marked. <strong>Drawn:</strong> 12.1.50. <strong>Revisions:</strong> index 3→4 (change 139, 26.10.50).</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286</h2>
+<p>No ISO fit code is printed on this sheet, and none is assigned: the limits are explicit ± or +/− micron values.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore radius</td>
+<td style="text-align: right;">9.2 mm</td>
+<td style="text-align: right;">±20 µm (<code>9,2r ±20</code>)</td>
+<td style="text-align: right;">9.180–9.220 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bore relief radius</td>
+<td style="text-align: right;">9.3 mm</td>
+<td style="text-align: right;">general ±50 µm (none printed; <code>9,3r</code>)</td>
+<td style="text-align: right;">9.250–9.350 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>End-tab inward radius</td>
+<td style="text-align: right;">7.2 mm</td>
+<td style="text-align: right;">general ±50 µm (none printed; <code>7,2r</code>)</td>
+<td style="text-align: right;">7.150–7.250 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Land (tooth-root) radius</td>
+<td style="text-align: right;">10.9 mm</td>
+<td style="text-align: right;">general ±50 µm (none printed; <code>10,9r</code>)</td>
+<td style="text-align: right;">10.850–10.950 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>End-tab radial width</td>
+<td style="text-align: right;">2.9 mm</td>
+<td style="text-align: right;">0/−50 µm</td>
+<td style="text-align: right;">2.850–2.900 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Raw outer tab/tip radius (9.2 + 2.9)</td>
+<td style="text-align: right;">12.1 mm</td>
+<td style="text-align: right;">sum of two toleranced callouts: 12.03–12.12 mm (Derived)</td>
+<td style="text-align: right;">—</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Tab corner radius</td>
+<td style="text-align: right;">1 mm</td>
+<td style="text-align: right;"><code>1r</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tooth tip flat</td>
+<td style="text-align: right;">0.2 mm</td>
+<td style="text-align: right;">±20 µm (<code>0,20 ±20</code>)</td>
+<td style="text-align: right;">0.180–0.220 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Root fillet</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;"><code>0,5r</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Segment height (side callout)</td>
+<td style="text-align: right;">7.8 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">7.750–7.850 mm</td>
+<td>Confirmed callout; feature Unverified; Derived limits</td>
+</tr>
+<tr>
+<td>Relief chord</td>
+<td style="text-align: right;">10 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">9.950–10.050 mm</td>
+<td>Confirmed callout; feature Unverified; Derived limits</td>
+</tr>
+<tr>
+<td>Shoulder chord</td>
+<td style="text-align: right;">13.18 mm</td>
+<td style="text-align: right;">±10 µm (<code>13,18 ±10</code>)</td>
+<td style="text-align: right;">13.170–13.190 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Plate thickness</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;">−20/−40 µm (<code>0,5 −20/−40</code>)</td>
+<td style="text-align: right;">0.460–0.480 mm</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tooth pitch</td>
+<td style="text-align: right;">11°15′</td>
+<td>±15′</td>
+</tr>
+<tr>
+<td>Tooth-covered arc (9 × 11°15′)</td>
+<td style="text-align: right;">101°15′</td>
+<td>±15′</td>
+</tr>
+<tr>
+<td>Blank arc</td>
+<td style="text-align: right;">125°</td>
+<td>general ±30′</td>
+</tr>
+<tr>
+<td>Construction angle</td>
+<td style="text-align: right;">60°</td>
+<td>±30′; the last tooth's deviation from it ±15′</td>
+</tr>
+<tr>
+<td>End-face angles (two)</td>
+<td style="text-align: right;">55°</td>
+<td>general ±30′</td>
+</tr>
+<tr>
+<td>Angular general tolerance</td>
+<td style="text-align: right;">—</td>
+<td>±30′</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
+<h2>Radial geometry (Derived from the callouts)</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raw outer tab radius</td>
+<td>9.2 + 2.9 (bore arc + tab width)</td>
+<td style="text-align: right;">12.1 mm (12.03–12.12 with both tolerances)</td>
+</tr>
+<tr>
+<td>Bore relief depth</td>
+<td>9.3 − 9.2</td>
+<td style="text-align: right;">0.1 mm</td>
+</tr>
+<tr>
+<td>Tooth height (land to raw tab radius)</td>
+<td>12.1 − 10.9</td>
+<td style="text-align: right;">1.2 mm</td>
+</tr>
+<tr>
+<td>Tooth pitch arc at the land</td>
+<td>10.9 × 11.25° × π/180</td>
+<td style="text-align: right;">2.14 mm</td>
+</tr>
+<tr>
+<td>Angular span of ten pitches</td>
+<td>10 × 11°15′</td>
+<td style="text-align: right;">112°30′ (blank arc 125°)</td>
+</tr>
+</tbody>
+</table>
+<p>The 2.9 dimension is a second, indirect statement of the <strong>raw tooth-tip radius</strong>: Machine-Facts §2 says no raw-tip radius is called out and takes 12.04–12.10 mm from the scan; 9.2 + 2.9 = 12.1 mm agrees with that scan value (<code>Derived</code>; the assumption that the 2.9 arrows meet the bore arc is <code>Inferred</code> from the drawing). The finished tooth-tip envelope is the Ø24 ±20 µm on <code>10.213-2</code>, i.e. r 12.0; the difference between 12.1 and 12.0 is the finishing allowance discussed in Machine-Facts §2.</p>
+<h2>The family this sheet defines</h2>
+<p>Nine other RW sheets (<code>10.078</code>–<code>10.090</code>, except <code>10.076</code>) and the two UW sheets say <code>Aus 10.076-3 angefertigt</code> ("made from 10.076-3"); each has its own audit. The derived segments keep the master's bore, tabs and outline and drop the first (10 − n) teeth. This is the only sheet with the full tolerance set.</p>
+<h2>Plate thickness</h2>
+<p><code>0,5 −20/−40</code> here (0.460–0.480 mm); the nine RW derived sheets and the two UW sheets read <code>0,5 −0/−20</code> (0.480–0.500). See any derived audit, e.g. <a href="Part-Dimensions-10078.html">Part-Dimensions-10078.md</a>. The revision table records only <code>Index 3 in 4 geändert</code>, change 139, 26.10.50; what it changed is not written (<code>Unverified</code>), and the derived sheets were not reissued. The parts list agrees with the derived sheets: 10.210 sheets 4 and 5 give all twelve segments (the master included) as 0.5 −0.02/0 or +0/−0.02, so <code>10.076-4</code> is the outlier; with −0.020/−0.040 the 37-plate stack could not reach the stations on <code>10.213-2</code> (see <a href="Part-Dimensions-10213.html">Part-Dimensions-10213.md</a>).</p>
+<h2>Hardness</h2>
+<p>Hard-rolled nickel silver, Brinell 230–240 (as printed). No hardening is specified; the segments are cold-worked strip.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general
+tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size; a scaled nominal exactly on a size-step boundary belongs to the lower step.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore radius</td>
+<td style="text-align: right;">27.6 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Bore relief radius</td>
+<td style="text-align: right;">27.9 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>End-tab inward radius</td>
+<td style="text-align: right;">21.6 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Land (tooth-root) radius</td>
+<td style="text-align: right;">32.7 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>End-tab radial width</td>
+<td style="text-align: right;">8.7 mm</td>
+<td style="text-align: right;">simply scaled -150/+0 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Raw outer tab/tip radius (9.2 + 2.9)</td>
+<td style="text-align: right;">36.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Tab corner radius</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Tooth tip flat</td>
+<td style="text-align: right;">0.6 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Root fillet</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Segment height (side callout)</td>
+<td style="text-align: right;">23.4 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Relief chord</td>
+<td style="text-align: right;">30 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Shoulder chord</td>
+<td style="text-align: right;">39.54 mm</td>
+<td style="text-align: right;">simply scaled -30/+30 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Plate thickness</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">simply scaled -120/-60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

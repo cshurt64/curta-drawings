@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.054-4 Press-Fit Sleeve — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10054.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.054-4 Press-Fit Sleeve — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.054</code>, <em>Presshülse</em> (press-fit sleeve), drawing <code>10.054-4</code>, current; replaces 10.054-2. Identity verified against <span class="ref">Drawing-Index.md</span>: page 73 is
+  <code>10.054-4</code>, and the sheet's own title block agrees. Scale 10:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 73 / <a href="../viewer.html?page=73&status=All&section=All">drawing-viewer page 73</a>, rasterized at 300–400 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.220 Complete Tens-Carry Wheel; 15 per machine (1 per 10.220). <strong>Material:</strong> Brass Ms 58 Pb, Ø3 bar. <strong>General tolerance:</strong> ±50 µm; angles none. <strong>Runout:</strong> 20 µm marked and side, 50 µm unmarked radial. <strong>Heat treatment:</strong> none. <strong>Drawn:</strong> 22.6.49. <strong>Revisions:</strong> none entered.</li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong>; <strong>ISO limits:</strong> <strong>Derived</strong> (ISO 286-1/-2); <strong>3× values:</strong> <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286 fit cases</h2>
+<p>None of the nominals sits on a size-step boundary. For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for <code>H</code>, <code>EI = 0</code> and it lies above.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet fit-table entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside diameter (shaft)</td>
+<td style="text-align: right;">Ø2.700 mm</td>
+<td><code>h11</code></td>
+<td>up to 3 mm</td>
+<td>IT11 = 60 µm; <code>es = 0</code>, <code>ei = −60</code></td>
+<td style="text-align: right;">Ø2.6400–2.7000 mm</td>
+<td><code>2,7-h11 −60</code></td>
+<td>matches ISO</td>
+</tr>
+<tr>
+<td>Bore (hole)</td>
+<td style="text-align: right;">Ø2.300 mm</td>
+<td><code>H8</code></td>
+<td>up to 3 mm</td>
+<td>IT8 = 14 µm; <code>EI = 0</code>, <code>ES = +14</code></td>
+<td style="text-align: right;">Ø2.3000–2.3140 mm</td>
+<td><code>2,3-H8 +14</code></td>
+<td>matches ISO</td>
+</tr>
+</tbody>
+</table>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length</td>
+<td style="text-align: right;">1.3 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.250–1.350 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Edge break at the outside (<code>0,1</code>, 90° countersink)</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>0,1</code> with a <code>90°</code> included angle</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callouts</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chamfer included angle</td>
+<td style="text-align: right;">90°</td>
+<td>none; angles blank</td>
+</tr>
+</tbody>
+</table>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are
+not adopted, general tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside diameter (shaft)</td>
+<td style="text-align: right;">Ø8.100 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>h11</code>, over 6 through 10 mm: IT11 = 90 µm; <code>es = 0</code>, <code>ei = −90</code> → Ø8.010–8.100 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Bore (hole)</td>
+<td style="text-align: right;">Ø6.900 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>H8</code>, over 6 through 10 mm: IT8 = 22 µm; <code>EI = 0</code>, <code>ES = +22</code> → Ø6.900–6.922 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Length</td>
+<td style="text-align: right;">3.9 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Edge break at the outside (<code>0,1</code>, 90° countersink)</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>Ø6 mm (3× of Ø2) sits exactly on the upper boundary of the "over 3 through 6 mm" step, so it belongs to that step; Ø6.001 would fall in the next. None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code>.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

@@ -1,0 +1,755 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.226-3 Complete Counter Body Assembly — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10226.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.226-3 Complete Counter Body Assembly — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.226</code>, <em>Kompl. Zählwerkskörper</em> (complete counter body),
+  drawing revision <code>10.226-3</code>, current (the printed <code>2</code> is struck and <code>3</code>
+  written over it). Identity verified against <span class="ref">Drawing-Index.md</span>:
+  page 232 is <code>10.226‑3 Kompl. Zählwerkskörper</code>, and the sheet's own title block
+  agrees. Scale 5:1; the sheet carries the <code>Abmasse in μ = 1/1000 mm</code> stamp.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  232 / <a href="../viewer.html?page=232&status=All&section=All">drawing-viewer page 232</a>,
+  rasterized at 400–700 dpi.</li>
+<li><strong>Child sources:</strong> <code>10.040-5</code> counter body (page 56), <code>10.008-4</code> counter-wheel
+  axle (page 14), <code>10.095-2</code> bushing (page 122), <code>10.149</code> pin Ø0.8 (page 183),
+  <code>10.150</code> pin Ø1.5 (page 184).</li>
+<li><strong>Labels:</strong> each value is one of <em>direct assembly callout</em> (printed on
+  <code>10.226-3</code>), <em>inherited component dimension</em> (printed on a child sheet), or
+  <em>calculated / inferred stack-up</em>. Facts are <strong>Confirmed</strong>, recalculated values
+  <strong>Derived</strong>, unresolved readings <strong>Unverified</strong>, judgement calls <strong>Inferred</strong>.</li>
+<li><strong>ISO limits:</strong> <strong>Derived</strong> from ISO 286-1 (system) and ISO 286-2 (tables).</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a>
+and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>Direct assembly callouts on 10.226-3</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle-tip envelope</td>
+<td><code>* Ø48 −0/−50</code> µm (47.950–48.000 mm) <code>für Übergangsausführung der Zählwerkskappe</code> — for the transitional design of the counter cap; spans opposite axle tips</td>
+<td>Direct callout, Confirmed; marked <code>*</code> (special inspection); that it spans axle tips is Inferred from the dimension line</td>
+</tr>
+<tr>
+<td>Span marked <code>*</code> only</td>
+<td>a dimension line along the middle of the body with no printed value</td>
+<td>Direct callout, Confirmed absent; meaning Unverified</td>
+</tr>
+<tr>
+<td>Axial steps</td>
+<td><code>1,3 ±100</code> µm; <code>1,5 ±100</code> µm; <code>1,3 ±20</code> µm; <code>4 ±20</code> µm</td>
+<td>Direct callouts, Confirmed; the features are the flange and axle-end steps, Inferred</td>
+</tr>
+<tr>
+<td>Small tolerance</td>
+<td><code>0,1</code> with <code>+28/−80</code> µm as read</td>
+<td>Direct callout, Confirmed as read; Unverified (small print)</td>
+</tr>
+<tr>
+<td>Screws</td>
+<td><code>Zylinderschraube M1x3 VSM 12124</code>, two leaders in Section A–A</td>
+<td>Direct callout, Confirmed</td>
+</tr>
+<tr>
+<td>Scale / quantity</td>
+<td>5:1; <code>Type I</code>; <code>Kompl. Nr. 10.243</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General linear and angular tolerance, runout, finish, treatment, material, heat treatment</td>
+<td>none (<code>—</code>); the linear field is labelled mm</td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Special inspection</td>
+<td>box <code>Diese Maße werden bei Abnahme besonders kontrolliert</code></td>
+<td>Confirmed text; which dimensions Unverified</td>
+</tr>
+<tr>
+<td>Revision</td>
+<td>index 1→2 (change 169, 5.5.1950); 2→3 (change 204, 4.8.50); drawn 17.3.50; replaces an unindexed <code>10.226</code></td>
+<td>Confirmed as read</td>
+</tr>
+</tbody>
+</table>
+<p>No ISO fit code is printed on this sheet. The <code>Ø48</code> tolerance is an explicit
+<code>−0/−50</code> µm deviation.</p>
+<h2>Component callouts on 10.226-3</h2>
+<table>
+<thead>
+<tr>
+<th>Leader</th>
+<th>Component</th>
+<th style="text-align: right;">Qty</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10'040</code></td>
+<td>Counter body (<code>10.040-5</code>)</td>
+<td style="text-align: right;">1</td>
+<td>Confirmed — single leader; the body's own <code>Kompl. Nr. 10.226</code>; BOM sheet 3</td>
+</tr>
+<tr>
+<td><code>10'008</code></td>
+<td>Counter-wheel axle (<code>10.008-4</code>)</td>
+<td style="text-align: right;">17</td>
+<td>Confirmed — one leader stands for 17 axle stubs counted in the plan view; the axle's own <code>Stück</code> 17 and <code>Kompl. Nr. 10.226</code>; BOM sheet 1 (upgraded from Inferred)</td>
+</tr>
+<tr>
+<td><code>10'095</code></td>
+<td>Locating-pin bushing (<code>10.095-2</code>, <code>Büchse</code>)</td>
+<td style="text-align: right;">1</td>
+<td>Confirmed — single leader; the bushing's <code>Stück</code> 1 and <code>Kompl. Nr. 10.226</code>; BOM sheet 5</td>
+</tr>
+<tr>
+<td><code>10'149</code></td>
+<td>Cylindrical pin Ø0.8 (<code>10.149</code>)</td>
+<td style="text-align: right;">2</td>
+<td>Confirmed — leader; the pin's <code>Stück p.Masch.</code> 2; BOM sheet 8</td>
+</tr>
+<tr>
+<td><code>10'150</code></td>
+<td>Cylindrical pin Ø1.5 (<code>10.150</code>)</td>
+<td style="text-align: right;">1</td>
+<td>Confirmed — leader; the pin's <code>Stück p.Masch.</code> 1; BOM sheet 8</td>
+</tr>
+<tr>
+<td><code>Zylinderschraube M1x3 VSM 12124</code></td>
+<td>Cylinder-head screw M1 × 3</td>
+<td style="text-align: right;">34</td>
+<td>Confirmed — BOM sheet 9: 34, used on the counter-wheel axle; 34 slotted heads counted in the plan view (by eye) = 2 per axle × 17</td>
+</tr>
+</tbody>
+</table>
+<p>The sheet prints no quantity for the axle or the screws. Both come from the
+BOM and a plan-view count that agree.</p>
+<h2>Inherited component dimensions</h2>
+<p><strong>From <code>10.040-5</code> (page 56), the counter body</strong> — Decoltal Ø33, scale 5:1, drawn
+28.6.49, replaces <code>10.040-1</code>; colourless anodized, hard; general ±100 µm and
+±30′; runout 20 µm marked, 50 µm unmarked; index 4→5 (change 194, 6.6.50).</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central bore (marked <code>*</code>)</td>
+<td style="text-align: right;">Ø12</td>
+<td style="text-align: right;"><code>H7</code> (<code>+18/0</code>)</td>
+<td style="text-align: right;">Ø12.000–12.018 mm</td>
+<td>see <a href="#iso-286-fit-cases">ISO 286 fit cases</a></td>
+</tr>
+<tr>
+<td>Inner step</td>
+<td style="text-align: right;">Ø20</td>
+<td style="text-align: right;"><code>H8</code> (<code>+33/0</code>)</td>
+<td style="text-align: right;">Ø20.000–20.033 mm</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Step (marked <code>*</code>)</td>
+<td style="text-align: right;">Ø27</td>
+<td style="text-align: right;"><code>j9</code> (<code>±26</code>)</td>
+<td style="text-align: right;">Ø26.974–27.026 mm</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Flange</td>
+<td style="text-align: right;">Ø32.6</td>
+<td style="text-align: right;"><code>−0/−100</code> µm</td>
+<td style="text-align: right;">Ø32.500–32.600 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Other diameters</td>
+<td style="text-align: right;">Ø23; Ø25.3; Ø15.7 ±50</td>
+<td style="text-align: right;">as written</td>
+<td style="text-align: right;">Ø15.650–15.750 mm for the last</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Radial ring dimensions in the plan</td>
+<td style="text-align: right;">29.04 ±20; 23 ±20; 18 ±20; 14 ±20</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">29.020–29.060; 22.980–23.020; 17.980–18.020; 13.980–14.020 mm</td>
+<td>Confirmed callouts; which features they span is Unverified</td>
+</tr>
+<tr>
+<td>Axle-slot width</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;"><code>M7</code> (<code>0/−9</code> as read)</td>
+<td style="text-align: right;">1.991–2.000 mm (sheet)</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Bushing seat</td>
+<td style="text-align: right;">Ø2.6</td>
+<td style="text-align: right;"><code>S7</code> (<code>−13/−22</code>)</td>
+<td style="text-align: right;">Ø2.578–2.587 mm (sheet)</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Pin seat</td>
+<td style="text-align: right;">Ø1.5</td>
+<td style="text-align: right;"><code>S7</code> (<code>−13/−22</code>)</td>
+<td style="text-align: right;">Ø1.478–1.487 mm (sheet)</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Small pin seat</td>
+<td style="text-align: right;">Ø0.8</td>
+<td style="text-align: right;"><code>N7</code> (<code>−4/−13</code>)</td>
+<td style="text-align: right;">Ø0.787–0.796 mm (sheet)</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Small bore</td>
+<td style="text-align: right;">Ø2</td>
+<td style="text-align: right;"><code>E8</code> (<code>+28/+14</code>)</td>
+<td style="text-align: right;">Ø2.014–2.028 mm</td>
+<td>see ISO cases</td>
+</tr>
+<tr>
+<td>Small holes</td>
+<td style="text-align: right;">Ø1</td>
+<td style="text-align: right;"><code>+30/0</code> µm (two)</td>
+<td style="text-align: right;">Ø1.000–1.030 mm</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Radii</td>
+<td style="text-align: right;">10 r ±50; 8.62 r ±20 (revised from 8.5 r ±30)</td>
+<td style="text-align: right;">as written</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed; revision note says <code>15,7 Ø auf 15,7 ±0,05</code> and <code>8,5 r ±0,03 auf 8,62 r ±0,02</code></td>
+</tr>
+<tr>
+<td>Angles</td>
+<td style="text-align: right;">multiples of 20° (20°–200°), 15°, 30°, 35°, 90°, 110°, 130°</td>
+<td style="text-align: right;">±5′</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Axial dimensions</td>
+<td style="text-align: right;">6.7 ±20; 4 ±10; 2; 1.4; 0.9 ±50</td>
+<td style="text-align: right;">as written (2 and 1.4 carry none)</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callouts; features partly identified in <a href="Part-Dimensions-10040.html">Part-Dimensions-10040.md</a></td>
+</tr>
+<tr>
+<td>Slot centering</td>
+<td style="text-align: right;">2 M7 slots to the Ø12 H7 bore</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed note <code>Mittigkeit der Schlitze 2-M7 zur Bohrg. 12-H7</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>From <code>10.008-4</code> (page 14), the axle:</strong> Ø2 <code>h6</code>, 17 mm, stainless steel RRMD,
+general ±100 µm; the audit is in <a href="Part-Dimensions-10243.html">Part-Dimensions-10243.md</a>.</p>
+<p><strong>From <code>10.095-2</code> (page 122), the bushing</strong> (<code>Büchse</code>, Ms 58, scale 10:1, drawn
+18.12.47): Ø2.6 <code>h7</code> outside (fit table <code>0/−0.009</code>); Ø2 <code>E8</code> bore (<code>+0.028/+0.014</code>);
+Ø1 <code>H8</code> (<code>+0.014/0</code>); lengths 7.7 and 7.2 mm; general ±0.05 mm; runout ±0.01 mm.
+Revisions: 2.6 h6 → h7 (27.12.48) and 7.3 ±0.05 → 7.7, added Ø1 H8 and 7.2 (10.9.48).</p>
+<p><strong>From <code>10.149</code> and <code>10.150</code>:</strong> cylindrical pins, RRMD stainless steel. <code>10.149</code>:
+Ø0.8 <code>h7</code> (<code>0/−9</code>), 4 mm long, 0.8 r end, 2 per machine. <code>10.150</code>: Ø1.5 <code>h7</code>
+(<code>0/−9</code>), 5 mm long, 1.5 r end, 1 per machine. General ±100 µm; runout 20 µm.</p>
+<h2>ISO 286 fit cases</h2>
+<p>All limits are recalculated from ISO 286-2; sizes ≤ 3 mm fall in the first
+size step ("over 0 up to 3 mm"), Ø12 in "over 10 through 18", Ø20 and Ø27 in
+"over 18 through 30". No nominal here sits on a step boundary.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>ISO calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet's own entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Body bore (hole)</td>
+<td style="text-align: right;">Ø12</td>
+<td><code>H7</code></td>
+<td>IT7 = 18; <code>EI = 0</code></td>
+<td style="text-align: right;">12.0000–12.0180</td>
+<td><code>+18/0</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Body step (hole)</td>
+<td style="text-align: right;">Ø20</td>
+<td><code>H8</code></td>
+<td>IT8 = 33; <code>EI = 0</code></td>
+<td style="text-align: right;">20.0000–20.0330</td>
+<td><code>+33/0</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Body step</td>
+<td style="text-align: right;">Ø27</td>
+<td><code>j9</code></td>
+<td>IT9 = 52; ISO 286-2 tabulates <code>j</code> only for grades 5–8, so <code>js9 = ±IT9/2 = ±26</code></td>
+<td style="text-align: right;">26.9740–27.0260</td>
+<td><code>±26</code></td>
+<td>matches <code>js9</code></td>
+</tr>
+<tr>
+<td>Small bore (hole)</td>
+<td style="text-align: right;">2</td>
+<td><code>E8</code></td>
+<td>IT8 = 14; <code>EI = +14</code>, <code>ES = +28</code></td>
+<td style="text-align: right;">2.0140–2.0280</td>
+<td><code>+28/+14</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Bushing bore (hole)</td>
+<td style="text-align: right;">1</td>
+<td><code>H8</code></td>
+<td>IT8 = 14; <code>EI = 0</code></td>
+<td style="text-align: right;">1.0000–1.0140</td>
+<td><code>+14/0</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Pin seat (hole)</td>
+<td style="text-align: right;">0.8</td>
+<td><code>N7</code></td>
+<td>IT7 = 10; <code>ES = −4</code>, <code>EI = −14</code></td>
+<td style="text-align: right;">0.7860–0.7960</td>
+<td><code>−4/−13</code></td>
+<td>lower limit 1 µm</td>
+</tr>
+<tr>
+<td>Pin seat (hole)</td>
+<td style="text-align: right;">1.5</td>
+<td><code>S7</code></td>
+<td>IT7 = 10; <code>ES = −14</code>, <code>EI = −24</code></td>
+<td style="text-align: right;">1.4760–1.4860</td>
+<td><code>−13/−22</code></td>
+<td>both limits 1–2 µm</td>
+</tr>
+<tr>
+<td>Bushing seat (hole)</td>
+<td style="text-align: right;">2.6</td>
+<td><code>S7</code></td>
+<td><code>ES = −14</code>, <code>EI = −24</code></td>
+<td style="text-align: right;">2.5760–2.5860</td>
+<td><code>−13/−22</code></td>
+<td>both limits 1–2 µm</td>
+</tr>
+<tr>
+<td>Axle slot (hole)</td>
+<td style="text-align: right;">2</td>
+<td><code>M7</code></td>
+<td><code>ES = −2</code>, <code>EI = −12</code></td>
+<td style="text-align: right;">1.9880–1.9980</td>
+<td><code>0/−9</code></td>
+<td>both limits 2–3 µm</td>
+</tr>
+<tr>
+<td>Pin (shaft)</td>
+<td style="text-align: right;">0.8</td>
+<td><code>h7</code></td>
+<td>IT7 = 10; <code>es = 0</code>, <code>ei = −10</code></td>
+<td style="text-align: right;">0.7900–0.8000</td>
+<td><code>0/−9</code></td>
+<td>lower limit 1 µm</td>
+</tr>
+<tr>
+<td>Pin (shaft)</td>
+<td style="text-align: right;">1.5</td>
+<td><code>h7</code></td>
+<td>same</td>
+<td style="text-align: right;">1.4900–1.5000</td>
+<td><code>0/−9</code></td>
+<td>lower limit 1 µm</td>
+</tr>
+<tr>
+<td>Bushing (shaft)</td>
+<td style="text-align: right;">2.6</td>
+<td><code>h7</code></td>
+<td>same</td>
+<td style="text-align: right;">2.5900–2.6000</td>
+<td><code>0/−0.009</code></td>
+<td>lower limit 1 µm</td>
+</tr>
+<tr>
+<td>Axle (shaft)</td>
+<td style="text-align: right;">2</td>
+<td><code>h6</code></td>
+<td>IT6 = 6; <code>es = 0</code>, <code>ei = −6</code></td>
+<td style="text-align: right;">1.9940–2.0000</td>
+<td><code>0/−7</code></td>
+<td>lower limit 1 µm</td>
+</tr>
+</tbody>
+</table>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for <code>H</code>, <code>EI = 0</code> and it lies
+above; <code>N</code>, <code>S</code> and <code>M</code> are holes whose zones straddle or lie below nominal.</p>
+<h3>Every sheet with a small-size fit table follows one pattern</h3>
+<p>Across the sheets read so far (<code>10.040-5</code>, <code>10.095-2</code>, <code>10.149</code>, <code>10.150</code>,
+<code>10.008-4</code>, and <code>10.043-6</code>/<code>10.045-6</code> in their own audits), the entries for
+sizes up to 3 mm show:</p>
+<table>
+<thead>
+<tr>
+<th>Grade at ≤ 3 mm</th>
+<th style="text-align: right;">Zone width on the drawings</th>
+<th style="text-align: right;">ISO 286-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>6</td>
+<td style="text-align: right;">7 µm (<code>h6 0/−7</code>)</td>
+<td style="text-align: right;">6 µm</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: right;">9 µm (<code>h7 0/−9</code>, <code>M7 0/−9</code>, <code>N7 −4/−13</code>, <code>P7 −7/−16</code>, <code>S7 −13/−22</code>)</td>
+<td style="text-align: right;">10 µm</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: right;">14 µm (<code>E8</code>, <code>F8</code>, <code>H8</code>)</td>
+<td style="text-align: right;">14 µm</td>
+</tr>
+</tbody>
+</table>
+<p>Fits at larger sizes (<code>H7</code> Ø12, <code>H8</code> Ø20 and Ø47.8, <code>js9</code> Ø27) match ISO exactly.
+This is a consistent, repeated difference confined to ≤ 3 mm and grades 6–7,
+not a run of random misreadings. It points to a tolerance table other than
+today's ISO 286-2 for the smallest sizes; the sheets are from 1947–1950 and
+would have used an older, ISA-based Swiss (VSM) system. That cause is
+<code>Unverified</code>; <strong>the pattern itself is Confirmed as read.</strong> An earlier note in the <code>10.243</code> audit said the
+differences were not table-wide; that was wrong, because it looked only at the
+<code>H8</code> entries, where the two systems agree anyway.</p>
+<p>For the replica this does not matter for what the project does (it re-applies
+ISO codes at the scaled size, per the project's tolerance decision), but it means the factory's own
+limits at these sizes are the sheet values, and ISO recalculations are a
+reference, not a reconstruction of them.</p>
+<h3>Pairings — Derived, not printed on any sheet</h3>
+<p>The child sheets do not name their mates. Each pairing below matches nominal
+size and code within this assembly and is <code>Inferred</code>; the limits are Derived
+from the sheet values and, in brackets, from ISO.</p>
+<table>
+<thead>
+<tr>
+<th>Pair</th>
+<th>Hole</th>
+<th>Shaft</th>
+<th>Fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bushing <code>10.095</code> in the body's Ø2.6 seat</td>
+<td><code>S7</code> 2.578–2.587 (ISO 2.576–2.586)</td>
+<td><code>h7</code> 2.591–2.600 (ISO 2.590–2.600)</td>
+<td>interference 4 to 22 µm (ISO 4 to 24) — a press fit</td>
+</tr>
+<tr>
+<td>Pin <code>10.150</code> in the body's Ø1.5 seat</td>
+<td><code>S7</code> 1.478–1.487 (ISO 1.476–1.486)</td>
+<td><code>h7</code> 1.491–1.500 (ISO 1.490–1.500)</td>
+<td>interference 4 to 22 µm (ISO 4 to 24) — a press fit</td>
+</tr>
+<tr>
+<td>Pins <code>10.149</code> in the body's Ø0.8 seats</td>
+<td><code>N7</code> 0.787–0.796 (ISO 0.786–0.796)</td>
+<td><code>h7</code> 0.791–0.800 (ISO 0.790–0.800)</td>
+<td>clearance 5 to interference 13 µm (ISO 6 to 14) — a transition fit</td>
+</tr>
+<tr>
+<td>Axle <code>10.008</code> in the body's 2 mm slots</td>
+<td><code>M7</code> 1.991–2.000 (ISO 1.988–1.998)</td>
+<td><code>h6</code> 1.993–2.000 (ISO 1.994–2.000)</td>
+<td>clearance 7 to interference 9 µm (ISO 4 to 12) — a transition fit</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>S7</code>/<code>h7</code> pairs are deliberate press fits; the <code>N7</code>/<code>h7</code> and <code>M7</code>/<code>h6</code> pairs
+are locating fits. Machine-Facts has the counter axles' project target as
+<code>Ø6, H8/h8</code>, a project choice; the drawings specify the slot as <code>M7</code>, not <code>H8</code>.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle tip envelope</td>
+<td>Ø48 −0/−50</td>
+<td style="text-align: right;">47.950–48.000 mm</td>
+<td>Direct callout</td>
+</tr>
+<tr>
+<td>Axle length</td>
+<td><code>10.008-4</code></td>
+<td style="text-align: right;">17 mm (general ±100 µm)</td>
+<td>Inherited</td>
+</tr>
+<tr>
+<td>Inner end of the axles</td>
+<td>48 / 2 − 17</td>
+<td style="text-align: right;">radius 7.0 mm = Ø14</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Body central diameter</td>
+<td><code>10.040-5</code> plan</td>
+<td style="text-align: right;">Ø14 ±20 µm</td>
+<td>Inherited</td>
+</tr>
+<tr>
+<td>Inner-end radius with tolerances</td>
+<td>tip radius 23.975–24.000 minus length 16.900–17.100 (general ±100 µm)</td>
+<td style="text-align: right;">6.875–7.100 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Radial closure</td>
+<td>7.0 mm nominal vs the body's Ø14 ±20 µm (radius 6.990–7.010 mm)</td>
+<td style="text-align: right;">the ranges overlap; nominals agree exactly</td>
+<td>Derived; the axles' inner ends land at the Ø14 feature, assuming that feature is the axle seat (Inferred)</td>
+</tr>
+<tr>
+<td>Axle count</td>
+<td>plan view</td>
+<td style="text-align: right;">17</td>
+<td>Derived from a visual count</td>
+</tr>
+<tr>
+<td>Screw heads</td>
+<td>plan view</td>
+<td style="text-align: right;">34 = 2 × 17</td>
+<td>Derived from a visual count; matches BOM sheet 9</td>
+</tr>
+<tr>
+<td>Tip envelope vs cap bore</td>
+<td>48.000–47.950 vs 47.800–47.839 (<code>10.089-5</code>, <code>H8</code>)</td>
+<td style="text-align: right;">0.111 to 0.200 mm larger</td>
+<td>Derived; the sheets do not say the two mate, so no interference is claimed</td>
+</tr>
+</tbody>
+</table>
+<p>The radial closure is the one stack that closes: 17 axles of 17 mm reaching
+out to a Ø48 envelope start at the Ø14 body feature. No axial stack closes,
+because the sheet's axial dimensions are not tied to a datum the child sheets
+share.</p>
+<p><strong>The tip envelope is larger than the cap's Ø47.8 H8.</strong> Both diameters are
+marked <code>*</code>. If the cap were to fit over the tips, the tips would not clear it;
+the sheet says only "for the transitional design of the counter cap", which
+suggests a design variant that the current cap sheet (<code>10.089-5</code>, index 5) may
+have superseded. <code>Unverified</code>; flagged, not concluded.</p>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle-tip envelope</td>
+<td style="text-align: right;">Ø48 −0/−50 µm</td>
+<td style="text-align: right;">see below</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Body radial ring dimensions</td>
+<td style="text-align: right;">±20 µm; angles ±5′</td>
+<td style="text-align: right;">scaling convention unresolved</td>
+<td>Confirmed on the child sheet</td>
+</tr>
+<tr>
+<td>Assembly quantity</td>
+<td style="text-align: right;">1 per machine</td>
+<td style="text-align: right;">does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Axles, screws, pins</td>
+<td style="text-align: right;">17, 34, 2 + 1, bushing 1</td>
+<td style="text-align: right;">do not scale</td>
+<td>Confirmed / Derived</td>
+</tr>
+<tr>
+<td>Standard screw</td>
+<td style="text-align: right;">M1 × 3, VSM 12124</td>
+<td style="text-align: right;">a standard part; a 3× replica needs its own choice</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Parent</td>
+<td style="text-align: right;"><code>10.243</code> Counter assembly, stage I</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Replaces</td>
+<td style="text-align: right;">an earlier unindexed <code>10.226</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed as read</td>
+</tr>
+</tbody>
+</table>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy
+(a project decision) ties tolerance to the manufacturing process, not to the 3×
+factor. The "simply scaled" values are a comparison only and are not adopted.
+Where a callout carries an ISO code, it is re-applied at the scaled basic size
+and the limits recalculated. A 3× table is not a factory specification, and the
+sheet's own sub-3 mm zone widths are not carried over.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle-tip envelope</td>
+<td style="text-align: right;">Ø144 mm</td>
+<td style="text-align: right;">−0/−150 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Axle length</td>
+<td style="text-align: right;">51 mm</td>
+<td style="text-align: right;">general ±100 µm not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived nominal</td>
+</tr>
+<tr>
+<td>Body central diameter</td>
+<td style="text-align: right;">Ø42 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Axle / slot</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>h6</code> 5.992–6.000; <code>M7</code> (over 3 through 6; IT7 = 12, ES = 0): 5.988–6.000</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Axle/slot pairing at 3×</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">clearance 8 to interference 12 µm — still a transition fit</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Bushing seat / bushing</td>
+<td style="text-align: right;">Ø7.8 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>S7</code> / <code>h7</code>: not recalculated (see open item 5)</td>
+<td>Derived nominal only</td>
+</tr>
+<tr>
+<td>Pin <code>10.150</code> seat / pin</td>
+<td style="text-align: right;">Ø4.5 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>S7</code> / <code>h7</code>: not recalculated (see open item 5)</td>
+<td>Derived nominal only</td>
+</tr>
+<tr>
+<td>Pins <code>10.149</code> seat / pin</td>
+<td style="text-align: right;">Ø2.4 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>N7</code> / <code>h7</code>: not recalculated (see open item 5)</td>
+<td>Derived nominal only</td>
+</tr>
+<tr>
+<td>Screws</td>
+<td style="text-align: right;">M3 by plain scaling</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Not adopted: a standard-part choice</td>
+</tr>
+</tbody>
+</table>
+<p>Note on the press-fit rows: the ISO fundamental deviations for <code>S</code> and <code>N</code> at
+the scaled sizes were not looked up in this pass, so those rows carry the scaled
+nominal only and no limits. <code>S7</code> is a press-fit zone at every size, so the
+pairing stays a press fit in kind; the interference values are not stated.</p>
+<p>None of this is a fabrication tolerance. A printed FDM part cannot hold any of
+it; per the project's tolerance decision the printed prototype fits are set from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Resolve whether the Ø48 tip envelope and the cap's Ø47.8 H8 are related
+   (a "transitional design" superseded by cap index 5).</li>
+<li>Read the <code>*</code>-only span in Section A–A, the <code>0,1 +28/−80</code> tolerance and the
+   three axial steps against the body sheet's own callouts.</li>
+<li>Trace the <code>10'149</code> and <code>10'150</code> leaders to their plan features (the small
+   rings near the hub) to confirm which seat each pin occupies.</li>
+<li>Confirm the sub-3 mm tolerance table (likely an older ISA/VSM one) from an
+   external source; until then the sheet values are the factory limits.</li>
+<li>Recalculate the <code>S7</code> interference values at the 3× sizes if the press fits
+   are to be carried into a design.</li>
+</ol>
+</main>
+</body>
+</html>

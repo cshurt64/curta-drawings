@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.242-1 Complete Calculating Machine — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10242.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.242-1 Complete Calculating Machine — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.242</code>, <em>Kompl. Rechenmaschine „CURTA“</em> (complete calculating machine "Curta"),
+  current drawing <code>10.242-1</code>, <code>Ersatz für 10.242</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog page 250
+  (<a href="../viewer.html?page=250&status=All&section=All">viewer page 250</a>). Landscape sheet,
+  scale 5:1; drawn 20.4.50; change no. 236 (22.8.50, <em>Nummer in Index 1 geändert</em>). Read at 300 dpi
+  on 2026-09-24.</li>
+<li><strong>Status and quantity:</strong> <code>10.210</code> sheet 11 (p213) lists <code>10.242</code> with <code>Stück –</code> and the remark
+  <em>Instruktionszeichnung</em> (instruction drawing), format 1. It is a reference drawing, not a part
+  with a per-machine count, and its <code>Kompl. Nr.</code> is not legible.</li>
+<li><strong>Assembly fields:</strong> no dimensions, no fit table and no <code>Abmasse in μ</code> stamp legible at this scan
+  quality; the title block is small and only partly legible.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; readings resting on small print <strong>Unverified</strong>;
+  arithmetic <strong>Derived</strong>. 3× values are geometric references, not factory specifications.</li>
+</ul>
+<blockquote>
+<p><strong>An instruction drawing, not an assembly with a parts count.</strong> The sheet is a 5:1
+cross-section: <em>Schnitt A÷A</em> (the setting mechanism and base assembly) on the left, <em>Schnitt B÷B</em>
+(the counter body) in the middle, and a side elevation with the <em>SYSTEM "C"</em> plate at the right.
+About 150 leaders identify the parts in place.</p>
+</blockquote>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any dimension</td>
+<td>none</td>
+<td>Confirmed absent</td>
+</tr>
+<tr>
+<td>Views</td>
+<td><code>Schnitt A÷A</code>, <code>Schnitt B÷B</code>, side elevation</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Parts not visible</td>
+<td><em>nicht ersichtliche Teile</em>: <code>10.116</code>, <code>10.134</code>, <code>10.150</code>, <code>10.151</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Counter digit stations</td>
+<td><code>11 10 9 8 7 6 5 4</code> (Section B–B); <code>9 8 7 6</code> on the <em>SYSTEM "C"</em> plate</td>
+<td>Confirmed as printed</td>
+</tr>
+<tr>
+<td>Setting-slot numbers under the side elevation</td>
+<td><code>8 7 6</code></td>
+<td>Confirmed as printed</td>
+</tr>
+<tr>
+<td>Setting-knob scale</td>
+<td><code>4 3 2 1</code> (in both sections)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Fit table, general tolerance</td>
+<td>none legible</td>
+<td>Confirmed absent</td>
+</tr>
+</tbody>
+</table>
+<p>No ISO fit is assigned to any interface on this sheet.
+<a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> defines the fit system and
+<a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a> tabulates deviations.</p>
+<h2>Component callouts and factory count</h2>
+<p>The leaders are <strong>not</strong> entered as children of <code>10.242</code>. Each named part belongs to its own parent
+assembly, where its quantity is recorded, and <code>10.242</code> has no defined piece count, so a parent
+edge here would double-count it. The interactive guide names every leader (110 part numbers and 17
+standard-part labels) using the catalog names; quantities and parents are on each part's own sheet
+and in <a href="../where-used.html">Where-Used.md</a>.</p>
+<p>The four parts hidden from both sections do carry a parent, recorded elsewhere:</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th>Parent</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.116</code></td>
+<td>Adjusting screw, zero-buffer lever</td>
+<td><code>10.231</code></td>
+<td>Confirmed (see <a href="Part-Dimensions-10231.html">Part-Dimensions-10231.md</a>)</td>
+</tr>
+<tr>
+<td><code>10.134</code></td>
+<td>Stop pin in the machine body</td>
+<td><code>10.227</code></td>
+<td>Confirmed (see <a href="Part-Dimensions-10227.html">Part-Dimensions-10227.md</a>)</td>
+</tr>
+<tr>
+<td><code>10.150</code></td>
+<td>Cylinder pin 1.5×5, counter body</td>
+<td><code>10.226</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.151</code></td>
+<td>Cylinder pin 1×3, counter locating ring</td>
+<td><code>10.201</code></td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h2>Inherited component dimensions and interfaces</h2>
+<p>None are repeated here; every part carries its own audit or is covered by its assembly's audit.</p>
+<p><strong>Checks (Derived).</strong> Several labels appear twice (for example <code>10.097</code>, <code>10.006</code>, <code>10.085</code>, <code>10.074</code>,
+<code>10.023</code>, <code>10.073</code>) because they are cut in both sections. The number of distinct part labels is
+about 110, against the roughly 120 parts of the machine recorded in the BOM; the difference is
+parts hidden in both sections (the four above) and parts without a leader (standard hardware is
+labelled by VSM number).</p>
+<h2>Calculated and inferred stack-ups</h2>
+<p>None can be made: no dimension is printed. The drawing is best used at 5:1 to check the axial
+order of parts, which the cross-section shows directly.</p>
+<h2>3× reference</h2>
+<p>Nothing to scale: no dimension is printed. See the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong>How the counter digit stations <code>11 … 4</code> relate to the <code>1–8</code> setting-slot numbering on
+   <code>10.002-6</code> (<code>Unverified</code>).</strong> New direct-drawing support for an 11-position counter.</li>
+<li><strong>The <code>Kompl. Nr.</code> field (<code>Unverified</code>).</strong> Not legible on this scan.</li>
+<li><strong>Whether every leader label was captured (<code>Unverified</code>).</strong> The guide names 110 part-number
+   labels and 17 standard-part labels; a few faint ones may be missing.</li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td>none recorded; <code>10.210</code> sheet 11 lists it as an instruction drawing, <code>Stück –</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none recorded (leaders identify parts held by their own parents)</td>
+<td>Confirmed (deliberate)</td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p250_10242-1.webp">drawing 10.242-1</a>, page 250.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.072-3 Driving Pin — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10072.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.072-3 Driving Pin — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.072</code>, <em>Mitnehmerstift</em> (driving pin), drawing <code>10.072-3</code>, current; <code>Ersatz für
+  10.072-2</code>. Identity agrees with <span class="ref">Drawing-Index.md</span> and the title block on
+  drawing-set/catalog page 94 (<a href="../viewer.html?page=94&status=All&section=All">viewer page 94</a>).
+  Scale 5:1 (reference view <code>M1:1</code>); stamped <code>Abmasse in μ = 1/1000 mm</code>. Drawn 29.12.49; the change
+  block is empty. Read at 300 dpi on 2026-09-24.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.213</code> (complete step drum); <code>Stück p.Masch. 1</code>, agreeing with the
+  leader on p217 and BOM sheet 4.</li>
+<li><strong>Material and finish:</strong> <em>nichtrost. Stahl RRMD; Ø3 h7 geschliffen</em> (non-rusting steel, ground);
+  predominant finish <code>▽ (▽▽▽) geschliffen</code>; no surface or heat treatment stated.</li>
+<li><strong>General tolerance:</strong> ±100 µm linear, angular <code>—</code>; runout <code>—</code>.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings
+  <strong>Unverified</strong>. 3× values are geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit cases</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet fit-table entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank</td>
+<td style="text-align: right;">Ø3 mm</td>
+<td><code>h7</code></td>
+<td>up to 3 mm (3.000 is the upper boundary of the step)</td>
+<td>IT7 = 10 µm; <code>es = 0</code></td>
+<td style="text-align: right;">Ø2.990–3.000</td>
+<td><code>3-h7  0/−9</code></td>
+<td>Sheet is 1 µm tighter than ISO 286 (the older-table pattern also seen on <code>10.063</code>)</td>
+</tr>
+</tbody>
+</table>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal. <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a>
+gives the system and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a> the tabulated deviations.</p>
+<h2>Direct dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank diameter</td>
+<td>Ø3 h7</td>
+<td>2.990–3.000 (ISO) / 2.991–3.000 (sheet)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>14</td>
+<td>13.900–14.100 (general ±100)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>End radius</td>
+<td>r4</td>
+<td>—</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank Ø3 h7</td>
+<td><code>0/−10</code> (ISO)</td>
+<td>Ø9.000</td>
+<td><code>0/−30</code></td>
+<td>&gt;6–10 mm: IT7 = 15 µm ⇒ <code>0/−15</code></td>
+</tr>
+<tr>
+<td>Length 14</td>
+<td>±100</td>
+<td>42</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>End radius r4</td>
+<td>—</td>
+<td>r12</td>
+<td>—</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, recalculated. A 3× table is not a factory specification. See
+the project's tolerance strategy.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.213</code> complete step drum, 1 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.213</code>; leader on p217</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p094_10072-3.webp">drawing 10.072-3</a>, page 94.</p>
+</main>
+</body>
+</html>

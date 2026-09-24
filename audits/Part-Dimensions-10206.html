@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.206-3 Complete Tens Bell — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10206.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.206-3 Complete Tens Bell — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.206</code>, <em>Kompl. Zehnerglocke</em> (complete tens bell), current
+  drawing <code>10.206-3</code>, <code>Ersatz für 10.206-2</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog
+  page 197 (<a href="../viewer.html?page=197&status=All&section=All">viewer page 197</a>).
+  Scale 5:1. Drawn 22.3.50; change entry <em>Index 2 in 3 geändert</em>, change no. 235,
+  29.8.50. Read at 300 dpi on 2026-09-23.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.227</code> (complete machine body with tens
+  bell); one <code>10.206</code> per machine (<code>Stück 1</code> in the title block; <code>10.210</code> sheet 11
+  roll-up, p213).</li>
+<li><strong>Views:</strong> an elevation (with the cutting planes A, B, C), a plan view, and
+  <code>Schnitt A÷A</code>, <code>Schnitt B÷B</code>, <code>Schnitt C÷C</code>.</li>
+<li><strong>Stamp:</strong> <code>Abmasse in μ = 1/1000 mm</code> — <strong>present</strong>, so <code>3,4 ±30</code> means
+  3.4 mm ±0.030 mm.</li>
+<li><strong>Assembly fields:</strong> general linear tolerance <code>—</code>; general angular tolerance
+  <code>—</code>; runout <code>—</code> / <code>—</code>; material <code>—</code>; surface finish <code>—</code>; surface treatment
+  <code>—</code>; heat treatment <code>—</code>. Type I, group <code>Kompl. Maschinenkörper</code>.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; child-sheet dimensions <strong>Confirmed</strong>
+  at their stated revisions; arithmetic and ISO recalculation <strong>Derived</strong>;
+  unresolved readings <strong>Unverified</strong>; readings resting on a judgment
+  <strong>Inferred</strong>. 3× values are geometric references, not factory specifications.</li>
+</ul>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sheet scale</td>
+<td>5:1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Outline diameter, plan view and Section B–B</td>
+<td><strong>23,4-h7</strong></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Fit-table entry (<code>Paßmaß</code> / <code>Abmaß in μ</code>)</td>
+<td><code>23,4-h7</code>, <code>0 / −21</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Stack heights from the top face</td>
+<td><code>3,4 ±30</code>, <code>5,9 ±50</code>, <code>8,3 ±80</code>, <code>10,8 ±100</code>, <code>11,1 ±50</code></td>
+<td>Confirmed values; the plane each one reaches is <strong>Unverified</strong> except 3.4 (below)</td>
+</tr>
+<tr>
+<td>Selection note</td>
+<td><code>10.120 zu Festsitz aussortiert</code> (10.120 selected for interference fit)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Swaging note</td>
+<td><code>gebördelt</code> (swaged / rolled over) at the lower rim</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Fastener note</td>
+<td><code>Zylinderschraube M1,4 × 2 VSM 12124</code></td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Cutting planes</td>
+<td><code>A÷A</code>, <code>B÷B</code>, <code>C÷C</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General tolerance, runout, material, surface, treatment</td>
+<td>all <code>—</code></td>
+<td>Confirmed blank</td>
+</tr>
+</tbody>
+</table>
+<h3>The 23.4 h7 fit (ISO 286-1 system, ISO 286-2 deviations) — recalculated</h3>
+<p>Basic size 23.4 mm lies in the <strong>18–30 mm</strong> step. IT7 in that step is <strong>21 µm</strong>;
+for <code>h</code>, <code>es = 0</code> and the zone lies <em>below</em> nominal, so the limits are
+Ø23.379–23.400 mm. This matches the sheet's own fit-table entry <code>0 / −21</code> exactly,
+so the recalculation agrees with the drawing. <strong>Confirmed</strong> entry, <strong>Derived</strong>
+limits. What the diameter belongs to is not stated: the elevation and the plan
+view scale it to the widest disc of the stack (400 px on a 17.1 px/mm scan, i.e.
+23.4 mm), which is consistent with the Ø23.6 ±50 of the four locking discs but
+not identical to it (<strong>Inferred</strong>; see the open points).</p>
+<h2>Component callouts and factory count</h2>
+<p>Twelve callouts: ten numbered parts, <code>10.120</code>, and the standard screw. Quantities
+come from each child's own sheet and the BOM, not from the leader count.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th style="text-align: right;">Per assembly</th>
+<th>Evidence</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.009</code></td>
+<td>Tens-bell body (<em>Zehnerglockenkörper</em>), Decoltal Ø20</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.009-7</code> (p16) <code>Stück 1</code>, <code>Kompl. Nr. 10.206</code>; BOM sheet 1 (p201) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.070</code></td>
+<td>Reversing spring, tens bell (<em>Umsteuerungsfeder</em>), 0.3 mm spring band steel</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.070-2</code> (p92) <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.206</code>; BOM sheet 4 (p204) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.100</code></td>
+<td>Tens tooth disc, revolution counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.100-3</code> (p127) <code>Stück 1</code>, <code>Kompl. Nr. 10.206</code>; BOM sheet 5 (p207) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.101</code></td>
+<td>Tens tooth disc, result counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.101-3</code> (p128) same; BOM sheet 5 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.102</code></td>
+<td>Shim ring 1.1 (<em>Beilagering</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet (p129) <code>Stück 1</code>; BOM sheet 5 (p207) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.103</code></td>
+<td>Shim ring 2</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td>one leader p197; own sheet (p130) <strong><code>Stück 2</code></strong>, <code>Kompl. Nr. 10.206</code>; BOM sheet 5 (p207) 2</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.104</code></td>
+<td>Locking disc, revolution counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.104-3</code> (p131) <code>Stück 1</code>; BOM sheet 5 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.105</code></td>
+<td>Tens locking disc, revolution counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.105-2</code> (p132) <code>Stück 1</code>; BOM sheet 5 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.106</code></td>
+<td>Locking disc, result counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.106-3</code> (p133) <code>Stück 1</code>; BOM sheet 6 (p208) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.107</code></td>
+<td>Tens locking disc, result counter</td>
+<td style="text-align: right;">1</td>
+<td>leader p197; own sheet <code>10.107-2</code> (p134) <code>Stück 1</code>; BOM sheet 6 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.120</code></td>
+<td>Support disc (<em>Abstützscheibe</em>), stainless sheet</td>
+<td style="text-align: right;">1</td>
+<td>bold label p197; own sheet (p150) <code>Stück 1</code>, <code>Kompl. Nr. 10.206</code>; <code>10.210</code> sheet 6 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>VSM 12124 M1.4×2</code></td>
+<td>Cylinder-head screw, free-cutting steel FH, cadmium-plated</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td>one label and leader p197; BOM sheet 9 (p211) 2, remark <code>Zehnerglocke</code>; two M1.4 holes on <code>10.009-7</code>'s plan view</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<p>Two rows would be wrong by a leader count: <code>10.103</code> (one leader, two parts) and
+the screw (one label, two screws). Both were blank before this audit.</p>
+<h3>Legacy numbers on the child sheets</h3>
+<p>Each disc sheet names the drawing it replaces, in the older <code>105.xxx</code> series:
+<code>10.100</code> ← <code>105.091</code>, <code>10.101</code> ← <code>105.086</code>, <code>10.104</code> ← <code>105.093</code>, <code>10.105</code> ←
+<code>105.092</code>, <code>10.106</code> ← <code>105.088</code>, <code>10.107</code> ← <code>105.087</code>. <strong>Confirmed</strong> on each
+sheet; the <code>105.xxx</code> sheets themselves are not in the set read here.</p>
+<h2>Inherited component dimensions and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Inherited dimension or control</th>
+<th>Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.009-7</code>, p16</td>
+<td>Hub <strong>Ø16 h6</strong> (<code>0/−11</code>), two <code>3-H9</code> slots concentric to it within ±20 µm, flange Ø20 ±100 × <strong>2.05 ±30</strong>, hub length 9.4 ±100 from the flange face, overall 34 ±150, tube Ø5.4 f6, bore <strong>Ø3 H7</strong>, two M1.4 tapped holes; Decoltal Ø20, hard colourless anodized</td>
+<td>The carrier for every ring part</td>
+</tr>
+<tr>
+<td><code>10.100</code>/<code>10.101</code>, p127–128</td>
+<td>bore <strong>Ø16 H6</strong> (<code>+11/0</code>), OD 21, radius <code>12 r −20</code>, thickness 0.5 ±10 (0.9 −50 with the dished tooth), Neusilber 0.5 Brinell 230–240</td>
+<td>Tooth discs, one for each counter</td>
+</tr>
+<tr>
+<td><code>10.104</code>–<code>10.107</code>, p131–134</td>
+<td>bore <strong>Ø16 H6</strong>, OD <strong>23.6 ±50</strong>, thickness 0.5 ±10 (<code>.104</code>, <code>.106</code>) or 0.8 ±10 (<code>.105</code>, <code>.107</code>), hard-rolled band steel Brinell 230–240</td>
+<td>Locking discs</td>
+</tr>
+<tr>
+<td><code>10.102</code>/<code>10.103</code>, p129–130</td>
+<td>bore <strong>Ø16 H9</strong> (<code>+43/0</code>), OD 19, thickness 1.1 ±10 and 2 ±10, Anticorodal tube B 19/1.5</td>
+<td>Shims</td>
+</tr>
+<tr>
+<td><code>10.070-2</code>, p92</td>
+<td>0.3 mm band steel, developed length about 48 mm, width 10.4, height 15.8/17.6, ear holes 1.4 and 3.2 apart</td>
+<td>Reversing spring</td>
+</tr>
+<tr>
+<td><code>10.120</code>, p150</td>
+<td>eight size classes of <code>Mass a</code>, <strong>14.48–14.52 mm</strong> in 5 µm steps; thickness 1; stainless sheet</td>
+<td>Interference-fit support disc</td>
+</tr>
+</tbody>
+</table>
+<h3>Fits derived from those figures</h3>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Fit</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tooth and locking discs on the hub</td>
+<td>Ø16 <strong>H6/h6</strong></td>
+<td>H6 Ø16.000–16.011 on h6 Ø15.989–16.000: <strong>clearance 0 to 22 µm</strong></td>
+<td>Derived; the codes are Confirmed on the child sheets, the pairing on the hub is Inferred</td>
+</tr>
+<tr>
+<td>Shims on the hub</td>
+<td>Ø16 <strong>H9/h6</strong></td>
+<td>H9 Ø16.000–16.043: <strong>clearance 0 to 54 µm</strong></td>
+<td>Derived</td>
+</tr>
+</tbody>
+</table>
+<p>IT6 = 11 µm and IT9 = 43 µm in the 10–18 mm step; <code>H</code> has <code>EI = 0</code> (zone above
+nominal) and <code>h</code> has <code>es = 0</code> (zone below). No fit code is specified for any
+interface <em>on this sheet</em>; these come entirely from the child sheets.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Arithmetic</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flange plus the first two discs</td>
+<td>2.05 + 0.5 + 0.8 = <strong>3.35</strong> against <code>3,4 ±30</code></td>
+<td>0.05 below the nominal 3.4 and 0.020 below its lower limit (3.370); with the child tolerances (2.05 ±30, 0.5 ±10, 0.8 ±10) the sum ranges 3.30–3.40, which overlaps 3.370–3.430 only between 3.370 and 3.400</td>
+<td>Derived; assumes <code>10.104</code> and <code>10.105</code> sit directly under the flange</td>
+</tr>
+<tr>
+<td>The nine ring parts</td>
+<td>0.5 + 0.8 + 0.5 + 0.5 + 0.5 + 0.8 + 1.1 + 2 × 2 = <strong>8.7</strong></td>
+<td>against 11.1 − 2.05 = <strong>9.05</strong> under the flange: <strong>0.35 mm unaccounted</strong></td>
+<td>Derived; cause Unverified</td>
+</tr>
+<tr>
+<td>Hub length</td>
+<td>9.4 ±100 from the flange face</td>
+<td>ring stack 8.7 leaves 0.7 mm</td>
+<td>Derived; consistent with the hub end being swaged over the top of the stack</td>
+</tr>
+</tbody>
+</table>
+<p>The 0.35 mm gap is the interesting number. Possible readings, none confirmed:
+the dished tooth discs (0.9 −50 overall against 0.5 thick) nest; the <code>10.103</code>
+rings do not both stack; or <code>10.120</code> (a 14.5 mm class, close to the hub's ≈14.5 mm
+bore if its wall is 0.75) presses into the hub end rather than stacking. The sheet
+does not show enough to say.</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outline Ø23.4 h7</td>
+<td><code>0/−21</code> ⇒ Ø23.379–23.400</td>
+<td>Ø70.200</td>
+<td><code>0/−63</code> ⇒ Ø70.137–70.200</td>
+<td>50–80 mm step, IT7 = 30 µm, <code>es = 0</code> ⇒ Ø70.170–70.200</td>
+</tr>
+<tr>
+<td>Hub Ø16 h6 / disc bore Ø16 H6</td>
+<td><code>0/−11</code> on <code>+11/0</code></td>
+<td>Ø48.000</td>
+<td><code>+33/0</code> and <code>0/−33</code></td>
+<td>30–50 mm step, IT6 = 16 µm ⇒ bore Ø48.000–48.016, hub Ø47.984–48.000</td>
+</tr>
+<tr>
+<td>Shim bore Ø16 H9</td>
+<td><code>+43/0</code></td>
+<td>Ø48.000</td>
+<td><code>+129/0</code></td>
+<td>IT9 = 62 µm ⇒ Ø48.000–48.062</td>
+</tr>
+<tr>
+<td>Stack heights</td>
+<td>3.4 / 5.9 / 8.3 / 10.8 / 11.1</td>
+<td>10.2 / 17.7 / 24.9 / 32.4 / 33.3</td>
+<td>not scaled</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, recalculated here rather than taken from any table. The sheet's
+general tolerances are dashes, so nothing on the sheet scales by default; a 3×
+table is a geometric reference, not a factory specification, and the project must
+say which convention it uses. See the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong><code>10.009</code> material (<code>Confirmed</code>, and a correction).</strong> Machine-Facts §4 recorded
+   <code>Anticorodal Ø20</code>; both BOM sheet 1 (p201) and the sheet's own <code>Werkstoff</code> field
+   read <strong><code>Decoltal Ø20</code></strong>. Corrected in Machine-Facts.</li>
+<li><strong><code>3-H7</code> on <code>10.009-7</code> (<code>Unverified</code>).</strong> The fit table appears to read <code>+9 / 0</code>;
+   ISO IT7 for a 1–3 mm step is 10 µm. To be settled in <code>10.009</code>'s own audit, not
+   here.</li>
+<li><strong>The 0.35 mm stack gap (<code>Unverified</code>).</strong> See above.</li>
+<li><strong>What the 23.4 h7 belongs to (<code>Inferred</code>).</strong> The sheet does not name it.</li>
+<li><strong>Height planes (<code>Unverified</code>).</strong> Only the 3.4 dimension is tied to a plane
+   (flange top to the underside of the first two discs, by arithmetic).</li>
+<li><strong>Transitional design note (<code>Confirmed</code>, meaning <code>Unverified</code>).</strong> <code>10.009-7</code>
+   carries a note that the slot and the 60° countersink are a transitional design
+   "until tooth segments with the large pitch and the old locking discs are used
+   up" — i.e. two generations of parts coexisted; which is drawn here is not stated.</li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.227</code> complete machine body with tens bell, 1 per machine</td>
+<td><code>Confirmed</code>: <code>Kompl. Nr.</code> on this sheet and the leader on p233</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>ten numbered parts, <code>10.120</code>, and <code>VSM 12124 M1.4×2</code> ×2, quantities in the table above</td>
+<td><code>Confirmed</code>: leaders on p197, every quantity sourced from a child sheet plus BOM</td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p197_10206-3.webp">drawing 10.206-3</a>, page 197.</p>
+</main>
+</body>
+</html>

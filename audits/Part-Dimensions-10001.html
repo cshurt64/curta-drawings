@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.001-10 Step Drum Body — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10001.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.001-10 Step Drum Body — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.001</code>, <em>Stufenwalzenkörper</em> (step drum body), drawing <code>10.001-10</code>, current; replaces 10.001-9. Identity verified against <span class="ref">Drawing-Index.md</span>: page 2 is <code>10.001-10</code>, and the sheet's own
+  title block agrees. Scale 5:1 and 20:1 (detail C); stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 2 / <a href="../viewer.html?page=2&status=All&section=All">drawing-viewer page 2</a>, rasterized at 400–700 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.213 Complete Step Drum; 1 per machine. <strong>Material:</strong> Decoltal Ø21 bar; anodized, hard, colourless. <strong>General tolerance:</strong> ±100 µm, ±1°. <strong>Runout:</strong> 20 µm marked radial and side; 50 µm unmarked. <strong>Drawn:</strong> 14.10.48. <strong>Revisions:</strong> index 7→8 (change 208, 2.8.50), 8→9 (233, 29.8.50), 9→10 (247, 27.10.50).</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286 fit cases</h2>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for capital letters (holes) the zone is above or around nominal per the fundamental deviation.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet fit-table entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central bore (hole, marked <code>*</code>)</td>
+<td style="text-align: right;">Ø3.000 mm</td>
+<td><code>J8</code> written, ±7 µm tabulated (= <code>JS8</code>)</td>
+<td>up to 3 mm (3.000 is the upper boundary of the step)</td>
+<td>IT8 = 14 µm; <code>JS8 = ±7</code></td>
+<td style="text-align: right;">Ø2.9930–3.0070 mm</td>
+<td><code>3-J8 ±7</code></td>
+<td>matches the ±7; the letter J is not the ISO J8</td>
+</tr>
+<tr>
+<td>Flange bore (hole)</td>
+<td style="text-align: right;">Ø3.000 mm</td>
+<td><code>U8</code></td>
+<td>up to 3 mm (upper boundary)</td>
+<td>IT8 = 14 µm; <code>ES = −18</code>, <code>EI = −32</code></td>
+<td style="text-align: right;">Ø2.9680–2.9820 mm</td>
+<td><code>3-U8 −18/−32</code> (small print, Unverified)</td>
+<td>matches ISO U8</td>
+</tr>
+</tbody>
+</table>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall diameter</td>
+<td style="text-align: right;">Ø21 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">Ø20.900–21.100 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Overall length</td>
+<td style="text-align: right;">26 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">25.980–26.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Drum length from the flange face (Section A–A)</td>
+<td style="text-align: right;">22.5 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">22.480–22.520 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Shoulder length (Section B–B)</td>
+<td style="text-align: right;">18.5 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">18.480–18.520 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Stepped outside diameter</td>
+<td style="text-align: right;">Ø18.4 mm</td>
+<td style="text-align: right;">±20 µm (two callouts; second one partly outside my crop, Unverified)</td>
+<td style="text-align: right;">Ø18.380–18.420 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Reduced outside diameter</td>
+<td style="text-align: right;">Ø14.4 mm</td>
+<td style="text-align: right;">none printed (general ±100 µm)</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; tolerance Unverified</td>
+</tr>
+<tr>
+<td>Narrow hub length</td>
+<td style="text-align: right;">8.7 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">8.600–8.800 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flange length</td>
+<td style="text-align: right;">6.09 mm</td>
+<td style="text-align: right;">+100/0 µm</td>
+<td style="text-align: right;">6.090–6.190 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flange stack</td>
+<td style="text-align: right;">7.38 mm</td>
+<td style="text-align: right;">+100/0 µm</td>
+<td style="text-align: right;">7.380–7.480 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Recess height</td>
+<td style="text-align: right;">5.5 mm</td>
+<td style="text-align: right;">+300/0 µm</td>
+<td style="text-align: right;">5.500–5.800 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flange root step (two callouts)</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;">+100/0 µm</td>
+<td style="text-align: right;">0.100–0.200 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Cone root diameter</td>
+<td style="text-align: right;">Ø3 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">Ø2.950–3.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Cone diameter</td>
+<td style="text-align: right;">Ø5 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Pocket radius</td>
+<td style="text-align: right;">8.2 mm</td>
+<td style="text-align: right;">±25 µm (<code>8,2 r ±25</code>)</td>
+<td style="text-align: right;">8.175–8.225 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Pocket corner radius</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;"><code>3 r</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Pocket-edge steps (two callouts)</td>
+<td style="text-align: right;">1 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">0.950–1.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Screw-hole dimension</td>
+<td style="text-align: right;">6.4 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">6.350–6.450 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Hole-pattern dimension</td>
+<td style="text-align: right;">12 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">11.950–12.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Set-up dimension (<code>Einstellmass</code>)</td>
+<td style="text-align: right;">5 mm</td>
+<td style="text-align: right;">set-up, none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Hole depth (M1.4)</td>
+<td style="text-align: right;">8 mm</td>
+<td style="text-align: right;">±1000 µm</td>
+<td style="text-align: right;">7.000–9.000 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Thread length (M1.4)</td>
+<td style="text-align: right;">4 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flange screw hole</td>
+<td style="text-align: right;">Ø1.7 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Detail C step</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">0.250–0.350 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Detail C radius</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>r 0,1</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Cutter width</td>
+<td style="text-align: right;">7 mm</td>
+<td style="text-align: right;"><code>Fräserbreite 7 mm</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; tooling note</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pocket angles, left view</td>
+<td style="text-align: right;">40°, 60°, 20°, 10°</td>
+<td>±30′, ±15′, ±30′ as marked</td>
+</tr>
+<tr>
+<td>Pocket angles, right view</td>
+<td style="text-align: right;">32°30′, 60°, 27°30′</td>
+<td>±30′, ±15′ as marked</td>
+</tr>
+<tr>
+<td>Cone included angle</td>
+<td style="text-align: right;">90°</td>
+<td>none; general ±1°</td>
+</tr>
+<tr>
+<td>Detail C flank</td>
+<td style="text-align: right;">60°</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
+<h2>Fits with the main axle <code>10.003</code> (Derived, from two sheets)</h2>
+<p>The drum is bored Ø3 in two zones: <code>J8</code> (±7 µm sheet; <code>JS8</code>) for the running section and <code>U8</code> (−18/−32 µm) at the flange. The axle is Ø3 <code>h7</code> (0/−9 µm on its sheet; ISO −10):</p>
+<table>
+<thead>
+<tr>
+<th>Pair</th>
+<th style="text-align: right;">Hole</th>
+<th style="text-align: right;">Shaft</th>
+<th>Fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.003</code> in the <code>J8</code> bore</td>
+<td style="text-align: right;">2.993–3.007</td>
+<td style="text-align: right;">2.991–3.000</td>
+<td>clearance to +16 µm, interference to 7 µm: a transition fit</td>
+</tr>
+<tr>
+<td><code>10.003</code> in the <code>U8</code> bore</td>
+<td style="text-align: right;">2.968–2.982</td>
+<td style="text-align: right;">2.991–3.000</td>
+<td>interference 9 to 32 µm: a press fit</td>
+</tr>
+</tbody>
+</table>
+<p>The pairing is <code>Inferred</code> by nominal size and the two bore zones on this sheet; no sheet says which section of the axle sits in which bore. The driving pin <code>10.072</code> is also Ø3 h7 and stands on the drum axis (<code>10.213-2</code>), so it competes for one of the same bores; see <a href="Part-Dimensions-10213.html">Part-Dimensions-10213.md</a>. It suggests the drum is located and driven by a pressed seat at the flange and guided by a sliding seat along its length. Machine-Facts §4a calls the pair "F1 / F3 ... J8 running"; the transition fit at the J8 zone is not a clear running fit.</p>
+<p>Machining notes: <strong><code>Toleranz der Segmente nach entsprechender Lehre</code></strong> (segment tolerance by the corresponding gauge) is the unrecoverable gauge already recorded in Machine-Facts §3; the axial stations of the segments live on <code>10.213-2</code>, not here.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general
+tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size; a scaled nominal exactly on a size-step boundary belongs to the lower step.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central bore (hole)</td>
+<td style="text-align: right;">Ø9.000 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>JS8</code>, over 6 through 10 mm: IT8 = 22 µm; <code>JS8 = ±11</code> → Ø8.989–9.011 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Flange bore (hole)</td>
+<td style="text-align: right;">Ø9.000 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>U8</code>, over 6 through 10 mm: not recalculated → —</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Overall diameter</td>
+<td style="text-align: right;">Ø63 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Overall length</td>
+<td style="text-align: right;">78 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Drum length from the flange face (Section A–A)</td>
+<td style="text-align: right;">67.5 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Shoulder length (Section B–B)</td>
+<td style="text-align: right;">55.5 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Stepped outside diameter</td>
+<td style="text-align: right;">Ø55.2 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Reduced outside diameter</td>
+<td style="text-align: right;">Ø43.2 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Narrow hub length</td>
+<td style="text-align: right;">26.1 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Flange length</td>
+<td style="text-align: right;">18.27 mm</td>
+<td style="text-align: right;">simply scaled +0/+300 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Flange stack</td>
+<td style="text-align: right;">22.14 mm</td>
+<td style="text-align: right;">simply scaled +0/+300 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Recess height</td>
+<td style="text-align: right;">16.5 mm</td>
+<td style="text-align: right;">simply scaled +0/+900 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Flange root step (two callouts)</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">simply scaled +0/+300 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Cone root diameter</td>
+<td style="text-align: right;">Ø9 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Cone diameter</td>
+<td style="text-align: right;">Ø15 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Pocket radius</td>
+<td style="text-align: right;">24.6 mm</td>
+<td style="text-align: right;">simply scaled -75/+75 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Pocket corner radius</td>
+<td style="text-align: right;">9 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Pocket-edge steps (two callouts)</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Screw-hole dimension</td>
+<td style="text-align: right;">19.2 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Hole-pattern dimension</td>
+<td style="text-align: right;">36 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Set-up dimension (<code>Einstellmass</code>)</td>
+<td style="text-align: right;">15 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Hole depth (M1.4)</td>
+<td style="text-align: right;">24 mm</td>
+<td style="text-align: right;">simply scaled -3000/+3000 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Thread length (M1.4)</td>
+<td style="text-align: right;">12 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Flange screw hole</td>
+<td style="text-align: right;">Ø5.1 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Detail C step</td>
+<td style="text-align: right;">0.9 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Detail C radius</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Cutter width</td>
+<td style="text-align: right;">21 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.061-5 Setting Axle — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10061.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.061-5 Setting Axle — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.061</code>, <em>Einstellachse</em> (setting axle), drawing <code>10.061-5</code>, current; replaces 10.061-4. Identity verified against <span class="ref">Drawing-Index.md</span>: page 81 is <code>10.061-5</code>, and the sheet's own
+  title block agrees. Scale 5:1 and 10:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 81 / <a href="../viewer.html?page=81&status=All&section=All">drawing-viewer page 81</a>, rasterized at 400–700 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.212 Complete Setting Axle; 8 per machine (1 per 10.212). <strong>Material:</strong> Stainless steel RRMD, Ø2.5 h6, ground. <strong>General tolerance:</strong> ±100 µm, ±30′. <strong>Runout:</strong> 20 µm marked radial and side; unmarked radial 50 µm. <strong>Drawn:</strong> 25.10.1950. <strong>Revisions:</strong> index 4→5 (change 126, 25.10.50).</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286 fit cases</h2>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for capital letters (holes) the zone is above or around nominal per the fundamental deviation.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet fit-table entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle diameter (shaft)</td>
+<td style="text-align: right;">Ø2.500 mm</td>
+<td><code>h6</code></td>
+<td>up to 3 mm</td>
+<td>IT6 = 6 µm; <code>es = 0</code>, <code>ei = −6</code></td>
+<td style="text-align: right;">Ø2.4940–2.5000 mm</td>
+<td><code>2,5-h6 −7</code></td>
+<td>sheet lower limit 1 µm lower (sub-3 mm pattern)</td>
+</tr>
+<tr>
+<td>Top pin diameter (shaft, marked <code>*</code>)</td>
+<td style="text-align: right;">Ø1.000 mm</td>
+<td><code>h8</code></td>
+<td>up to 3 mm</td>
+<td>IT8 = 14 µm; <code>es = 0</code>, <code>ei = −14</code></td>
+<td style="text-align: right;">Ø0.9860–1.0000 mm</td>
+<td><code>1-h8 −14</code></td>
+<td>matches ISO</td>
+</tr>
+</tbody>
+</table>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall length</td>
+<td style="text-align: right;">36.7 mm</td>
+<td style="text-align: right;">0/−100 µm</td>
+<td style="text-align: right;">36.600–36.700 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Reference length</td>
+<td style="text-align: right;">35.2 mm</td>
+<td style="text-align: right;">±20 µm; sorted into Pos. 1 (35.18–35.20) and Pos. 2 (35.20–35.22)</td>
+<td style="text-align: right;">35.180–35.220 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Top end to the spiral start</td>
+<td style="text-align: right;">11.25 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">11.230–11.270 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral datum length</td>
+<td style="text-align: right;">5 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">4.980–5.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Pitch of the spiral (per 360°)</td>
+<td style="text-align: right;">20 mm</td>
+<td style="text-align: right;">±20 µm (<code>Steigung der Spirale 20 mm ±20</code>)</td>
+<td style="text-align: right;">19.980–20.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 1</td>
+<td style="text-align: right;">2 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">1.980–2.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 2</td>
+<td style="text-align: right;">4 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">3.980–4.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 3</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">5.980–6.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 4</td>
+<td style="text-align: right;">8 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">7.980–8.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 5</td>
+<td style="text-align: right;">10 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">9.980–10.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 6</td>
+<td style="text-align: right;">12 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">11.980–12.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 7</td>
+<td style="text-align: right;">14 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">13.980–14.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 8</td>
+<td style="text-align: right;">16 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">15.980–16.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Spiral station 9</td>
+<td style="text-align: right;">18 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">17.980–18.020 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Top pin length (theoretical)</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;"><code>theoret. Mass</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Theoretical dimension</td>
+<td style="text-align: right;">0.8 mm</td>
+<td style="text-align: right;"><code>theor. Mass</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Spiral depth/offset</td>
+<td style="text-align: right;">0.05 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">0.000–0.100 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Lower-end hole</td>
+<td style="text-align: right;">Ø0.85 mm</td>
+<td style="text-align: right;">+50/0 µm (marked <code>*</code>)</td>
+<td style="text-align: right;">Ø0.850–0.900 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Lower-end hole depth (Detail C)</td>
+<td style="text-align: right;">1.8 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Detail C step</td>
+<td style="text-align: right;">0.15 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flat cut depth (Section B–B)</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">0.450–0.550 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Corner radius (Section B–B)</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>max. r0,1</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Countersink depth (detail)</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;"><code>max. 0,5</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Chamfers (three)</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>0,1/45°</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Countersink included angle (Section A–A)</td>
+<td style="text-align: right;">110°</td>
+<td>none; general ±30′</td>
+</tr>
+<tr>
+<td>Spiral angular positions (<code>Bogenmass</code>)</td>
+<td style="text-align: right;">36° … 324°, nine stations</td>
+<td>±1° each</td>
+</tr>
+<tr>
+<td>Section B–B cutter angle</td>
+<td style="text-align: right;">90°</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Detail C hole point</td>
+<td style="text-align: right;">60°</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
+<h2>The spiral is a 10-digit cam (Derived)</h2>
+<p>The axle carries nine pockets along a helical band, 36° apart in angle (36°, 72°, …, 324°, each ±1°) and 2 mm apart along the axle (2, 4, …, 18 mm, each ±0.020). The spiral pitch is 20 mm per 360°, so 36° corresponds to 20 × 36/360 = 2.000 mm: the angular and axial ladders agree exactly (<code>Derived</code> check). Together with the countersink notch at the top, these are the ten digit positions 0–9 of one setting slider: turning the axle by 36° per digit moves the pocket engaged by the drum's tooth stack.</p>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Angular pitch</td>
+<td>360°/10 positions</td>
+<td style="text-align: right;">36°</td>
+</tr>
+<tr>
+<td>Axial pitch</td>
+<td>20 mm × 36°/360°</td>
+<td style="text-align: right;">2.0 mm</td>
+</tr>
+<tr>
+<td>Positions on the sheet</td>
+<td>pockets 1–9 plus the 110° countersink at the top</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+<p>The spiral's tolerance is ±0.020 mm per station against the ±1° angular limit: at the Ø2.5 surface, ±1° is ±0.022 mm of arc (Derived), so the axial and angular limits are matched in size.</p>
+<h2>Length grading (<code>Aussortieren nach</code>)</h2>
+<p>The axles are sorted into <strong>Pos. 1: 35.18–35.20 mm</strong> and <strong>Pos. 2: 35.20–35.22 mm</strong>, the two halves of the 35.2 ±0.020 band. <span class="ref">Assembly-Links.csv</span> already records that <code>10.212</code> is sorted per <code>10.061</code> Pos. 1/2 for its use in <code>10.240</code>.</p>
+<h2>Fit with the digit roller <code>10.029</code> and the knob <code>10.057</code></h2>
+<p>The axle is Ø2.5 <code>h6</code>: pressed into the digit roller <code>10.029</code> (interference 2 to 23 µm, <a href="Part-Dimensions-10029.html">Part-Dimensions-10029.md</a>) and sliding in the knob <code>10.057</code> (clearance 20 to 52 µm, <a href="Part-Dimensions-10057.html">Part-Dimensions-10057.md</a>). Both are Derived pairings.</p>
+<h2>Correction</h2>
+<p>Machine-Facts §4 and §4a recorded this axle as Ø2.5 <strong>h7</strong>. Its own sheet reads <code>Ø2,5-h6</code> (fit table <code>0/−7</code>) and the BOM master agrees, so the earlier entry was the outlier and is corrected.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general
+tolerances are not silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size; a scaled nominal exactly on a size-step boundary belongs to the lower step.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Axle diameter (shaft)</td>
+<td style="text-align: right;">Ø7.500 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>h6</code>, over 6 through 10 mm: IT6 = 9 µm; <code>es = 0</code>, <code>ei = −9</code> → Ø7.491–7.500 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Top pin diameter (shaft)</td>
+<td style="text-align: right;">Ø3.000 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>h8</code>, up to 3 mm (upper boundary): IT8 = 14 µm; <code>es = 0</code>, <code>ei = −14</code> → Ø2.986–3.000 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Overall length</td>
+<td style="text-align: right;">110.1 mm</td>
+<td style="text-align: right;">simply scaled -300/+0 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Reference length</td>
+<td style="text-align: right;">105.6 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Top end to the spiral start</td>
+<td style="text-align: right;">33.75 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral datum length</td>
+<td style="text-align: right;">15 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Pitch of the spiral (per 360°)</td>
+<td style="text-align: right;">60 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 1</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 2</td>
+<td style="text-align: right;">12 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 3</td>
+<td style="text-align: right;">18 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 4</td>
+<td style="text-align: right;">24 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 5</td>
+<td style="text-align: right;">30 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 6</td>
+<td style="text-align: right;">36 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 7</td>
+<td style="text-align: right;">42 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 8</td>
+<td style="text-align: right;">48 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral station 9</td>
+<td style="text-align: right;">54 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Top pin length (theoretical)</td>
+<td style="text-align: right;">4.5 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Theoretical dimension</td>
+<td style="text-align: right;">2.4 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Spiral depth/offset</td>
+<td style="text-align: right;">0.15 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Lower-end hole</td>
+<td style="text-align: right;">Ø2.55 mm</td>
+<td style="text-align: right;">simply scaled +0/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Lower-end hole depth (Detail C)</td>
+<td style="text-align: right;">5.4 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Detail C step</td>
+<td style="text-align: right;">0.45 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Flat cut depth (Section B–B)</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">simply scaled -150/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Corner radius (Section B–B)</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Countersink depth (detail)</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Chamfers (three)</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

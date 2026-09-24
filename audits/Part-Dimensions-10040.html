@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.040-5 Counter Body — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10040.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.040-5 Counter Body — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.040</code>, <em>Zählwerkskörper</em> (counter body), drawing revision
+  <code>10.040-5</code>, current; it supersedes <code>10.040-1</code>. Identity verified against
+  <span class="ref">Drawing-Index.md</span>: page 56 is <code>10.040‑5 Zählwerkskörper</code>,
+  and the sheet's own title block agrees. Scale 5:1 (1:1 pictogram at top left);
+  the sheet is stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  56 / <a href="../viewer.html?page=56&status=All&section=All">drawing-viewer page 56</a>,
+  rasterized at 300 and 800 dpi. Section A–A is drawn rotated 90°.</li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong> where legible; readings of small print and
+  features whose meaning the sheet does not state are <strong>Unverified</strong>.</li>
+<li><strong>ISO limits:</strong> <strong>Derived</strong> by recalculation from ISO 286-1 and ISO 286-2, not
+  copied from the sheet's fit table.</li>
+<li><strong>3× values:</strong> <strong>Derived project references</strong>, not factory specifications.</li>
+<li><strong>Related:</strong> <span class="ref">10040-English-Annotation.md</span> and the
+  parent assembly audit <a href="Part-Dimensions-10226.html">Part-Dimensions-10226.md</a>,
+  which derives the pairings with the axles, bushing and pins.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a>
+and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286 fit cases</h2>
+<p>All are holes (capital letters). Basic-size steps are ISO 286-1 ones; none of the
+nominals sits on a step boundary. "Sheet" is the drawing's own fit-table entry.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central bore (marked <code>*</code>)</td>
+<td style="text-align: right;">Ø12</td>
+<td><code>H7</code></td>
+<td>over 10 through 18 mm</td>
+<td>IT7 = 18 µm; <code>EI = 0</code>, <code>ES = +18</code></td>
+<td style="text-align: right;">12.0000–12.0180</td>
+<td><code>+18/0</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Inner step</td>
+<td style="text-align: right;">Ø20</td>
+<td><code>H8</code></td>
+<td>over 18 through 30 mm</td>
+<td>IT8 = 33 µm; <code>EI = 0</code>, <code>ES = +33</code></td>
+<td style="text-align: right;">20.0000–20.0330</td>
+<td><code>+33/0</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Step (marked <code>*</code>)</td>
+<td style="text-align: right;">Ø27</td>
+<td><code>j9</code></td>
+<td>over 18 through 30 mm</td>
+<td>IT9 = 52 µm; ISO 286-2 has no <code>j9</code> (j is tabulated for grades 5–8), so <code>js9 = ±26</code> is used</td>
+<td style="text-align: right;">26.9740–27.0260</td>
+<td><code>±26</code></td>
+<td>matches <code>js9</code></td>
+</tr>
+<tr>
+<td>Small bore</td>
+<td style="text-align: right;">Ø2</td>
+<td><code>E8</code></td>
+<td>up to 3 mm</td>
+<td>IT8 = 14 µm; <code>EI = +14</code>, <code>ES = +28</code></td>
+<td style="text-align: right;">2.0140–2.0280</td>
+<td><code>+28/+14</code></td>
+<td>matches</td>
+</tr>
+<tr>
+<td>Axle slot</td>
+<td style="text-align: right;">2</td>
+<td><code>M7</code></td>
+<td>up to 3 mm</td>
+<td>IT7 = 10 µm; <code>ES = −2</code>, <code>EI = −12</code></td>
+<td style="text-align: right;">1.9880–1.9980</td>
+<td><code>0/−9</code></td>
+<td>sheet is 2–3 µm higher</td>
+</tr>
+<tr>
+<td>Bushing seat</td>
+<td style="text-align: right;">Ø2.6</td>
+<td><code>S7</code></td>
+<td>up to 3 mm</td>
+<td><code>ES = −14</code>, <code>EI = −24</code></td>
+<td style="text-align: right;">2.5760–2.5860</td>
+<td><code>−13/−22</code></td>
+<td>sheet is 1–2 µm higher</td>
+</tr>
+<tr>
+<td>Pin seat</td>
+<td style="text-align: right;">Ø1.5</td>
+<td><code>S7</code></td>
+<td>up to 3 mm</td>
+<td><code>ES = −14</code>, <code>EI = −24</code></td>
+<td style="text-align: right;">1.4760–1.4860</td>
+<td><code>−13/−22</code></td>
+<td>sheet is 1–2 µm higher</td>
+</tr>
+<tr>
+<td>Small pin seat</td>
+<td style="text-align: right;">Ø0.8</td>
+<td><code>N7</code></td>
+<td>up to 3 mm</td>
+<td><code>ES = −4</code>, <code>EI = −14</code></td>
+<td style="text-align: right;">0.7860–0.7960</td>
+<td><code>−4/−13</code></td>
+<td>lower limit 1 µm higher</td>
+</tr>
+</tbody>
+</table>
+<p>For <code>H</code>, <code>EI = 0</code> and the zone lies above nominal. Every entry of 3 mm and below
+shows the sub-3 mm pattern recorded in <span class="ref">Machine-Facts.md</span> §3
+(grade 7 zones 9 µm wide against ISO's 10), while grade 8 and every larger size
+match ISO exactly. The sheet's values are the factory limits; the ISO figures
+are a reference.</p>
+<h2>Original drawing dimensions</h2>
+<p>Section A–A unless another view is named. <code>*</code> marks a radial-runout-controlled
+dimension; the diamond marks side (axial) runout.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall axial height</td>
+<td style="text-align: right;">6.7 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">6.680–6.720 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Slotted upper region, top face down</td>
+<td style="text-align: right;">4 mm</td>
+<td style="text-align: right;">±10 µm</td>
+<td style="text-align: right;">3.990–4.010 mm</td>
+<td>Confirmed callout; lower reference Inferred</td>
+</tr>
+<tr>
+<td>Top face to flange face</td>
+<td style="text-align: right;">5.6 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">5.500–5.700 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Flange thickness</td>
+<td style="text-align: right;">6.7 − 5.6 = 1.1 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Step between the Ø23 and Ø27 shoulders</td>
+<td style="text-align: right;">2 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">1.900–2.100 mm</td>
+<td>Confirmed callout; feature Inferred</td>
+</tr>
+<tr>
+<td>Axial step</td>
+<td style="text-align: right;">0.9 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">0.850–0.950 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Recess depth from the flange face</td>
+<td style="text-align: right;">1.4 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">1.300–1.500 mm</td>
+<td>Confirmed callout; feature Inferred</td>
+</tr>
+<tr>
+<td>Flange outside diameter</td>
+<td style="text-align: right;">Ø32.6 mm</td>
+<td style="text-align: right;">−0/−100 µm</td>
+<td style="text-align: right;">Ø32.500–32.600 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Shoulder</td>
+<td style="text-align: right;">Ø23 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">Ø22.900–23.100 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Recess</td>
+<td style="text-align: right;">Ø15.7 mm</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">Ø15.650–15.750 mm</td>
+<td>Confirmed callout; revised in change (a)</td>
+</tr>
+<tr>
+<td>Recess/collar</td>
+<td style="text-align: right;">Ø25.3 mm</td>
+<td style="text-align: right;">general ±100 µm</td>
+<td style="text-align: right;">Ø25.200–25.400 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Two small holes</td>
+<td style="text-align: right;">Ø1 mm</td>
+<td style="text-align: right;">+30/0 µm</td>
+<td style="text-align: right;">Ø1.000–1.030 mm</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Body material</td>
+<td style="text-align: right;">Decoltal Ø33</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Cutter</td>
+<td style="text-align: right;">Ø35 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed tooling note; not a part dimension</td>
+</tr>
+</tbody>
+</table>
+<p>Plan view:</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outer radial ring</td>
+<td style="text-align: right;">29.04 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">29.020–29.060 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Radial ring</td>
+<td style="text-align: right;">23 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">22.980–23.020 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Radial ring</td>
+<td style="text-align: right;">18 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">17.980–18.020 mm</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+<tr>
+<td>Central ring</td>
+<td style="text-align: right;">14 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">13.980–14.020 mm</td>
+<td>Confirmed callout; seat of the axles' inner ends Inferred</td>
+</tr>
+<tr>
+<td>Radius</td>
+<td style="text-align: right;">R10</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">9.950–10.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Radius (marked (a))</td>
+<td style="text-align: right;">R8.62</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">8.600–8.640 mm</td>
+<td>Confirmed callout; revised from R8.5 ±0.03</td>
+</tr>
+<tr>
+<td>Slot angles</td>
+<td style="text-align: right;">multiples of 20° (20° to 200°); 15°, 30°, 35°, 90°, 110°, 130°</td>
+<td style="text-align: right;">±5′</td>
+<td style="text-align: right;">e.g. 89°55′–90°05′</td>
+<td>Confirmed callouts; whether the series covers a full circle is Unverified</td>
+</tr>
+<tr>
+<td>Slot centering</td>
+<td style="text-align: right;">2‑M7 slots to the Ø12 H7 bore</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed note</td>
+</tr>
+<tr>
+<td>Non-toleranced angles</td>
+<td style="text-align: right;">±30′</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-toleranced linear dimensions</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">not silently scaled; project decision</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Non-toleranced angular dimensions</td>
+<td style="text-align: right;">±30′</td>
+<td style="text-align: right;">angles do not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Radial runout (<code>*</code>)</td>
+<td style="text-align: right;">max 20 µm</td>
+<td style="text-align: right;">scaling convention unresolved</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Side / axial runout (diamond)</td>
+<td style="text-align: right;">max 20 µm</td>
+<td style="text-align: right;">scaling convention unresolved</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Unmarked runout</td>
+<td style="text-align: right;">none (<code>—</code>)</td>
+<td style="text-align: right;">none</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Edges</td>
+<td style="text-align: right;">deburred and broken to ≤0.1 mm</td>
+<td style="text-align: right;">does not scale by rule</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Surface finish</td>
+<td style="text-align: right;">predominant two-triangle grade; three-triangle where marked</td>
+<td style="text-align: right;">grade symbols do not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Surface treatment</td>
+<td style="text-align: right;">colourless, hard anodized (<code>farblos eloxiert / hart</code>)</td>
+<td style="text-align: right;">process note</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Heat treatment</td>
+<td style="text-align: right;">none (dash)</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Machining note</td>
+<td style="text-align: right;"><code>Ø12 u. 20 muss in einer Aufspannung gedreht werden</code> — turn in a single clamping</td>
+<td style="text-align: right;">a coaxiality requirement; carries into any redesign</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Special inspection</td>
+<td style="text-align: right;">box <code>Diese Maße werden bei Abnahme besonders kontrolliert</code></td>
+<td style="text-align: right;">not shown which dimensions</td>
+<td>Confirmed text; which Unverified</td>
+</tr>
+<tr>
+<td>Material / stock</td>
+<td style="text-align: right;">Decoltal Ø33 (BOM master agrees; Machine-Facts §4 said Anticorodal)</td>
+<td style="text-align: right;">does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Quantity per machine</td>
+<td style="text-align: right;">1 (<code>Type I</code>)</td>
+<td style="text-align: right;">does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Parent</td>
+<td style="text-align: right;"><code>10.226</code> Complete counter body assembly</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Revision history</td>
+<td style="text-align: right;">index 4→5, change 194, 6.6.50; change (a), 2x, 28.8.49 as read</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed as read</td>
+</tr>
+<tr>
+<td>Drawn</td>
+<td style="text-align: right;">28.6.49</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<p>The (a) revision changed two dimensions, and the sheet marks both: Ø15.7 became
+Ø15.7 ±0.05 and R8.5 ±0.03 became R8.62 ±0.02. So the plan's R8.62 and the
+recess Ø15.7 are the post-revision values, and any copy of <code>10.040-1</code> or an
+older index carries different figures.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Calculation</th>
+<th style="text-align: right;">Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Flange thickness</td>
+<td>6.7 − 5.6</td>
+<td style="text-align: right;">1.1 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Hatched-body height below the slotted region</td>
+<td>6.7 − 4</td>
+<td style="text-align: right;">2.7 mm</td>
+<td>Derived; the datum for the 4 mm is Inferred</td>
+</tr>
+<tr>
+<td>Flange overhang beyond the recess</td>
+<td>(32.6 − 25.3) / 2</td>
+<td style="text-align: right;">3.65 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Wall between the Ø12 bore and the Ø15.7 recess</td>
+<td>(15.7 − 12) / 2</td>
+<td style="text-align: right;">1.85 mm</td>
+<td>Derived</td>
+</tr>
+<tr>
+<td>Slot pitch, if the 20° series is a full circle</td>
+<td>360° / 20°</td>
+<td style="text-align: right;">18 positions</td>
+<td>Derived; the sheet's 17 axles use one fewer, which is <code>Unverified</code> (the slot count was not counted on the plan)</td>
+</tr>
+<tr>
+<td>Axle inner end (parent assembly)</td>
+<td>48 / 2 − 17 = 7.0 mm = 14 / 2</td>
+<td style="text-align: right;">7.0 mm</td>
+<td>Derived; see <a href="Part-Dimensions-10226.html">Part-Dimensions-10226.md</a></td>
+</tr>
+</tbody>
+</table>
+<p>The body's axial dimensions are all measured from the two end faces, so its own
+stack closes (6.7 = 5.6 + 1.1). It cannot be tied to the axial steps on
+<code>10.226-3</code> (1.3 ±100, 1.5 ±100, 1.3 ±20, 4 ±20) without a shared datum that
+neither sheet prints, so the axial stack of the assembly stays open.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy
+(a project decision) ties tolerance to the manufacturing process, not to the 3×
+factor. "Simply scaled" values are a comparison only and are not adopted. Where a
+callout carries an ISO code, it is re-applied at the scaled basic size and the
+limits recalculated. A 3× table is not a factory specification, and the sheet's
+sub-3 mm zone widths and general tolerances are not silently carried over.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall axial height</td>
+<td style="text-align: right;">20.1 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Flange outside diameter</td>
+<td style="text-align: right;">Ø97.8 mm</td>
+<td style="text-align: right;">−0/−300 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Central ring / rings</td>
+<td style="text-align: right;">42; 54; 69; 87.12 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Central bore</td>
+<td style="text-align: right;">Ø36 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>H7</code>, over 30 through 50 mm: IT7 = 25 µm → Ø36.000–36.025 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Inner step</td>
+<td style="text-align: right;">Ø60 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>H8</code>, over 50 through 80 mm: IT8 = 46 µm → Ø60.000–60.046 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Step</td>
+<td style="text-align: right;">Ø81 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>js9</code>, over 80 through 120 mm: IT9 = 87 µm → ±43.5 µm → Ø80.9565–81.0435 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Axle slot</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>M7</code>, over 3 through 6 mm (upper boundary): IT7 = 12 µm; ES = 0 → 5.988–6.000 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Bushing seat</td>
+<td style="text-align: right;">Ø7.8 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>S7</code>: not recalculated</td>
+<td>Derived nominal only</td>
+</tr>
+<tr>
+<td>Pin seats</td>
+<td style="text-align: right;">Ø4.5 mm; Ø2.4 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>S7</code> and <code>N7</code>: not recalculated</td>
+<td>Derived nominals only</td>
+</tr>
+<tr>
+<td>Small bore</td>
+<td style="text-align: right;">Ø6 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>E8</code>, over 3 through 6 mm (upper boundary): EI = +20, IT8 = 18 → 6.020–6.038 mm</td>
+<td>Derived project reference</td>
+</tr>
+</tbody>
+</table>
+<p>Ø6 sits exactly on the upper boundary of the "over 3 through 6 mm" ISO size step,
+so it belongs to that step; Ø6.001 would fall in the next step. The 3× <code>M7</code> and
+<code>E8</code> values are for that reading. Ø36, Ø60 and Ø81 fall inside their steps.</p>
+<p>The 3× axial height (20.1 mm) and flange diameter (Ø97.8) are large for a printed
+part; per the project's tolerance decision the printed prototype fits come from measurement, and none of
+this is a fabrication tolerance.</p>
+<h2>Open items</h2>
+<ol>
+<li>Identify the feature spanned by the <code>0.9 ±50</code> step, and confirm the datum for
+   the <code>4 ±10</code>.</li>
+<li>Count the radial slots on the plan and compare with the 17 axles on <code>10.226-3</code>
+   (a full 20° circle would be 18).</li>
+<li>Recalculate the <code>S7</code> and <code>N7</code> limits at the 3× sizes if the press fits are
+   carried into a design.</li>
+<li>Establish the sheet's small-size tolerance table (likely an older ISA-based
+   one); see Machine-Facts §3.</li>
+</ol>
+</main>
+</body>
+</html>

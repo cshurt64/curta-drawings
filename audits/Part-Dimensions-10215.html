@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.215-2 Complete Housing — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10215.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.215-2 Complete Housing — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.215</code>, <em>Kompl. Gehäuse</em> (complete housing), current drawing
+  <code>10.215-2</code>, <code>Ersatz für 10.215-1</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog
+  page 219 (<a href="../viewer.html?page=219&status=All&section=All">viewer page 219</a>).
+  Scale 2:1, with a 10:1 detent detail. Drawn 8.2.50 (initials as read <code>hkl.</code>,
+  <code>Unverified</code>); the change table is empty. Read at 300 dpi on 2026-09-23.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr.</code> reads <code>10.210</code> struck through and <code>234</code>
+  written over it — <code>10.234</code>, <em>Grundkörper Stufe III</em>; one <code>10.215</code> per machine
+  (<code>Stück 1</code>; <code>10.210</code> sheets 10–11). The hand correction is corroborated by
+  <code>10.234-1</code>'s own leader on p241. <code>Confirmed</code>.</li>
+<li><strong>Views:</strong> <code>Schnitt A÷A</code> (half-section), a plan view carrying the A–A arrows, and
+  the <code>M10:1</code> detent detail.</li>
+<li><strong>No <code>Abmasse in μ</code> stamp and no dimension.</strong> The general linear tolerance is a dash
+  with the unit <code>mm</code> written after it (as on <code>10.201-4</code> and <code>10.243-1</code>).</li>
+<li><strong>Assembly fields:</strong> general angular tolerance <code>—</code>; radial and side runout <code>—</code>;
+  unmarked runout <code>—</code>; material <code>—</code>; surface finish <code>—</code>; surface treatment <code>—</code>; heat
+  treatment <code>—</code>. Type I, group <code>Grundkörper</code>.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; child-sheet dimensions <strong>Confirmed</strong> at
+  their stated revisions; arithmetic and ISO recalculation <strong>Derived</strong>; unresolved
+  readings <strong>Unverified</strong>; readings resting on a judgment <strong>Inferred</strong>. 3× values
+  are geometric references, not factory specifications.</li>
+</ul>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sheet scales</td>
+<td>2:1; detent detail 10:1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Section</td>
+<td><code>Schnitt A÷A</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Standard part</td>
+<td><code>Kugel Ø1mm</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General linear tolerance</td>
+<td><code>— mm</code></td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>General angular tolerance, runout, material, surface, treatment, heat treatment</td>
+<td>all <code>—</code></td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td><code>Abmasse in μ</code> stamp; any dimension</td>
+<td>none</td>
+<td>Confirmed absent</td>
+</tr>
+<tr>
+<td>Special-inspection box</td>
+<td><code>Diese Maße werden bei Abnahme besonders kontrolliert</code></td>
+<td>Confirmed text; which dimensions Unverified</td>
+</tr>
+</tbody>
+</table>
+<p>Nothing on the sheet can be scaled, and no ISO fit is assigned to any interface on it.
+<a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> defines the fit system and
+<a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a> tabulates deviations.</p>
+<h2>Component callouts and factory count</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th style="text-align: right;">Per assembly</th>
+<th>Evidence</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.002</code></td>
+<td>Upper housing (<em>Gehäuseoberteil</em>), Anticorodal tube 46/3</td>
+<td style="text-align: right;">1</td>
+<td>leader p219; own sheet <code>10.002-6</code> (p3) <code>Kompl. Nr. 10.215</code>; BOM sheet 1 (p201) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.214</code></td>
+<td>Lower housing with screw</td>
+<td style="text-align: right;">1</td>
+<td>leader p219; own sheet (p218) <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.215</code>; <code>10.210</code> sheet 10 roll-up 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.046</code></td>
+<td>Decimal-point slider (<em>Kommaschieber</em>), Anticorodal B Ø3</td>
+<td style="text-align: right;">8</td>
+<td>M10:1 detail; BOM sheet 3 (p203) <strong>8</strong> per machine</td>
+<td>Confirmed (eight positions)</td>
+</tr>
+<tr>
+<td><code>10.047</code></td>
+<td>Decimal-point slider spring, Ø0.15 wire</td>
+<td style="text-align: right;">8</td>
+<td>M10:1 detail; BOM sheet 3 8 per machine</td>
+<td>Confirmed (eight positions)</td>
+</tr>
+<tr>
+<td><code>Kugel Ø1 mm</code></td>
+<td>Steel ball, 1 mm (standard)</td>
+<td style="text-align: right;">1</td>
+<td>detail label; BOM sheet 9 (p211) <code>Kugel Ø 1</code> <strong>8</strong> per machine</td>
+<td>Confirmed (eight positions)</td>
+</tr>
+</tbody>
+</table>
+<h3>The slider allocation closes</h3>
+<p>The slider, its spring and its ball are each <strong>8 per machine</strong> (BOM sheets 3 and 9), and
+the housing has <strong>eight slider positions</strong> (confirmed by the user, 2026-09-24), so all eight
+sit under <code>10.215</code>; the M10:1 detail on this sheet shows one of them, as one leader stands
+for several pieces. The slider drawn on the clearing cap <code>10.244</code> is one of the same eight, so
+it is not counted again there. Machine-Facts §4 recorded <code>10.046</code> as 7 against 8 on the BOM;
+the BOM's 8 is read again at 300 dpi and §4 is corrected.</p>
+<h2>Inherited component dimensions and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Inherited dimension or control</th>
+<th>Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.002-6</code>, p3 (via <span class="ref">Machine-Facts.md</span> §4a)</td>
+<td>spigot <strong>Ø45.4 h7</strong>; bores <strong>Ø42.8 H8</strong>, <strong>Ø43 H8</strong>; Anticorodal tube 46/3</td>
+<td>The upper housing</td>
+</tr>
+<tr>
+<td><code>10.062-4</code>, p82 (via <a href="Part-Dimensions-10214.html">Part-Dimensions-10214.md</a>)</td>
+<td>bore <strong>Ø45.4 H7</strong> (<code>+25/0</code>), <strong>Ø48.2 H8</strong>, Ø53 outside, 17 ±100</td>
+<td>The lower housing</td>
+</tr>
+</tbody>
+</table>
+<h3>Fit derived from those figures</h3>
+<p>For <code>h</code>, <code>es = 0</code> and the zone lies below nominal; for <code>H</code>, <code>EI = 0</code> and it lies above.
+All nominals are in the ISO <strong>30–50 mm</strong> step (IT7 = 25 µm, IT8 = 39 µm).</p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upper housing spigot Ø45.4 h7 in the lower housing bore Ø45.4 H7</td>
+<td>h7 Ø45.375–45.400 in H7 Ø45.400–45.425 ⇒ <strong>clearance 0 to 50 µm</strong></td>
+<td>Derived; codes Confirmed on the child sheets, pairing Inferred</td>
+</tr>
+</tbody>
+</table>
+<h2>Calculated and inferred stack-ups</h2>
+<p>None: the section is undimensioned and the scan is reduced with nothing to calibrate
+against. The number of plan-view slotted heads (four are visible) cannot be reconciled
+with the recorded screws either — <code>10.060</code> is 2 per machine, one in <code>10.214</code> — so the
+other heads are unassigned (<strong>Unverified</strong>).</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Housing joint Ø45.4 H7/h7</td>
+<td><code>+25/0</code> and <code>0/−25</code></td>
+<td>Ø136.200</td>
+<td><code>+75/0</code>, <code>0/−75</code></td>
+<td>120–180 mm step, IT7 = 40 µm ⇒ bore Ø136.200–136.240, spigot Ø136.160–136.200: clearance widens to 0–80 µm</td>
+</tr>
+<tr>
+<td>Ball Ø1; slider Ø3</td>
+<td>—</td>
+<td>Ø3; Ø9</td>
+<td>—</td>
+<td>not scaled</td>
+</tr>
+<tr>
+<td>Anything on <code>10.215-2</code></td>
+<td>none</td>
+<td>nothing to scale</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, recalculated. A 3× table is not a factory specification. See
+the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong>The slider, spring and ball allocation (<code>Unverified</code>).</strong> 6 of 8 unallocated.</li>
+<li><strong>The four slotted heads in the plan view (<code>Unverified</code>).</strong></li>
+<li><strong>Red pencil marks on the scan (<code>Confirmed</code>).</strong> Not drawing content.</li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.234</code> base assembly stage III, 1 per machine</td>
+<td><code>Confirmed</code>: hand-corrected <code>Kompl. Nr.</code> and the leader on p241</td>
+</tr>
+<tr>
+<td>Children</td>
+<td><code>10.002</code> ×1, <code>10.214</code> ×1, <code>10.046</code> ×8, <code>10.047</code> ×8, <code>Ø1 ball</code> ×8</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p219_10215-2.webp">drawing 10.215-2</a>, page 219.</p>
+</main>
+</body>
+</html>

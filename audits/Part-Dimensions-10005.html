@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.005-6 Tens-Carry Slider, Result Side — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10005.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.005-6 Tens-Carry Slider, Result Side — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.005</code>, <em>Zehnerschieber, Resultatseite</em> (tens-carry slider, result side), drawing revision <code>10.005-6</code>, current; it supersedes <code>10.005-3</code>. Identity verified against
+  <span class="ref">Drawing-Index.md</span>: page 8 is <code>10.005-6</code>, and the sheet's own title block agrees. Scale 10:1; the sheet is stamped
+  <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 8 /
+  <a href="../viewer.html?page=8&status=All&section=All">drawing-viewer page 8</a>, rasterized at 300–400 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.234 Base assembly, stage III; 10 per machine; <code>Stück</code> 10.</li>
+<li><strong>Material:</strong> Stainless hardenable strip steel 0.5 ±10 µm, hard-rolled, Brinell 230–240. <strong>General tolerance:</strong> ±50 µm, ±30′. <strong>Runout:</strong> none (dashes). <strong>Drawn:</strong> 25.8.1950. <strong>Revisions:</strong> index 3→4 (change 161, 25.8.50), 4→5 (132, 20.10.50), 5→6 (321, 21.11.50).</li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong> where legible; unreadable or unlabeled features are <strong>Unverified</strong>. <strong>ISO limits:</strong> <strong>Derived</strong> (ISO 286-1/-2), where a code is printed.
+  <strong>3× values:</strong> <strong>Derived project references</strong>, not factory specifications.</li>
+<li><strong>Related:</strong> <span class="ref">10005-English-Annotation.md</span>.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286</h2>
+<p>No ISO fit code is printed on this sheet, and none is assigned: the limits are explicit ± or +/− micron values.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall height of the formed slider (side view)</td>
+<td style="text-align: right;">20.6 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">20.550–20.650 mm</td>
+<td>Confirmed callout; Derived limits</td>
+</tr>
+<tr>
+<td>Stretched (developed) length of the bent arm</td>
+<td style="text-align: right;">11.2 mm</td>
+<td style="text-align: right;"><code>gestr. Länge ~11,5</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; the approximate 11.5 is a second, looser figure</td>
+</tr>
+<tr>
+<td>Height from the lower end to the upper bend</td>
+<td style="text-align: right;">7.5 mm</td>
+<td style="text-align: right;">written <code>7,500</code>; general ±50 µm</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; three-decimal writing suggests an inspection reference (Unverified)</td>
+</tr>
+<tr>
+<td>Oblique length, bend to upper end</td>
+<td style="text-align: right;">5.8 mm</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">5.700–5.900 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Oblique length (upper line, dimension line to the top break)</td>
+<td style="text-align: right;">9.7 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">9.650–9.750 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Test dimension (<code>Prüfmass</code>)</td>
+<td style="text-align: right;">1.15 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">1.130–1.170 mm</td>
+<td>Confirmed callout; the inspection dimension for the offset of the arm</td>
+</tr>
+<tr>
+<td>Upper end segment</td>
+<td style="text-align: right;">2.2 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">2.150–2.250 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Lower straight length</td>
+<td style="text-align: right;">3.5 mm</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">3.400–3.600 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Middle bend length</td>
+<td style="text-align: right;">2 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.950–2.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Foot tab width (side view)</td>
+<td style="text-align: right;">0.8 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">0.750–0.850 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Strip thickness</td>
+<td style="text-align: right;">0.5 mm</td>
+<td style="text-align: right;">±10 µm</td>
+<td style="text-align: right;">0.4900–0.5100 mm</td>
+<td>Confirmed callout; matches the material line 0.5 ±10</td>
+</tr>
+<tr>
+<td>Offsets 1.16 and 2.38</td>
+<td style="text-align: right;">1.16 mm</td>
+<td style="text-align: right;">general ±50 µm; 2.38 also general</td>
+<td style="text-align: right;">1.110–1.210 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Chord across the lower bend</td>
+<td style="text-align: right;">2.31 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">2.260–2.360 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Width across the bend region</td>
+<td style="text-align: right;">1.2 mm</td>
+<td style="text-align: right;"><code>1,2</code> with ±100 (small print, one-sided or two-sided Unverified)</td>
+<td style="text-align: right;">1.100–1.300 mm</td>
+<td>Confirmed callout; sign of the tolerance Unverified</td>
+</tr>
+<tr>
+<td>Left-leg width (head)</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">2.950–3.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Flat length of the blank (theoretical)</td>
+<td style="text-align: right;">19.7 mm</td>
+<td style="text-align: right;"><code>theoretisches Mass</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; theoretical, not toleranced</td>
+</tr>
+<tr>
+<td>Blank overall to the notch line</td>
+<td style="text-align: right;">14.9 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">14.880–14.920 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Notch V width</td>
+<td style="text-align: right;">1.4 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.350–1.450 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>V-notch radius</td>
+<td style="text-align: right;">0.2 mm</td>
+<td style="text-align: right;"><code>r0,2</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Strip width at the notches</td>
+<td style="text-align: right;">1.8 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.750–1.850 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Strip width beyond the notches</td>
+<td style="text-align: right;">1.9 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">1.850–1.950 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Notch depth (each side)</td>
+<td style="text-align: right;">0.6 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">0.550–0.650 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Hole Ø</td>
+<td style="text-align: right;">Ø0.8 mm</td>
+<td style="text-align: right;">+50/0 µm</td>
+<td style="text-align: right;">Ø0.8000–0.8500 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>End-tab length</td>
+<td style="text-align: right;">4 mm</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">3.900–4.100 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>End-tab distance</td>
+<td style="text-align: right;">5 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">4.950–5.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tab width</td>
+<td style="text-align: right;">2 mm</td>
+<td style="text-align: right;">±10 µm</td>
+<td style="text-align: right;">1.9900–2.0100 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Overall strip width at the end</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">2.950–3.050 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Head-tab width</td>
+<td style="text-align: right;">1.85 mm</td>
+<td style="text-align: right;">+20/0 µm</td>
+<td style="text-align: right;">1.850–1.870 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Head-tab step</td>
+<td style="text-align: right;">1 mm</td>
+<td style="text-align: right;">0/−30 µm</td>
+<td style="text-align: right;">0.970–1.000 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Rounded head length (<code>gerundet</code>)</td>
+<td style="text-align: right;">2.5 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">2.450–2.550 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Shoulder-to-shoulder length</td>
+<td style="text-align: right;">2.8 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">2.780–2.820 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Blank length to the shoulder</td>
+<td style="text-align: right;">4.8 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">4.780–4.820 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Shoulder to V-notch</td>
+<td style="text-align: right;">4.6 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">4.550–4.650 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Blank length, notch line to end (second line)</td>
+<td style="text-align: right;">14.7 mm</td>
+<td style="text-align: right;">±100 µm</td>
+<td style="text-align: right;">14.600–14.800 mm</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arm angle to the vertical</td>
+<td style="text-align: right;">13°</td>
+<td>none; general ±30′</td>
+</tr>
+<tr>
+<td>Lower bend</td>
+<td style="text-align: right;">150°</td>
+<td>none; general ±30′</td>
+</tr>
+<tr>
+<td>Upper bend (inside)</td>
+<td style="text-align: right;">137°</td>
+<td>none; general ±30′</td>
+</tr>
+<tr>
+<td>V-notch included angle (<code>Zacken</code>)</td>
+<td style="text-align: right;">90°</td>
+<td>none; general ±30′</td>
+</tr>
+</tbody>
+</table>
+<p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance; that is a Derived reading of a printed general note, not a per-feature callout.</p>
+<h2>Relation to OBS-007 and a project decision</h2>
+<p>The notch pair on this sheet (<code>Zacken</code>: two 90° V-notches with R0.2 roots, 1.4 mm wide and 0.6 mm deep, one on each edge, <code>absolut gratfrei</code>)
+is the tooth-and-valley that the <code>10.007</code> spring legs reach (Inferred from the OBS-007 evidence, not stated on any sheet). It is 4.6 mm from
+the slider's shoulder, so 13.8 mm at 3×.</p>
+<p>a project decision records a caliper span of ~17.25 mm on the installed printed slider, from the spring's mounting slot to the tooth-and-valley; ÷ 3 is
+5.75 mm. <strong>No dimension on this sheet is identifiable as that span.</strong> The only nearby figure is the side view's <code>5.8 ±100</code> (×3 = 17.4 mm, band
+17.1–17.7 mm), which runs along the formed arm between two bends, a different feature by my reading. The numerical closeness is a lead to check,
+not a confirmation of a project decision (<code>Unverified</code>). Two things the sheet does say bear on the printed replica: the notches must be absolutely
+burr-free, and the whole blank is toleranced ±20–50 µm, so a 3× printed slider's notch geometry is set by the print, not by this table.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. The
+"simply scaled" values are a comparison only and are not adopted, general tolerances are not silently carried over, and a 3× table is not a factory specification.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall height of the formed slider (side view)</td>
+<td style="text-align: right;">61.8 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Stretched (developed) length of the bent arm</td>
+<td style="text-align: right;">33.6 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Height from the lower end to the upper bend</td>
+<td style="text-align: right;">22.5 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Oblique length, bend to upper end</td>
+<td style="text-align: right;">17.4 mm</td>
+<td style="text-align: right;">simply scaled -300/+300 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Oblique length (upper line, dimension line to the top break)</td>
+<td style="text-align: right;">29.1 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Test dimension (<code>Prüfmass</code>)</td>
+<td style="text-align: right;">3.45 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Upper end segment</td>
+<td style="text-align: right;">6.6 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Lower straight length</td>
+<td style="text-align: right;">10.5 mm</td>
+<td style="text-align: right;">simply scaled -300/+300 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Middle bend length</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Foot tab width (side view)</td>
+<td style="text-align: right;">2.4 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Strip thickness</td>
+<td style="text-align: right;">1.5 mm</td>
+<td style="text-align: right;">simply scaled -30/+30 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Offsets 1.16 and 2.38</td>
+<td style="text-align: right;">3.48 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Chord across the lower bend</td>
+<td style="text-align: right;">6.93 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Width across the bend region</td>
+<td style="text-align: right;">3.6 mm</td>
+<td style="text-align: right;">simply scaled -300/+300 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Left-leg width (head)</td>
+<td style="text-align: right;">9 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Flat length of the blank (theoretical)</td>
+<td style="text-align: right;">59.1 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Blank overall to the notch line</td>
+<td style="text-align: right;">44.7 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Notch V width</td>
+<td style="text-align: right;">4.2 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>V-notch radius</td>
+<td style="text-align: right;">0.6 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Strip width at the notches</td>
+<td style="text-align: right;">5.4 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Strip width beyond the notches</td>
+<td style="text-align: right;">5.7 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Notch depth (each side)</td>
+<td style="text-align: right;">1.8 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Hole Ø</td>
+<td style="text-align: right;">Ø2.4 mm</td>
+<td style="text-align: right;">simply scaled +0/+150 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>End-tab length</td>
+<td style="text-align: right;">12 mm</td>
+<td style="text-align: right;">simply scaled -300/+300 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>End-tab distance</td>
+<td style="text-align: right;">15 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Tab width</td>
+<td style="text-align: right;">6 mm</td>
+<td style="text-align: right;">simply scaled -30/+30 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Overall strip width at the end</td>
+<td style="text-align: right;">9 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Head-tab width</td>
+<td style="text-align: right;">5.55 mm</td>
+<td style="text-align: right;">simply scaled +0/+60 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Head-tab step</td>
+<td style="text-align: right;">3 mm</td>
+<td style="text-align: right;">simply scaled -90/+0 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Rounded head length (<code>gerundet</code>)</td>
+<td style="text-align: right;">7.5 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Shoulder-to-shoulder length</td>
+<td style="text-align: right;">8.4 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Blank length to the shoulder</td>
+<td style="text-align: right;">14.4 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Shoulder to V-notch</td>
+<td style="text-align: right;">13.8 mm</td>
+<td style="text-align: right;">±50 µm not silently scaled</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+<tr>
+<td>Blank length, notch line to end (second line)</td>
+<td style="text-align: right;">44.1 mm</td>
+<td style="text-align: right;">simply scaled -300/+300 µm (comparison only)</td>
+<td>Derived geometric reference; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code> above; a CAD model built from the sheet would settle them.</li>
+<li>The sub-3 mm zone widths pattern in <span class="ref">Machine-Facts.md</span> §3 applies where a fit table is present.</li>
+</ol>
+</main>
+</body>
+</html>

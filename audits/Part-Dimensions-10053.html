@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.053-3 Drive Wheel II — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10053.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.053-3 Drive Wheel II — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.053</code>, <em>Schaltrad II</em> (drive wheel ii), drawing <code>10.053-3</code>, current; replaces 10.053-2 (105.133). Identity verified against <span class="ref">Drawing-Index.md</span>: page 72 is
+  <code>10.053-3</code>, and the sheet's own title block agrees. Scale 20:1; stamped <code>Abmasse in μ = 1/1000 mm</code>.</li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page 72 / <a href="../viewer.html?page=72&status=All&section=All">drawing-viewer page 72</a>, rasterized at 300–400 dpi.</li>
+<li><strong>Parent(s) and quantity:</strong> 10.220 Complete Tens-Carry Wheel; 15 per machine (1 per 10.220). <strong>Material:</strong> Stainless hardenable strip steel 0.6 ±20 µm, hard-rolled, Brinell 230–240 (Firma Matthey, Neuveville). <strong>General tolerance:</strong> ±50 µm, ±20′. <strong>Runout:</strong> 20 µm marked radial and side; 50 µm unmarked. <strong>Drawn:</strong> 20.1.50. <strong>Revisions:</strong> none entered.</li>
+<li><strong>Labels:</strong> <strong>Confirmed</strong> (printed), <strong>Derived</strong> (calculated), <strong>Unverified</strong>, <strong>Inferred</strong>; 3× values are <strong>Derived project references</strong>, not factory specifications.</li>
+</ul>
+<p>Official standards references: <a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> and <a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a>.</p>
+<h2>ISO 286 fit cases</h2>
+<p>None of the nominals sits on a size-step boundary. For <code>h</code>, <code>es = 0</code> and the zone lies below nominal.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th>Code</th>
+<th>Basic-size step</th>
+<th>Calculation</th>
+<th style="text-align: right;">ISO limits</th>
+<th>Sheet fit-table entry</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore (hole)</td>
+<td style="text-align: right;">Ø2.300 mm</td>
+<td><code>J8</code> written, ±7 µm tabulated (= <code>JS8</code>)</td>
+<td>up to 3 mm</td>
+<td>IT8 = 14 µm; <code>JS8 = ±7</code></td>
+<td style="text-align: right;">Ø2.2930–2.3070 mm</td>
+<td><code>2,3-J8 ±7</code></td>
+<td>matches the ±7; the letter J is not the ISO J8</td>
+</tr>
+</tbody>
+</table>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strip thickness</td>
+<td style="text-align: right;">0.6 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">0.580–0.620 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Overall envelope (marked <code>*</code>)</td>
+<td style="text-align: right;">4.4 mm</td>
+<td style="text-align: right;">+50/0 µm</td>
+<td style="text-align: right;">4.400–4.450 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Root envelope</td>
+<td style="text-align: right;">3.3 mm</td>
+<td style="text-align: right;">±40 µm</td>
+<td style="text-align: right;">3.260–3.340 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Inner reference diameter</td>
+<td style="text-align: right;">2.8 mm</td>
+<td style="text-align: right;">0/−100 µm</td>
+<td style="text-align: right;">2.700–2.800 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Nose position offset</td>
+<td style="text-align: right;">0.611 mm</td>
+<td style="text-align: right;">±10 µm</td>
+<td style="text-align: right;">0.601–0.621 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tooth root radius</td>
+<td style="text-align: right;">0.75 mm</td>
+<td style="text-align: right;">±20 µm (<code>0,75 r</code>)</td>
+<td style="text-align: right;">0.730–0.770 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Notch corner radius</td>
+<td style="text-align: right;">0.2 mm</td>
+<td style="text-align: right;">±20 µm (<code>0,2 r</code>)</td>
+<td style="text-align: right;">0.180–0.220 mm</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bore edge radius</td>
+<td style="text-align: right;">0.1 mm</td>
+<td style="text-align: right;"><code>max. 0,1 r</code></td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Construction dimension</td>
+<td style="text-align: right;">0.4 mm</td>
+<td style="text-align: right;">none</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; feature Unverified</td>
+</tr>
+</tbody>
+</table>
+<p>Angles and other controls:</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+<th>Tolerance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Notch included angle</td>
+<td style="text-align: right;">90°</td>
+<td>±10′</td>
+</tr>
+<tr>
+<td>Construction angle (<code>9° Konstruktionsmass</code>)</td>
+<td style="text-align: right;">9°</td>
+<td>none; construction dimension</td>
+</tr>
+<tr>
+<td>Tooth pitch</td>
+<td style="text-align: right;">72°</td>
+<td>general ±20′</td>
+</tr>
+<tr>
+<td>Nose position to each tooth curve (<code>Max. Abweichung der Nase zu jeder einzelnen Zahnkurve</code>)</td>
+<td style="text-align: right;">—</td>
+<td>±30′</td>
+</tr>
+</tbody>
+</table>
+<h2>Relation to the ratchet wheel <code>10.049</code></h2>
+<p>Both are five-point stars of the same 72° pitch with a Ø2.3 bore and a 90° notch, and both fit the same guide sleeve <code>10.055</code> (see <a href="Part-Dimensions-10055.html">Part-Dimensions-10055.md</a>). The drive wheel is 0.6 ±0.020 mm thick
+(the ratchet wheel 0.5 ±0.020), 4.4 +0.050/0 across (4.4 ±0.020), with a 3.3 root circle and a smoother tooth form (0.75 r roots); the ratchet wheel has a slit at each tip. The rotation of the notch to
+the outer contour is ±30′ per tooth here, ±20′ on <code>10.049</code>, and the 10.220 assembly gives ±1° for this wheel against 2° ±40′ for <code>10.049</code>. On the sheet, "tooth curve, hole and nose re-passivated" applies.</p>
+<p>Reading this sheet closes the stack question left by <a href="Part-Dimensions-10055.html">Part-Dimensions-10055.md</a>: 1.9 (<code>10.051</code>) + 1.3 (<code>10.054</code>) + 0.5 (<code>10.049</code>) + 0.6 (<code>10.053</code>) = 4.3 mm against the 4.8 mm reduced length, so 0.5 mm remains
+unaccounted for (<code>Derived</code>; not a tolerance stack-up, which the sheets' general tolerances would only widen).</p>
+<p>Machine-Facts §4 recorded the material as phosphor bronze 0.6; the sheet and the BOM master say stainless hardenable strip steel 0.6 ±20 µm, so §4 is corrected.</p>
+<h2>Project 3× reference</h2>
+<p><strong>Convention used here:</strong> the project's tolerance strategy (a project decision) ties tolerance to the manufacturing process, not to the 3× factor. "Simply scaled" values are a comparison only and are not adopted, general tolerances are not
+silently carried over, and a 3× table is not a factory specification. ISO codes are re-applied at the scaled size.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Simply scaled tolerance (comparison only)</th>
+<th style="text-align: right;">ISO recalculated at scaled size</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore (hole)</td>
+<td style="text-align: right;">Ø6.900 mm</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;"><code>JS8</code>, over 6 through 10 mm: IT8 = 22 µm; <code>JS8 = ±11</code> → Ø6.889–6.911 mm</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Strip thickness</td>
+<td style="text-align: right;">1.8 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Overall envelope (marked <code>*</code>)</td>
+<td style="text-align: right;">13.2 mm</td>
+<td style="text-align: right;">simply scaled +0/+150 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Root envelope</td>
+<td style="text-align: right;">9.9 mm</td>
+<td style="text-align: right;">simply scaled -120/+120 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Inner reference diameter</td>
+<td style="text-align: right;">8.4 mm</td>
+<td style="text-align: right;">simply scaled -300/+0 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Nose position offset</td>
+<td style="text-align: right;">1.833 mm</td>
+<td style="text-align: right;">simply scaled -30/+30 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Tooth root radius</td>
+<td style="text-align: right;">2.25 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Notch corner radius</td>
+<td style="text-align: right;">0.6 mm</td>
+<td style="text-align: right;">simply scaled -60/+60 µm (comparison only)</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Bore edge radius</td>
+<td style="text-align: right;">0.3 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>Construction dimension</td>
+<td style="text-align: right;">1.2 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived; not adopted</td>
+</tr>
+</tbody>
+</table>
+<p>None of this is a fabrication tolerance; per the project's tolerance decision printed prototype fits come from measurement.</p>
+<h2>Open items</h2>
+<ol>
+<li>Features whose meaning the sheet does not state are marked <code>Unverified</code>.</li>
+<li>See <span class="ref">Machine-Facts.md</span> §3 for the sub-3 mm zone-width pattern.</li>
+</ol>
+</main>
+</body>
+</html>

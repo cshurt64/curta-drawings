@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.007-3 Tens-Carry Spring — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10007.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.007-3 Tens-Carry Spring — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.007</code>, <em>Zehnerschaltfeder</em> (tens-carry spring), drawing revision <code>10.007-3</code></li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  13 / <a href="../viewer.html?page=13&status=All&section=All">drawing-viewer page 13</a></li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong> from the current drawing and title block</li>
+<li><strong>3× values:</strong> <strong>Derived project references</strong>, not factory specifications</li>
+<li><strong>ISO 286 does not apply to this part.</strong> <code>10.007</code> is a formed wire spring —
+  it has no hole/shaft interface on this sheet, so there is no ISO 286
+  hole/shaft case to identify. Its tolerances are direct linear/angular
+  callouts and the title block's general (non-ISO) tolerance block, handled
+  per this project's tolerance strategy rather than ISO 286-1/2 (see
+  the project's tolerance strategy: tolerance is tied to
+  manufacturing process, not to the 3× geometric scale — factory absolute
+  tolerance bands are held near-original rather than multiplied by 3).</li>
+</ul>
+<p><strong>Part anatomy</strong> (informal terms adopted during the
+<span class="ref">OBS-007</span> investigation, not printed on the
+sheet): <strong>bridge</strong> (the connecting member), two <strong>legs</strong> running from the
+bridge, and a <strong>foot</strong> (bent tab) at the free end of each leg.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wire diameter</td>
+<td style="text-align: right;">Ø0.200 mm</td>
+<td style="text-align: right;">not toleranced on this sheet (material/stock spec)</td>
+<td style="text-align: right;">Ø0.200 mm nominal, no stated limits</td>
+<td>Confirmed callout; tolerance <code>Unverified</code> (not stated on this sheet — likely a wire-stock/material spec elsewhere)</td>
+</tr>
+<tr>
+<td>Base spacing (leg-to-leg, near the bridge)</td>
+<td style="text-align: right;">2.200 mm</td>
+<td style="text-align: right;">general ±50 µm (title block)</td>
+<td style="text-align: right;">2.150–2.250 mm</td>
+<td>Confirmed number; rounded-corner datum interpretation Unverified</td>
+</tr>
+<tr>
+<td>Foot spacing (clear gap between feet)</td>
+<td style="text-align: right;">0.500 mm</td>
+<td style="text-align: right;">general ±50 µm (title block)</td>
+<td style="text-align: right;">0.450–0.550 mm</td>
+<td>Confirmed callout; extension lines meet facing surfaces</td>
+</tr>
+<tr>
+<td>Leg length (bridge to foot)</td>
+<td style="text-align: right;">6.700 mm</td>
+<td style="text-align: right;">explicit ±100 µm</td>
+<td style="text-align: right;">6.600–6.800 mm</td>
+<td>Confirmed callout and explicit tolerance</td>
+</tr>
+<tr>
+<td>Foot length (bent tab)</td>
+<td style="text-align: right;">2.000 mm</td>
+<td style="text-align: right;">explicit ±200 µm</td>
+<td style="text-align: right;">1.800–2.200 mm</td>
+<td>Confirmed callout and explicit tolerance</td>
+</tr>
+<tr>
+<td>Bend angle (leg to foot)</td>
+<td style="text-align: right;">90°</td>
+<td style="text-align: right;">not toleranced (general angular tolerance not stated on this sheet)</td>
+<td style="text-align: right;">—</td>
+<td>Confirmed callout; tolerance <code>Unverified</code>/not stated</td>
+</tr>
+<tr>
+<td>Leg-to-leg length matching</td>
+<td style="text-align: right;">— (functional control, not a dimension)</td>
+<td style="text-align: right;">±50 µm (<code>Zul. Ungleichheit der Federarmlängen</code>)</td>
+<td style="text-align: right;">Interpretation of inequality band Unverified; project uses max 0.100 mm</td>
+<td>Confirmed written callout; 0.100 mm is the workbook convention, not a confirmed factory limit</td>
+</tr>
+<tr>
+<td>Stretched (uncoiled) length</td>
+<td style="text-align: right;">~19 mm</td>
+<td style="text-align: right;">approximate, informational only (<code>~</code>)</td>
+<td style="text-align: right;">not a functional dimension</td>
+<td>Confirmed callout; explicitly approximate</td>
+</tr>
+</tbody>
+</table>
+<p>The base-spacing (2.2 mm) vs. foot-spacing (0.5 mm) dimensions establish that
+the two legs are <strong>designed to converge</strong>, not run parallel. Do not subtract
+these two numbers to assert 1.7 mm centerline closure: the foot value is a
+clear gap and the rounded bridge datum needs interpretation. Any acceptance criterion for
+spring geometry (see the OBS-007 spring survey) should compare against this
+converging-taper target, not a parallel-legs assumption.</p>
+<h2>Project 3× dimensions</h2>
+<p>Per the project's tolerance strategy, nominal <em>geometry</em>
+scales 3× but tolerance is a manufacturing-capability constraint that does
+not automatically scale with it. The table below scales the nominals and
+retains the factory's absolute tolerance bands unchanged (the same
+convention already used for <code>10.041</code>'s axial length) — this is a project
+convention, not a mathematical requirement, and should be revisited if F4/F5
+build experience calls for a looser band once printed/formed springs are in
+hand.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Applied tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wire diameter</td>
+<td style="text-align: right;">Ø0.600 mm</td>
+<td style="text-align: right;">not stated (see original)</td>
+<td style="text-align: right;">Ø0.600 mm nominal, no stated limits</td>
+<td>Derived project reference</td>
+</tr>
+<tr>
+<td>Base spacing (leg-to-leg, near the bridge)</td>
+<td style="text-align: right;">6.600 mm</td>
+<td style="text-align: right;">retained general ±50 µm</td>
+<td style="text-align: right;">6.550–6.650 mm</td>
+<td>Derived nominal; project tolerance convention</td>
+</tr>
+<tr>
+<td>Foot spacing (clear gap between feet)</td>
+<td style="text-align: right;">1.500 mm</td>
+<td style="text-align: right;">retained general ±50 µm</td>
+<td style="text-align: right;">1.450–1.550 mm</td>
+<td>Derived nominal; center spacing is 2.100 mm with Ø0.600 wire</td>
+</tr>
+<tr>
+<td>Leg length (bridge to foot)</td>
+<td style="text-align: right;">20.100 mm</td>
+<td style="text-align: right;">retained explicit ±100 µm</td>
+<td style="text-align: right;">20.000–20.200 mm</td>
+<td>Derived nominal; project tolerance convention</td>
+</tr>
+<tr>
+<td>Foot length (bent tab)</td>
+<td style="text-align: right;">6.000 mm</td>
+<td style="text-align: right;">retained explicit ±200 µm</td>
+<td style="text-align: right;">5.800–6.200 mm</td>
+<td>Derived nominal; project tolerance convention</td>
+</tr>
+<tr>
+<td>Bend angle (leg to foot)</td>
+<td style="text-align: right;">90°</td>
+<td style="text-align: right;">angles do not scale</td>
+<td style="text-align: right;">—</td>
+<td>Derived (unchanged from factory)</td>
+</tr>
+<tr>
+<td>Leg-to-leg length matching</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">workbook's interpretation of ±50 µm</td>
+<td style="text-align: right;">max 0.100 mm difference between the two legs' lengths</td>
+<td>Project acceptance convention per the project's tolerance decision; factory interpretation Unverified</td>
+</tr>
+<tr>
+<td>Stretched (uncoiled) length</td>
+<td style="text-align: right;">~57 mm</td>
+<td style="text-align: right;">approximate, informational only</td>
+<td style="text-align: right;">not a functional dimension</td>
+<td>Derived (naive 3×, informational)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current project control:</strong> use <strong>0.100 mm maximum absolute arm difference</strong>,
+matching <code>Targets (3x)!C6</code> in
+<span class="ref">10.007 Spring Measurements.xlsx</span>
+and a project decision. This preserves the existing workbook acceptance convention without
+claiming the historical inequality note has been conclusively resolved.
+The workbook's newer labelled ~20 mm arm measurements must not be confused
+with the legacy 2–5 mm unlabeled readings in OBS-007; those older readings
+cannot establish noncompliance with the 20.10 mm arm datum without confirming
+what was measured.</p>
+<p>The <span class="ref">spring-forming jig specification</span>
+(superseded as the jig definition by the <span class="ref">manuals in <code>fabrication/10007-spring/</code></span>, a project decision)
+records the workbook reconciliation, explicit prototype datums, and
+unverified bend radii. Numeric targets match the workbook; CAD datum choices
+are separately identified as interpretations.</p>
+<h3>Derived: leg convergence angle</h3>
+<p>The base-spacing, foot-spacing and leg-length dimensions together imply a
+per-leg lean angle off the bridge — useful as a forming control (bend to an
+angle) instead of trying to gauge the small foot spacing directly on a
+floppy wire tip. This angle is scale-invariant: since all three inputs
+scale by 3× together, the 1× and 3× angle are identical.</p>
+<p><strong>Simple centerline reading</strong> (this audit's original interpretation — base
+and foot spacing both taken as direct centerline-to-centerline spacing):</p>
+<pre><code>half-width at base = 2.200 / 2 = 1.100 mm
+half-width at foot = 0.500 / 2 = 0.250 mm
+inward travel per leg = 1.100 − 0.250 = 0.850 mm
+run (leg length)      = 6.700 mm
+
+angle = atan(0.850 / 6.700) ≈ 7.23°
+</code></pre>
+<p><strong>Jig-spec's clear-gap reading</strong> (per the spring-forming jig specification's
+<code>bridge_virtual_span</code>/<code>foot_clear_gap</code> interpretation — foot spacing taken
+as a clear gap between wire surfaces, so the wire diameter is added back in
+for center-to-center spacing, and the run is reduced by one wire diameter):</p>
+<pre><code>atan((6.60 − 2.10) / (2 × 19.50)) ≈ 6.58°   (3× figures, from the jig spec §3)
+</code></pre>
+<p>Both figures are <code>Derived</code>, not directly stated on the drawing; the ~0.6°
+spread between them is a direct consequence of the same unresolved
+base/foot-spacing datum question noted above (centerline vs. clear gap),
+not a new source of uncertainty. Use whichever the jig implementation
+adopts as its <code>bridge_inside_r</code>/inclination convention, and note explicitly
+which one a formed prototype was targeted against before comparing it back
+to caliper readings.</p>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Non-toleranced linear dimensions</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">retained as ±50 µm in the working table</td>
+<td>Confirmed original; project convention at 3×</td>
+</tr>
+<tr>
+<td>Non-toleranced angular dimensions</td>
+<td style="text-align: right;">not stated on this sheet</td>
+<td style="text-align: right;">not applicable</td>
+<td>Confirmed original (blank)</td>
+</tr>
+<tr>
+<td>Runout / lateral runout (controlled and uncontrolled)</td>
+<td style="text-align: right;">not stated on this sheet</td>
+<td style="text-align: right;">not applicable</td>
+<td>Confirmed original (blank) — not applicable to a wire-form part</td>
+</tr>
+<tr>
+<td>Surface finish</td>
+<td style="text-align: right;">not stated on this sheet</td>
+<td style="text-align: right;">not applicable</td>
+<td>Confirmed original (blank)</td>
+</tr>
+<tr>
+<td>Surface/heat treatment</td>
+<td style="text-align: right;">not stated on this sheet</td>
+<td style="text-align: right;">not applicable</td>
+<td>Confirmed original (blank)</td>
+</tr>
+<tr>
+<td>Standard edge-break note</td>
+<td style="text-align: right;">edges deburred, broken ~0.1 mm, unless otherwise specified</td>
+<td style="text-align: right;">scaling convention unresolved (does not clearly apply to Ø0.2 mm wire)</td>
+<td>Confirmed original</td>
+</tr>
+<tr>
+<td>Material / stock</td>
+<td style="text-align: right;">non-rusting spring steel wire (<code>nichtr. Fed St Dr</code>), Ø0.2 mm</td>
+<td style="text-align: right;">material designation does not scale; a 3× replica needs its own wire selection sized to the Ø0.6 mm target diameter above</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Quantity per machine</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">assembly quantity does not scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Type / Group</td>
+<td style="text-align: right;">Type I; Maschinenkörper (machine body)</td>
+<td style="text-align: right;">classification does not scale</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<h2>Revision history</h2>
+<ul>
+<li><code>10.007-2</code> (superseded) → <code>10.007-3</code> (current): Index 2→3, change no. 135,
+  26 Oct 1950. Drawn 23 May 1950; the sheet's own Index 1→2 change (no. 187)
+  is dated the same day, i.e. Index 2 was the as-drawn release and Index 3 is
+  a later administrative/index change rather than a geometry revision (no
+  revision note describes a dimensional change, unlike <code>10.041</code>'s Änd. Nr.
+  274). Confirmed from the title block; the nature of the Index-3 change
+  itself is <code>Unverified</code> beyond what the sparse revision-table entry states.</li>
+</ul>
+<h2>Assembly relevance</h2>
+<p>The title block associates <code>10.007</code> with <strong>10.234 Base assembly, stage III</strong>
+(qty 1/machine per its own <code>Kompl. Nr.</code> callout), matching the independently
+confirmed <a href="../where-used.html">Where-Used.md</a> entry (single leader, p241). This
+is a direct assembly callout, not an inferred stack-up. <code>10.007</code> has no
+child components — it is a raw formed-wire part.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.234-1 Base Assembly, Stage III — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10234.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.234-1 Base Assembly, Stage III — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.234</code>, <em>Grundkörper Stufe III</em> (base assembly, stage III), current drawing
+  <code>10.234-1</code>, <code>Ersatz für 10.234</code>. Identity agrees with <span class="ref">Drawing-Index.md</span> and
+  the title block on drawing-set/catalog page 241
+  (<a href="../viewer.html?page=241&status=All&section=All">viewer page 241</a>). Landscape sheet,
+  scale <code>3:1</code> as read (<strong>Unverified</strong>, small print); drawn 15.3.50; change no. 243 (30.8.50,
+  <em>Nummer in Index 1 geändert</em>). Read at 300 dpi on 2026-09-24.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.210</code> (the complete machine, top level); group
+  <code>Kompl. Rechenmaschine</code> (complete calculating machine); 1 per machine (<code>10.210</code> sheet 11).</li>
+<li><strong>Assembly fields:</strong> general linear tolerance <code>—</code>; angular <code>—</code>; no runout or finish fields legible
+  at this scan quality. Type I. No fit table and no printed dimensions.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; child quantities <strong>Confirmed</strong> from own sheets and BOM
+  sheets; arithmetic <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3× values are geometric
+  references, not factory specifications.</li>
+</ul>
+<blockquote>
+<p><strong>No dimensions, eighteen leaders, and quantities that a leader count gets wrong.</strong> One leader
+often stands for several pieces. Eight rows in the earlier where-used record were set to 1 from
+a leader and are corrected below.</p>
+</blockquote>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Any dimension</td>
+<td>none</td>
+<td>Confirmed absent</td>
+</tr>
+<tr>
+<td>Selective-fit note</td>
+<td><code>Achtung! 10.240 Pos. 1 u. 10.135 Pos. 1 in Grundkörper mit Befestigungssäulen 10.064 Pos. 1 oder 2 (1 oder 2 Rillen) montieren. 10.240 Pos. 2 u. 10.135 Pos. 2 … Pos. 3 oder 4 (3 oder 4 Rillen) montieren.</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Nameplate</td>
+<td><code>"CURTA"</code> engraved on the housing</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Section / views</td>
+<td><code>Schnitt A÷A</code>; <code>Ansicht in Pfeilrichtung! (Abschlußscheibe weg)</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General tolerance, group</td>
+<td><code>—</code>; <code>Kompl. Rechenmaschine</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Fit table</td>
+<td>none</td>
+<td>Confirmed absent</td>
+</tr>
+</tbody>
+</table>
+<p>No ISO fit is assigned to any interface on this sheet.
+<a href="https://www.iso.org/standard/45975.html">ISO 286-1</a> defines the fit system and
+<a href="https://www.iso.org/obp/ui/#iso:std:54915:en">ISO 286-2</a> tabulates deviations.</p>
+<h2>Component callouts and factory count</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th style="text-align: right;">Per assembly</th>
+<th>Evidence</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.233</code></td>
+<td>Base assembly, stage II</td>
+<td style="text-align: right;">1</td>
+<td><code>Kompl. Nr.</code> p240; roll-up sheet 11</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.215</code></td>
+<td>Complete housing</td>
+<td style="text-align: right;">1</td>
+<td>roll-up sheets 10 and 11; own <code>Kompl. Nr.</code> hand-corrected 10.210 → 234</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.224</code></td>
+<td>Complete locking pawl</td>
+<td style="text-align: right;">1</td>
+<td>roll-up sheet 11; own sheet p229</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.240</code></td>
+<td>Complete setting knob</td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td>own sheet p248 <code>Stück p.Masch. 8</code>, <code>Kompl. Nr. 10.234</code>; roll-up sheet 11 total 8</td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>10.005</code></td>
+<td>Tens-carry slider, result side</td>
+<td style="text-align: right;">10</td>
+<td>own sheet <code>Stück 10</code>, sole parent</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.006</code></td>
+<td>Tens-carry slider, quotient side</td>
+<td style="text-align: right;">5</td>
+<td>own sheet <code>Stück 5</code>, sole parent</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.007</code></td>
+<td>Tens-carry spring</td>
+<td style="text-align: right;">15</td>
+<td>own sheet <code>Stück p.Masch. 15</code> (10 + 5)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.018</code></td>
+<td>Carry-slider bearing</td>
+<td style="text-align: right;">15</td>
+<td>own sheet <code>Stück p.Masch. 15</code> (10 + 5)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.028</code></td>
+<td>End washer (<em>Abschlußscheibe</em>)</td>
+<td style="text-align: right;">1</td>
+<td>BOM sheet 2 <code>Stück 1</code>; own sheet <code>Kompl. Nr. 10.234</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.058</code></td>
+<td>Locking spring</td>
+<td style="text-align: right;">1</td>
+<td>own sheet <code>Stück p.Masch. 1</code>; BOM sheet 3</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.059</code></td>
+<td>Adjusting screw</td>
+<td style="text-align: right;">1</td>
+<td>BOM sheet 3 <code>Stück 1</code>; own sheet lists variants b ×1, a ×4</td>
+<td>Confirmed per BOM; <strong>question open</strong> (234-4)</td>
+</tr>
+<tr>
+<td><code>10.074</code></td>
+<td>Countersunk screw</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td>BOM sheet 4 <code>Stück 3</code>; own sheet variant a ×3</td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>10.085</code></td>
+<td>Sleeve (<em>Manschette</em>)</td>
+<td style="text-align: right;">1</td>
+<td>BOM sheet 5 <code>Stück 1</code>; own sheet <code>Kompl. Nr. 10.234</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.135</code></td>
+<td>Bearing pin (<em>Lagerbolzen</em>)</td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td>own sheet p170 <code>Stück p.Masch. 8</code>; BOM sheet 7 <code>8</code></td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>10.136</code></td>
+<td>Retaining plate (<em>Halteplatte</em>)</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td>own sheet p171 <code>Stück p.Masch. 2</code>; BOM sheet 7 <code>2</code></td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>VSM 12124</code> M1.4×5</td>
+<td>Cylinder-head screw</td>
+<td style="text-align: right;"><strong>15</strong></td>
+<td>BOM sheet 9 <code>15</code>, remark for the tens-carry sliders; 10 + 5 sliders, one screw each (<strong>Derived</strong>)</td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>VSM 12142</code> M2×18/6</td>
+<td>Countersunk screw</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td>BOM sheet 9 <code>2</code>, remark <em>Abschlußscheibe</em></td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+<tr>
+<td><code>VSM 12124</code> M1.4×3</td>
+<td>Cylinder-head screw</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td>BOM sheet 9 <code>7</code>, remark retaining plate and step drum; 10.213 takes 3, leaving 4 (<strong>Derived</strong>)</td>
+<td>Confirmed (<strong>was 1</strong>)</td>
+</tr>
+</tbody>
+</table>
+<h2>Inherited component dimensions and interfaces</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Inherited dimension or control</th>
+<th>Relevance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.059</code>, p78</td>
+<td>fit-table entry <code>2.5 e9</code>, <code>−0.014/−0.039</code> mm; variant table <code>b 1× 2.5 f8</code>, <code>a 4× 2.5 h8</code>; brass Ms 58 Pb Ø5; marked <em>Diese Maße werden bei Abnahme besonders kontrolliert</em></td>
+<td>The adjusting screw</td>
+</tr>
+<tr>
+<td><code>10.135</code>, p170</td>
+<td>free-cutting brass Ms 58 Mn Ø2.5; runout 20 µm; grades by position (pos. 1, 2)</td>
+<td>The bearing pin</td>
+</tr>
+<tr>
+<td><code>10.074</code>, p97</td>
+<td>brass Ms 58; variant a ×3 <code>Maß 3 auf 2.5</code>; Type I, IIa, IIb</td>
+<td>The countersunk screw</td>
+</tr>
+<tr>
+<td><code>10.005</code>, <code>10.006</code>, p8, p11</td>
+<td>sliders ×10 and ×5; drawn 25.8.1950</td>
+<td>The carry sliders</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Checks (Derived).</strong> <code>10.005</code> ×10 + <code>10.006</code> ×5 = 15 = <code>10.007</code> ×15 = <code>10.018</code> ×15 = the 15 M1.4×5
+screws on BOM sheet 9, so every slider has one spring, one bearing and one screw. The 8 setting
+knobs <code>10.240</code> match the 8 bearing pins <code>10.135</code>, and each knob carries one Ø2 ball, which
+completes the ball total (17 + 8 + 1 = 26, BOM sheet 9). <code>Ø2.5 e9</code> at ≤3 mm: IT9 = 25 µm,
+<code>es = −14</code> ⇒ <code>−14/−39</code>, agreeing with the sheet.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<p>None can be made: the assembly prints no dimensions.</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Adjusting screw 2.5 e9</td>
+<td><code>−14/−39</code></td>
+<td>Ø7.5</td>
+<td><code>−42/−117</code></td>
+<td>&gt;6–10 mm: IT9 = 36, e es = −25 ⇒ <code>−25/−61</code></td>
+</tr>
+<tr>
+<td>Selective-fit grading (posts, knobs, pins)</td>
+<td>grades by 1/100 mm</td>
+<td>—</td>
+<td>—</td>
+<td>a 3× design needs a decision on whether to keep grading</td>
+</tr>
+<tr>
+<td>Anything else on <code>10.234-1</code></td>
+<td>none</td>
+<td>nothing to scale</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, recalculated. The e deviation is recalled from ISO 286-1 and should be checked. A 3×
+table is not a factory specification. See the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong><code>10.059</code> quantity (<code>Unverified</code>).</strong> BOM sheet 3 says 1; the part's own sheet lists variants
+   b ×1 and a ×4.</li>
+<li><strong>The scale <code>3:1</code> (<code>Unverified</code>).</strong></li>
+<li><strong>The marking <code>SY</code> (<code>Unverified</code>).</strong></li>
+<li><strong>Grade limits for the selective fit</strong> are on the <code>10.240</code>, <code>10.135</code> and <code>10.064</code> sheets.</li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.210</code> complete machine (top-level parts list), 1 per machine</td>
+<td><code>Confirmed</code>: <code>Kompl. Nr.</code> on this sheet; roll-up sheet 11</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>see the table above</td>
+<td><code>Confirmed</code>; <code>10.059</code> question open</td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p241_10234-1.webp">drawing 10.234-1</a>, page 241.</p>
+</main>
+</body>
+</html>

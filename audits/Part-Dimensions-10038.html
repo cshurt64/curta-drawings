@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.038-3 Drive Wheel I — dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10038.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.038-3 Drive Wheel I — dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.038</code>, <em>Schaltrad I</em> (Drive Wheel I), drawing revision <code>10.038-3</code></li>
+<li><strong>Primary source:</strong> original Contina engineering drawing, drawing-set PDF page
+  54 / <a href="../viewer.html?page=54&status=All&section=All">drawing-viewer page 54</a></li>
+<li><strong>Drawing values:</strong> <strong>Confirmed</strong> from the current drawing and title block</li>
+<li><strong>Calculated limits:</strong> <strong>Derived</strong> from the drawing's explicit micron deviations</li>
+<li><strong>3× values:</strong> <strong>Derived geometric references</strong>, not adopted fabrication
+  tolerances or factory specifications</li>
+</ul>
+<p>Unlike 10.017 and 10.041, this sheet does not assign ISO 286 letter/grade fits.
+Its tolerances are explicit micron deviations. The 3× table below multiplies
+both geometry and tolerance magnitudes by three so the result is mathematically
+unambiguous; the project still needs to decide which tolerances should instead
+be retained or replaced with manufacturing-process targets.</p>
+<h2>Original drawing dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">Nominal</th>
+<th style="text-align: right;">Drawing tolerance</th>
+<th style="text-align: right;">Deviations</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status and basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strip / finished wheel thickness</td>
+<td style="text-align: right;">0.500 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">−20/+20 µm</td>
+<td style="text-align: right;">0.480–0.520 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Bore fit diameter</td>
+<td style="text-align: right;">Ø2.300 mm</td>
+<td style="text-align: right;">mean deviation −38 µm, tolerance about mean ±7 µm</td>
+<td style="text-align: right;">−45/−31 µm</td>
+<td style="text-align: right;">Ø2.255–2.269 mm</td>
+<td>Confirmed notation; Derived limits</td>
+</tr>
+<tr>
+<td>Inner reference diameter</td>
+<td style="text-align: right;">Ø2.800 mm</td>
+<td style="text-align: right;">+0/−100 µm</td>
+<td style="text-align: right;">−100/+0 µm</td>
+<td style="text-align: right;">Ø2.700–2.800 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Tooth-root reference diameter</td>
+<td style="text-align: right;">Ø3.300 mm</td>
+<td style="text-align: right;">±40 µm</td>
+<td style="text-align: right;">−40/+40 µm</td>
+<td style="text-align: right;">Ø3.260–3.340 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Outside tooth envelope</td>
+<td style="text-align: right;">Ø4.400 mm</td>
+<td style="text-align: right;">+50/0 µm</td>
+<td style="text-align: right;">0/+50 µm</td>
+<td style="text-align: right;">Ø4.400–4.450 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Keying-lug width/location dimension</td>
+<td style="text-align: right;">0.611 mm</td>
+<td style="text-align: right;">±10 µm</td>
+<td style="text-align: right;">−10/+10 µm</td>
+<td style="text-align: right;">0.601–0.621 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Lug/profile construction dimension</td>
+<td style="text-align: right;">0.750 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">−20/+20 µm</td>
+<td style="text-align: right;">0.730–0.770 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Root-relief construction dimension</td>
+<td style="text-align: right;">0.200 mm</td>
+<td style="text-align: right;">±20 µm</td>
+<td style="text-align: right;">−20/+20 µm</td>
+<td style="text-align: right;">0.180–0.220 mm</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Construction offset</td>
+<td style="text-align: right;">0.400 mm</td>
+<td style="text-align: right;">general ±50 µm</td>
+<td style="text-align: right;">−50/+50 µm</td>
+<td style="text-align: right;">0.350–0.450 mm</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<p>The Ø2.3 entry uses the title block's fit notation: a −38 µm mean deviation
+with ±7 µm tolerance about that displaced center, producing deviations of
+−45/−31 µm rather than a symmetric tolerance about nominal.</p>
+<h2>Direct geometric 3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align: right;">3× nominal</th>
+<th style="text-align: right;">Geometrically scaled tolerance</th>
+<th style="text-align: right;">Resulting limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strip / finished wheel thickness</td>
+<td style="text-align: right;">1.500 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">1.440–1.560 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Bore fit diameter</td>
+<td style="text-align: right;">Ø6.900 mm</td>
+<td style="text-align: right;">deviations −135/−93 µm</td>
+<td style="text-align: right;">Ø6.765–6.807 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Inner reference diameter</td>
+<td style="text-align: right;">Ø8.400 mm</td>
+<td style="text-align: right;">+0/−300 µm</td>
+<td style="text-align: right;">Ø8.100–8.400 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Tooth-root reference diameter</td>
+<td style="text-align: right;">Ø9.900 mm</td>
+<td style="text-align: right;">±120 µm</td>
+<td style="text-align: right;">Ø9.780–10.020 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Outside tooth envelope</td>
+<td style="text-align: right;">Ø13.200 mm</td>
+<td style="text-align: right;">+150/0 µm</td>
+<td style="text-align: right;">Ø13.200–13.350 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Keying-lug width/location dimension</td>
+<td style="text-align: right;">1.833 mm</td>
+<td style="text-align: right;">±30 µm</td>
+<td style="text-align: right;">1.803–1.863 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Lug/profile construction dimension</td>
+<td style="text-align: right;">2.250 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">2.190–2.310 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Root-relief construction dimension</td>
+<td style="text-align: right;">0.600 mm</td>
+<td style="text-align: right;">±60 µm</td>
+<td style="text-align: right;">0.540–0.660 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+<tr>
+<td>Construction offset</td>
+<td style="text-align: right;">1.200 mm</td>
+<td style="text-align: right;">±150 µm</td>
+<td style="text-align: right;">1.050–1.350 mm</td>
+<td>Derived geometric reference</td>
+</tr>
+</tbody>
+</table>
+<p>The 1.500 mm thickness is therefore the correct exact 3× nominal. Its
+mathematically scaled tolerance is ±0.060 mm; retaining the original ±0.020 mm
+would be a separate, tighter project choice rather than a consequence of scale.</p>
+<h2>Other drawing controls</h2>
+<table>
+<thead>
+<tr>
+<th>Drawing item</th>
+<th style="text-align: right;">Factory requirement</th>
+<th style="text-align: right;">3× interpretation</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root-relief radius</td>
+<td style="text-align: right;">max 0.10 mm</td>
+<td style="text-align: right;">max 0.30 mm by geometric scale</td>
+<td>Confirmed original; Derived scaled geometry</td>
+</tr>
+<tr>
+<td>Construction angle</td>
+<td style="text-align: right;">90° ±10′</td>
+<td style="text-align: right;">unchanged by geometric scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Internal profile angle</td>
+<td style="text-align: right;">72°, general angular tolerance ±20′</td>
+<td style="text-align: right;">unchanged by geometric scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Lug-to-each-tooth profile orientation</td>
+<td style="text-align: right;">maximum deviation ±30′</td>
+<td style="text-align: right;">unchanged by geometric scale</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Non-toleranced linear dimensions</td>
+<td style="text-align: right;">±50 µm</td>
+<td style="text-align: right;">±150 µm only under direct geometric scaling</td>
+<td>Confirmed original; Derived comparison</td>
+</tr>
+<tr>
+<td>Runout / lateral runout</td>
+<td style="text-align: right;">max 20 µm</td>
+<td style="text-align: right;">max 60 µm only under direct geometric scaling</td>
+<td>Confirmed original; Derived comparison</td>
+</tr>
+<tr>
+<td>Uncontrolled runout / lateral runout</td>
+<td style="text-align: right;">max 50 µm</td>
+<td style="text-align: right;">max 150 µm only under direct geometric scaling</td>
+<td>Confirmed original; Derived comparison</td>
+</tr>
+<tr>
+<td>Matched finishing</td>
+<td style="text-align: right;">tooth curve, bore and keying lug refitted together; indicated faces flat</td>
+<td style="text-align: right;">process requirement remains applicable</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Edge condition</td>
+<td style="text-align: right;">punching burr removed; unspecified edges deburred and broken to about 0.1 mm</td>
+<td style="text-align: right;">manufacturing treatment; do not scale automatically</td>
+<td>Confirmed original</td>
+</tr>
+</tbody>
+</table>
+<p>The drawing specifies 20 pieces per machine. It calls for high-quality
+hardenable 0.5 ±0.020 mm strip steel, hardened to Brinell 230–240.</p>
+<h2>Assembly relevance</h2>
+<p>The title block lists complete assemblies 10.217, 10.218, 10.219 and 10.230.
+In those assemblies, wheel thickness contributes to the axial stack, the bore
+fit controls the sleeve interface, and the tooth/root envelope controls drive
+engagement. Those are inherited component dimensions, not direct assembly
+dimensions.</p>
+</main>
+</body>
+</html>

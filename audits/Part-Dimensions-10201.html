@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.201-4 Counter, Stage II — assembly dimensional audit and 3× reference</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10201.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.201-4 Counter, Stage II — assembly dimensional audit and 3× reference</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Assembly:</strong> <code>10.201</code>, <em>Zählwerk Stufe II</em> (counter, stage II), current drawing
+  <code>10.201-4</code>, <code>Ersatz für 10.201-3</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog
+  page 191 (<a href="../viewer.html?page=191&status=All&section=All">viewer page 191</a>).
+  Scale 5:1. Drawn 5.4.50 (initials as read <code>hkl.</code>, <code>Unverified</code>); change entry
+  <em>Index 3 in 4 geändert</em>, change no. 244, 30.8.50. Read at 300–600 dpi on
+  2026-09-23.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.210</code> (the complete machine); <code>Stückzahl 1</code>
+  and one per machine.</li>
+<li><strong>Views:</strong> a section (drawn turned through 90°, as printed) and a plan view of the
+  ring of digit windows and radial arms; no dimension is printed on either.</li>
+<li><strong>Stamp:</strong> <code>Abmasse in μ = 1/1000 mm</code> — present, but the sheet prints no
+  dimension for it to apply to.</li>
+<li><strong>Assembly fields:</strong> general linear tolerance <code>— mm</code> (a dash with the unit written
+  after it, the same oddity as on <code>10.243-1</code>); general angular tolerance <code>—</code>;
+  radial runout <code>—</code>, <strong>side runout 20 µ</strong>; unmarked runout <code>—</code>; material <code>—</code>; surface
+  finish <code>—</code>; surface treatment <code>—</code>; heat treatment <code>—</code>. Type I, group
+  <code>Kompl. Rechenmaschine</code> (complete calculating machine).</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; child-sheet dimensions <strong>Confirmed</strong> at
+  their stated revisions; arithmetic and ISO recalculation <strong>Derived</strong>; unresolved
+  readings <strong>Unverified</strong>; readings resting on a judgment <strong>Inferred</strong>. 3× values
+  are geometric references, not factory specifications.</li>
+</ul>
+<blockquote>
+<p><strong>This sheet dimensions nothing on the drawing itself.</strong> The only numbers are in
+the title-block fit table, the <code>20 µ</code> side runout, and a small <code>Ø1 S7</code> note beside
+the <code>10.151</code> pin in the section. Everything geometric comes from the child sheets,
+and from the counter assembly <a href="Part-Dimensions-10243.html"><code>10.243</code></a> inside it.</p>
+</blockquote>
+<h2>Direct assembly callouts</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sheet scale; <code>Abmasse in μ</code> stamp</td>
+<td>5:1; present</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Note beside the section</td>
+<td><code>Stellung von 10.229 zu 10.243 markieren</code> (mark the position of <code>10.229</code> relative to <code>10.243</code>)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Position numbers along the section</td>
+<td><code>2</code>, <code>3</code>, <code>4</code>, <code>5</code></td>
+<td>Confirmed marks; what they number is <strong>Unverified</strong></td>
+</tr>
+<tr>
+<td>Hole note beside the <code>10.151</code> pin</td>
+<td><code>Ø1 – S7</code></td>
+<td>Confirmed as read (rotated small print)</td>
+</tr>
+<tr>
+<td>Fit-table entry (<code>Paßmaß</code> / <code>Abmaß in μ</code>)</td>
+<td><code>1-S7  −13 / −22</code></td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Fit-table entry</td>
+<td><code>10-H7  +15 / 0</code></td>
+<td>Confirmed; <strong>no matching callout is printed on the view</strong> (Unverified)</td>
+</tr>
+<tr>
+<td>Side runout</td>
+<td>20 µ</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>General linear tolerance</td>
+<td><code>— mm</code></td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>General angular tolerance, radial and unmarked runout, finish, treatment, heat treatment, material</td>
+<td>all <code>—</code></td>
+<td>Confirmed blank</td>
+</tr>
+<tr>
+<td>Special-inspection box</td>
+<td><code>Diese Maße werden bei Abnahme besonders kontrolliert</code></td>
+<td>Confirmed text; which dimensions Unverified</td>
+</tr>
+</tbody>
+</table>
+<h3>The two fit-table entries (ISO 286-1 system, ISO 286-2 deviations) — recalculated</h3>
+<ul>
+<li><strong><code>10 H7</code>.</strong> 10 mm is the upper boundary of the <strong>6–10 mm</strong> step, so it belongs
+  to that step: IT7 = <strong>15 µm</strong>, <code>EI = 0</code>, zone <em>above</em> nominal ⇒ <strong>Ø10.000–10.015</strong>.
+  This matches the sheet's <code>+15/0</code> exactly (<strong>Derived</strong>, matches).</li>
+<li><strong><code>1 S7</code>.</strong> 1 mm is in the <strong>up to 3 mm</strong> step: IT7 = 10 µm and the ISO
+  fundamental deviation for <code>S</code> gives <code>ES = −14</code>, <code>EI = −24</code> ⇒ <strong>Ø0.976–0.986</strong>.
+  The sheet prints <strong>−13 / −22</strong> (Ø0.978–0.987) — 1–2 µm shifted, the same
+  sub-3 mm older-table pattern recorded in <span class="ref">Machine-Facts.md</span> §3
+  (<strong>Derived</strong>, differs by 1–2 µm).</li>
+</ul>
+<p>Neither entry has a callout on the printed view except the <code>Ø1 S7</code> note.</p>
+<h2>Component callouts and factory count</h2>
+<p>Nine callouts: eight numbered parts and one standard part, all ×1 except the balls.
+Each child's own sheet says <code>Stück p.Masch. 1</code> and names <code>10.201</code> in <code>Kompl. Nr.</code>
+except <code>10.144</code>, whose <code>Kompl. Nr.</code> was first <code>10.226</code>, struck out, and replaced
+by <code>201</code>; the two roll-up assemblies are sourced from the <code>10.210</code> roll-up.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>English name</th>
+<th style="text-align: right;">Per assembly</th>
+<th>Evidence</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.229</code></td>
+<td>Complete counter sleeve (<em>Kompl. Zählwerkshülse</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader p191; own sheet (p236) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; <code>10.210</code> sheet 11 roll-up (p213) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.098</code></td>
+<td>Shim washer, small (<em>Beilagscheibe</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet <code>10.098-1</code> (p125) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; BOM sheet 5 (p207) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.153</code></td>
+<td>Compensating ring (<em>Ausgleichring</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet (p188) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; BOM sheet 8 (p210) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.004</code></td>
+<td>Spring star (<em>Federstern</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet <code>10.004-2</code> (p5) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; BOM sheet 1 (p201) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.243</code></td>
+<td>Counter, stage I (<em>Zählwerk Stufe I</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; <code>10.210</code> sheet 12 roll-up (p214) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.144</code></td>
+<td>Counter locating ring (<em>Zählwerksfixierring</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet (p179) <code>Stück 1</code>, <code>Kompl. Nr. 10.226</code>→<code>201</code> (hand-corrected); BOM sheet 7 (p209) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.026</code></td>
+<td>Counter-sleeve nut (<em>Zählwerkshülsenmutter</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet (p39) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; BOM sheet 2 (p202) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>10.151</code></td>
+<td>Cylindrical pin 1 × 3 (<em>Zylindrischer Stift</em>)</td>
+<td style="text-align: right;">1</td>
+<td>leader; own sheet (p185) <code>Stück 1</code>, <code>Kompl. Nr. 10.201</code>; BOM sheet 8 (p210) 1</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td><code>Ø2 ball</code></td>
+<td>Steel ball, 2 mm (<code>Kugel 2mm ⌀</code>)</td>
+<td style="text-align: right;">17</td>
+<td>one label at one arm station; 17 arm stations counted on the plan view</td>
+<td><strong>Inferred</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>The ball count is inferred, and the allocation does not close</h3>
+<p>The sheet labels one ball. Counting radial arms on the plan view gives 17, matching
+the 17 digit windows. BOM sheet 9 (p211) lists <code>Kugel Ø 2</code> at <strong>26</strong> per machine
+with no remark. The recorded parents are <code>10.201</code> ×17, <code>10.240</code> ×1 and <code>10.241</code> ×1
+= 19, leaving <strong>7</strong> of the 26 with no recorded parent (<strong>Derived</strong>). Either other
+assemblies use Ø2 balls that have not been read yet, or the 17 here is wrong. That is
+<code>Unverified</code>, and is the one quantity in this assembly that is not settled.</p>
+<h2>Inherited component dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Child</th>
+<th>Inherited dimensions and controls</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10.026</code> (p39)</td>
+<td>Ø14 outside, Ø12.5, thread <strong>M11 × 0.5</strong>, 4 and 1.5 high, general ±0.1 mm, runout 0.02 mm, Decoltal, colourless hard-anodized</td>
+<td>Counter-sleeve nut</td>
+</tr>
+<tr>
+<td><code>10.098-1</code> (p125)</td>
+<td>Ø16 outside, Ø14, Ø12.2; 0.5 thick (Anticorodal B 0.5); two Ø1 holes; general ±100 µ</td>
+<td>Small shim</td>
+</tr>
+<tr>
+<td><code>10.153</code> (p188)</td>
+<td>Ø16 outside, Ø14, Ø12.2; thickness <code>a</code> graded 0.06 / 0.08 / 0.10 / 0.12 / 0.14 mm; Sandvik 20W sheet</td>
+<td>Compensating (grading) ring</td>
+</tr>
+<tr>
+<td><code>10.144</code> (p179)</td>
+<td>Ø20.1 +50/−20 outside; 1 ±20 thick; slots <strong>1.8 H7</strong> and <strong>2 H7</strong> (<code>+9/0</code>); 5 slots plus 6 re-finished; Brinell 230–240</td>
+<td>Locating ring</td>
+</tr>
+<tr>
+<td><code>10.229</code> (p236)</td>
+<td><code>8-N8</code> (<code>−3/−25</code>); children <code>10.025</code> and <code>10.147</code></td>
+<td>Counter sleeve</td>
+</tr>
+<tr>
+<td><code>10.151</code> (p185)</td>
+<td><strong>Ø1 h7</strong> (<code>0/−9</code>) × 3 long, stainless RRMD</td>
+<td>Pin</td>
+</tr>
+<tr>
+<td><code>10.004-2</code> (p5)</td>
+<td>strip 0.1 ±10 µ, Brinell 230–240; slot pitch angles 140°, 120°, 100°, 80°, 60°; slot width 1.5</td>
+<td>Spring star</td>
+</tr>
+</tbody>
+</table>
+<h3>Fit derived from those figures</h3>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ø1 S7 hole against the <code>10.151</code> pin Ø1 h7</td>
+<td>Sheet values: hole Ø0.978–0.987, pin Ø0.991–1.000 ⇒ <strong>interference 4 to 22 µm</strong>; ISO limits (S7 −14/−24, h7 0/−10) ⇒ 4 to 24 µm</td>
+<td>Derived; that this hole is the pin's seat is <strong>Inferred</strong> — the part carrying the hole is not identified</td>
+</tr>
+<tr>
+<td>Ø8 N8 counter sleeve</td>
+<td><code>−3/−25</code> ⇒ Ø7.975–7.997 (IT8 = 22 µm at 6–10 mm)</td>
+<td>Derived; the mating part is not read here</td>
+</tr>
+</tbody>
+</table>
+<p><code>S</code> and <code>N</code> are holes, <code>h</code> a shaft. No fit is specified <em>on this sheet</em> other than
+the <code>Ø1 S7</code> note; the rest are the children's.</p>
+<h2>Calculated and inferred stack-ups</h2>
+<p><strong>None can be made.</strong> The section shows the stack but prints no axial dimension, and
+the scan is reduced from the original sheet with no printed length to calibrate
+against. The number-roll axial stack and the window pitch are on the children and on
+<a href="Part-Dimensions-10243.html"><code>10.243-1</code></a>. A stack-up for this assembly would rest on
+scaled scan pixels, so none is recorded.</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pin hole Ø1 S7 / pin h7</td>
+<td>−13/−22 (sheet); −14/−24 (ISO) on 0/−10</td>
+<td>Ø3.000</td>
+<td>−39/−66 on 0/−30</td>
+<td>3 mm is the <strong>upper boundary of the up-to-3 mm step</strong>, so it stays in that step: S7 −14/−24 ⇒ Ø2.976–2.986; h7 0/−10 ⇒ Ø2.990–3.000. The fit is unchanged (interference 4–24 µm)</td>
+</tr>
+<tr>
+<td>Ø10 H7 (feature unidentified)</td>
+<td>+15/0</td>
+<td>Ø30.000</td>
+<td>+45/0</td>
+<td>30 mm is the upper boundary of the <strong>18–30 mm</strong> step: IT7 = 21 µm ⇒ Ø30.000–30.021</td>
+</tr>
+<tr>
+<td>Side runout</td>
+<td>20 µ</td>
+<td>60 µ</td>
+<td>—</td>
+<td>not adopted</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived</strong>, recalculated rather than taken from a table. The boundary cases are the
+interesting ones: both scaled diameters (3 and 30 mm) fall exactly on a size-step
+upper limit and therefore stay in the lower step. A 3× table is not a factory
+specification. See the project's tolerance strategy.</p>
+<h2>Open points</h2>
+<ol>
+<li><strong>The Ø2 ball quantity (<code>Inferred</code>, 7 unallocated).</strong> See above.</li>
+<li><strong><code>10-H7</code> with no callout (<code>Unverified</code>).</strong> The feature it dimensions is not
+   printed on the view; the counter-sleeve bore or a bore in <code>10.243</code> are candidates,
+   none checked.</li>
+<li><strong>Which part carries the Ø1 S7 hole (<code>Unverified</code>).</strong> <code>10.144</code> has Ø1 holes but
+   carries <code>H7</code> slots, not <code>S7</code>.</li>
+<li><strong>The position numbers <code>2</code>–<code>5</code> (<code>Unverified</code>).</strong></li>
+<li><strong><code>10.004</code> material (<code>Confirmed</code>, and a correction).</strong> <span class="ref">Machine-Facts.md</span>
+   §4 recorded <code>Phosphor bronze 0.14</code>; both the part's own sheet (<code>10.004-2</code>, p5) and
+   BOM sheet 1 (p201) read hardenable stainless band steel, 0.1 ±10 µ, Brinell 230–240.
+   Corrected there.</li>
+<li><strong>The <code>mm</code> after the dash (<code>Confirmed</code>, odd).</strong> The general linear tolerance prints
+   <code>— mm</code>; the sheet still carries an <code>Abmasse in μ</code> stamp.</li>
+</ol>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.210</code> complete machine, 1 per machine</td>
+<td><code>Confirmed</code>: <code>Kompl. Nr.</code> on this sheet; <code>Stückzahl 1</code></td>
+</tr>
+<tr>
+<td>Children</td>
+<td>eight numbered parts ×1; <code>Ø2 ball</code> ×17 (Inferred)</td>
+<td><code>Confirmed</code> / <code>Inferred</code> as tabled</td>
+</tr>
+</tbody>
+</table>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p191_10201-4.webp">drawing 10.201-4</a>, page 191.</p>
+</main>
+</body>
+</html>
