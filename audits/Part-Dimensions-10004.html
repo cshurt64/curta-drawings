@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.004-2 Spring Star — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10004.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.004-2 Spring Star — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.004</code>, <em>Federstern</em> (spring star), drawing <code>10.004-2</code>, current; <code>Ersatz für 10.004-1</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog page 5
+  (<a href="../viewer.html?page=5&status=All&section=All">viewer page 5</a>). Scale 5:1 (reference view <code>M 1:1</code>); stamped
+  <code>Abmasse in μ = 1/1000 mm</code>. Drawn 19.9.1950; change block: <code>Index 1 in 2 geändert</code>, change no. 159, 19.9.50.
+  Read at 300 dpi on 2026-09-26.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.201</code> (counter stage II); <code>Stück p.Masch. 1</code>, agreeing with the callout on p191 and
+  BOM sheet 1 (p201).</li>
+<li><strong>Material:</strong> <em>nichtr. härtb. Bandst.</em> (stainless, hardenable strip steel), 0.1 ±10 µm, Brinell 230–240 (as read; the word
+  is cut after <code>Bandst</code>). This agrees with <span class="ref">Machine-Facts.md</span> §4 and the BOM.</li>
+<li><strong>General tolerance:</strong> ±100 µm linear, ±30′ angular. <strong>Runout:</strong> none stated (dashes).</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3× values are
+  geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit cases</h2>
+<p>None. The sheet gives no ISO fit code and its fit table is empty. <code>12 +60/+10</code> and <code>0,9 ±30</code> are explicit deviations, not
+letter-grade fits, so no ISO 286 recalculation applies.</p>
+<h2>Direct dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Strip thickness (edge view)</td>
+<td>0,1 ±10</td>
+<td>0.090–0.110</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Overall diameter across the arm tips</td>
+<td>ø30</td>
+<td>29.9–30.1 (general ±100)</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Centre bore</td>
+<td>12 +60/+10 (no ø sign)</td>
+<td>12.010–12.060</td>
+<td>Confirmed callout; that it is a diameter is <strong>Derived</strong> (the circle scales to ≈ 12 mm at 5:1)</td>
+</tr>
+<tr>
+<td>Slot-root circle</td>
+<td>ø16</td>
+<td>15.9–16.1 (general)</td>
+<td>Confirmed callout; that it is the circle through the slot roots is <strong>Unverified</strong> (the dimension line ends on the root of one slot)</td>
+</tr>
+<tr>
+<td>Hole spacing</td>
+<td>14 ±50</td>
+<td>13.950–14.050</td>
+<td>Confirmed callout; that it spans the two hole centres is <strong>Unverified</strong> (both extension lines pass through the hole centres)</td>
+</tr>
+<tr>
+<td>Small hole diameter</td>
+<td>0,9 ±30</td>
+<td>0.870–0.930</td>
+<td>Confirmed (right-hand hole); the left-hand hole has no callout</td>
+</tr>
+<tr>
+<td>Arm width</td>
+<td>1,5</td>
+<td>1.4–1.6 (general)</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Arm tip radius</td>
+<td>r0,75</td>
+<td>0.65–0.85 (general)</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Arm angles</td>
+<td>20° through 200° (see below)</td>
+<td>±30′ (general)</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Hardness</td>
+<td>Brin. 230–240</td>
+<td>—</td>
+<td>Confirmed (as read)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arm angles.</strong> Printed at 20° steps below the horizontal centre line — 20°, 40°, 60°, 80°, 100°, 120°, 140°, 160°, 180°,
+200° — and at 30°, 50°, 70°, 90°, 110°, 130° above it. Read as angles from the right-hand horizontal arm, this places the
+arms at 0°, 30°, 50°, 70°, 90°, 110°, 130° upward, then the arm printed as 200° (equal to 160° the other way), 180° and eight
+more down to 20°: <strong>17 arms</strong> (a count of the drawn arms, <strong>Derived</strong>). That is the number of Ø2 balls <code>10.201</code> carries at its
+arm stations (17, BOM sheet 9 total 26), which is why the sheet is read as one arm per ball. The two 30° gaps (0°→30° and
+130°→160°, both measured upward) are the only places the 20° pitch is broken; the reason is not stated (<strong>Unverified</strong>).</p>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Mathematically scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thickness 0.1 ±10</td>
+<td>±10</td>
+<td>0.3 mm</td>
+<td>±30</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Overall ø30; slot-root ø16</td>
+<td>general ±100</td>
+<td>ø90; ø48</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Bore 12 +60/+10</td>
+<td>+60/+10</td>
+<td>ø36</td>
+<td>+180/+30</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Hole spacing 14 ±50; hole ø0.9 ±30</td>
+<td>±50; ±30</td>
+<td>42; ø2.7</td>
+<td>±150; ±90</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Arm width 1.5; tip r0.75</td>
+<td>general</td>
+<td>4.5; r2.25</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy. Two caution
+notes, both <strong>Derived</strong> engineering estimates and not tested: a spring's force does not scale with the geometry alone. For a
+bending arm of width <em>w</em>, thickness <em>t</em> and length <em>L</em>, stiffness goes as <em>w·t³/L³</em>, so geometrically tripling everything triples
+the force at the same relative deflection. And a 0.3 mm strip is not a 0.1 mm strip that has been made bigger: the material
+choice and hardness (230–240 Brinell here) must be re-derived for a 3× part rather than carried over.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.201</code> counter stage II, 1 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.201</code>; callout on p191; BOM sheet 1</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<ol>
+<li><strong>What the ø16 and 14 ±50 dimension lines terminate on (<code>Unverified</code>).</strong> The readings above follow the extension lines but
+   the sheet does not label the features.</li>
+<li><strong>The left-hand hole has no dimension (<code>Unverified</code>).</strong> It looks the same size as the dimensioned right-hand hole.</li>
+<li><strong>The 30° gaps (<code>Unverified</code>).</strong> Why the arm pattern departs from the 20° pitch twice, and how the two holes relate to it.</li>
+<li><strong>Hardness units and the cut-off word.</strong> <code>Brin. 230–240</code> is read as Brinell hardness; <code>Bandst</code> is presumed <code>Bandstahl</code> (<strong>Unverified</strong>).</li>
+</ol>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p005_10004-2.webp">drawing 10.004-2</a>, page 5.</p>
+</main>
+</body>
+</html>
