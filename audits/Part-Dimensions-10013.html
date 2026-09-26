@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.013-4 Crank — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10013.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.013-4 Crank — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.013</code>, <em>Kurbel</em> (crank), drawing <code>10.013-4</code>, current; <code>Ersatz für 10.013-2</code>. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog page 24
+  (<a href="../viewer.html?page=24&status=All&section=All">viewer page 24</a>). Scale printed <code>5:1</code> (reference view <code>M 1:1</code>); the scan is
+  a reduced copy of a larger sheet, so do not scale from the image. Stamped <code>Abmasse in μ = 1/1000 mm</code>. Drawn 15.6.1950; changes:
+  index 2 in 3 (no. 189, 15.6.50) and index 3 in 4 (no. 323, 1.12.1950). Read at 300 dpi on 2026-09-26.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.245</code> (complete crank); <code>Stück 1</code>, agreeing with the callout on p253 and BOM sheet 1
+  (p201).</li>
+<li><strong>Material:</strong> <em>Anticorodal B (Pressling)</em> (a hardenable aluminium alloy, supplied as a pressed blank); <em>poliert</em> (polished),
+  <em>schwarz eloxiert</em> (black anodized). No heat treatment.</li>
+<li><strong>General tolerance:</strong> ±100 µm linear; the pressed blank ±150 µm; angular ±1°. <strong>Runout:</strong> ±20 µm radial and side on marked
+  surfaces; dashes for unmarked. <strong>Finish:</strong> polished, ▽▽ and ▽▽▽.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3× values are
+  geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit cases</h2>
+<p>ISO 286-1 defines the system; ISO 286-2 tabulates the deviations.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Case</th>
+<th>Step</th>
+<th>IT / fundamental deviation</th>
+<th>ISO limits</th>
+<th>Sheet fit table</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hub bore</td>
+<td><code>3 N7</code></td>
+<td>over 1 through 3 (3 mm is the top of the step)</td>
+<td>IT7 = 10 µm; <code>ES = −4 µm</code> (<code>N</code>)</td>
+<td>2.986–2.996 mm (−14/−4)</td>
+<td>−4/−13</td>
+<td>Confirmed callout; the sheet's lower limit is 1 µm above ISO (<strong>Unverified</strong>)</td>
+</tr>
+</tbody>
+</table>
+<p>The sheet's zone is 9 µm wide, not 10. With <code>10.009</code>'s <code>3 H7</code> (<code>+9/0</code>) and <code>10.072</code>'s <code>3 h7</code> (<code>0/−9</code>), that makes three sheets
+where an IT7 at 3 mm is 9 µm wide, which points at the tolerance table the factory used, not at three separate slips. That is a
+reading, not a finding.</p>
+<h2>Direct dimensions</h2>
+<p>Values without a tolerance carry the general ±100 µm.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Distance between centres</td>
+<td>15</td>
+<td>14.9–15.1</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Hub diameters</td>
+<td>12; 13; 13.5</td>
+<td>Ø11.9–12.1; 12.9–13.1; 13.4–13.6</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Hub bore</td>
+<td>3 N7</td>
+<td>2.987–2.996 (sheet)</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Hub outer radius</td>
+<td>r6.75</td>
+<td>6.65–6.85</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Hub depths</td>
+<td>2; 3.7; 6.7; 9.5; 11.5</td>
+<td>general</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Pin boss</td>
+<td>~10.5 (approximate); 4; 1; 0.5; 0.5; 45°; 60° (two)</td>
+<td>general; ~10.5 has none</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Boss hole</td>
+<td>Ø2 0/−100; M1.7 left-hand thread</td>
+<td>1.900–2.000</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Arm</td>
+<td>6 wide at the base; r3 top; 5; 8°20′ taper</td>
+<td>general</td>
+<td>Confirmed callouts; the <code>5</code> is <strong>Unverified</strong></td>
+</tr>
+<tr>
+<td>Cross hole</td>
+<td>Ø1 ±50</td>
+<td>0.950–1.050</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bare-turned band</td>
+<td>2; "turned after anodizing, white"</td>
+<td>general</td>
+<td>Confirmed</td>
+</tr>
+</tbody>
+</table>
+<p>The cross hole is drilled through hub and axle together: <em>Mit Hauptachse 10.223 durchgebohrt und konisch ausgerieben</em>
+(with main axle <code>10.223</code>, drilled through and taper-reamed). So the hole is an assembly operation, not a stand-alone part
+dimension.</p>
+<h2>3× reference</h2>
+<p>The one ISO case is recalculated at the tripled basic size (9 mm is in "over 6 through 10": IT7 = 15 µm, <code>ES = −4 µm</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hub bore <code>3 N7</code></td>
+<td>−4/−13</td>
+<td>9 mm</td>
+<td>−12/−39</td>
+<td><code>9 N7</code>: 8.981–8.996 mm (−19/−4)</td>
+</tr>
+<tr>
+<td>Distance between centres 15</td>
+<td>±100</td>
+<td>45 mm</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Ø13.5; r6.75</td>
+<td>±100</td>
+<td>Ø40.5; r20.25</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Cross hole Ø1 ±50</td>
+<td>±50</td>
+<td>Ø3</td>
+<td>±150</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Thread M1.7 (left hand)</td>
+<td>—</td>
+<td>M5.1</td>
+<td>—</td>
+<td>not a standard size; a design decision</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy. The hub bore at 3×
+(Ø9) is the same "Ø9, H7-equivalent" main-axle interface already in Machine-Facts.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.245</code> complete crank, 1 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück 1</code>, <code>Kompl. Nr. 10.245</code>; callout p253; BOM sheet 1</td>
+</tr>
+<tr>
+<td>Mates with</td>
+<td><code>10.223</code> complete main axle (pin hole made in place)</td>
+<td><code>Confirmed</code> from the sheet's note</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<ol>
+<li><strong>The sheet's <code>3 N7</code> (<code>Unverified</code>).</strong> −4/−13 against ISO −4/−14; the same house-table pattern as <code>10.009</code> and <code>10.072</code>.</li>
+<li><strong>The <code>5</code> at the top of the arm (<code>Unverified</code>).</strong> Read as the boss radius or width; the sheet does not say which.</li>
+<li><strong><code>~10.5</code> (<code>Confirmed</code>, meaning approximate).</strong> The only dimension printed with a tilde and no tolerance.</li>
+<li><strong>A left-hand thread.</strong> <code>M1.7 links</code> is a left-hand M1.7; the mating screw is not on this sheet.</li>
+</ol>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p024_10013-4.webp">drawing 10.013-4</a>, page 24.</p>
+</main>
+</body>
+</html>
