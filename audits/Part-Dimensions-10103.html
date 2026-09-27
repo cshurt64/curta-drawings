@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.103 Shim Ring (Stepped) — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10103.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.103 Shim Ring (Stepped) — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.103</code>, <em>Beilagering</em> (shim ring — a stepped variant of <a href="Part-Dimensions-10102.html">10.102</a>, same title), drawing
+  <code>10.103</code>, current and the only issue (<code>Ersatz für</code> blank, no revision index printed). Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog page 130
+  (<a href="../viewer.html?page=130&status=All&section=All">viewer page 130</a>). Scale 5:1 (reference view <code>M1:1</code>); stamped
+  <code>Abmasse in μ = 1/1000 mm</code>. Drawn 3.5.1950; the change block is empty. Read at 300 dpi on 2026-09-27.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.206</code> (complete tens bell); <code>Stück 2</code>: two per machine, even though the parent sheet
+  draws only a single leader for this part — already reconciled in <span class="ref">Assembly-Links.csv</span> from the sheet's own
+  count and BOM sheet 5's independent 2/machine.</li>
+<li><strong>Material:</strong> <em>Anticorodalrohr B 19/1,5</em> (Anticorodal tube B, 19 mm outside by 1.5 mm wall). <strong>Surface treatment:</strong> <em>Eloxiert
+  /farblos</em> (anodized, colourless).</li>
+<li><strong>General tolerance:</strong> ±50 µm linear; angular a dash. <strong>Runout:</strong> 20 µm radial and side on marked surfaces; side runout 50 µm on
+  unmarked, radial not stated. <strong>Finish:</strong> ▽▽.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3× values are
+  geometric references, not factory specifications.</li>
+</ul>
+<h2>Compared with <code>10.102</code></h2>
+<p>Same outside diameter (Ø19) and bore fit (<code>Ø16 H9</code>) as <code>10.102</code>, but this ring is stepped: a 7 mm-wide inner recess 1 mm deep on one
+face, giving an overall thickness of 2 mm against <code>10.102</code>'s flat 1.1 mm. Two of these sit in the tens bell against <code>10.102</code>'s one.</p>
+<h2>ISO 286 fit cases</h2>
+<p>ISO 286-1 defines the system; ISO 286-2 tabulates the deviations. One case, over 10 through 18 mm.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Case</th>
+<th>IT / fundamental deviation</th>
+<th>ISO limits</th>
+<th>Sheet fit table</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore</td>
+<td><code>Ø16 H9</code></td>
+<td>IT9 = 43 µm; <code>EI = 0</code></td>
+<td>16.000–16.043 mm</td>
+<td>+43/0</td>
+<td>Confirmed; agrees</td>
+</tr>
+</tbody>
+</table>
+<h2>Direct dimensions</h2>
+<p>Values without a tolerance carry the general ±50 µm.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outside diameter</td>
+<td>19</td>
+<td>18.95–19.05</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Bore</td>
+<td>Ø16 H9</td>
+<td>16.000–16.043</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Overall thickness</td>
+<td>2 ±10</td>
+<td>1.990–2.010</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Inner-step width</td>
+<td>7</td>
+<td>6.95–7.05</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Inner-step depth</td>
+<td>1</td>
+<td>0.95–1.05</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<p>Derived: overall 2 mm minus the 1 mm step leaves 1 mm of full-thickness rim (<strong>Derived</strong>), matching <code>10.102</code>'s own 1.1 mm within
+general tolerance — consistent with the two rings sharing a common design family.</p>
+<h2>3× reference</h2>
+<p>The one ISO case is recalculated at the tripled basic size (48 mm is in "over 30 through 50": IT9 = 62 µm) — identical to <code>10.102</code>'s
+3× table.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore <code>Ø16 H9</code></td>
+<td>+43/0</td>
+<td>48 mm</td>
+<td>+129/0</td>
+<td><code>48 H9</code>: 48.000–48.062 mm</td>
+</tr>
+<tr>
+<td>Outside 19; thickness 2 ±10</td>
+<td>±50; ±10</td>
+<td>57; 6 mm</td>
+<td>±150; ±30</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Step width 7; depth 1</td>
+<td>±50</td>
+<td>21; 3 mm</td>
+<td>±150</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.206</code> complete tens bell, 2 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück 2</code>, <code>Kompl. Nr. 10.206</code>; single leader p197; BOM sheet 5 (already reconciled)</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<p>None outstanding beyond what is already noted in <code>Assembly-Links.csv</code> (single leader for two parts, already reconciled).</p>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p130_10103.webp">drawing 10.103</a>, page 130.</p>
+</main>
+</body>
+</html>
