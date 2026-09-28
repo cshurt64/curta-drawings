@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.111-4 Zero-Buffer Disc — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10111.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.111-4 Zero-Buffer Disc — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.111</code>, <em>Nullpufferscheibe</em> (zero-buffer disc), drawing <code>10.111-4</code>, current; <code>Ersatz für 10.111-3</code>. Identity
+  agrees with <span class="ref">Drawing-Index.md</span> and the title block on drawing-set/catalog page 138
+  (<a href="../viewer.html?page=138&status=All&section=All">viewer page 138</a>). Scale 5:1 (reference view <code>M1:1</code>, plus a
+  detail tooth-profile view at <code>M.20:1</code>); stamped <code>Abmasse in µ = 1/1000 mm</code>. Drawn 5.7.1950; change block records
+  <code>Index 3 in 4 geändert</code>, change 199 of 5.7.50. Read at 300 dpi on 2026-09-27.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.231</code> (complete bearing plate, <em>Kompl. Lagerplatte</em>); <code>Stück p.Masch. 1</code>, agreeing
+  with the sheet's own callout — already recorded in <span class="ref">Assembly-Links.csv</span> as <code>10.231,10.111,1</code>
+  (<code>Confirmed</code>). Per <span class="ref">Machine-Facts.md</span> §732, this disc is one of the parts making up the complete
+  zero-buffer <code>10.246</code>, itself inside <code>10.231</code>.</li>
+<li><strong>Material:</strong> <em>Decoltal Ø24</em> (an aluminum alloy, bar stock Ø24 mm). <strong>Surface treatment:</strong> <em>hart eloxiert / farblos</em>
+  (hard anodized, colorless).</li>
+<li><strong>General tolerance:</strong> ±100 µm linear, ±1° angular (a wider angular tolerance than the usual ±30′ seen on most other
+  sheets). <strong>Runout:</strong> 20 µm radial and side on marked surfaces; 50 µm on unmarked. <strong>Finish:</strong> ▽, with ▽▽▽ in brackets.
+  A note reads <em>Diese Maße werden bei Abnahme besonders kontrolliert</em> ("these dimensions are specially checked at
+  acceptance"); no per-feature mark distinguishes which — read as applying to the sheet's toleranced fits and angles
+  (<strong>Inferred</strong>).</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3× values
+  are geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit cases</h2>
+<p>ISO 286-1 defines the system; ISO 286-2 tabulates the deviations. One case, over 6 through 10 mm.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Case</th>
+<th>IT / fundamental deviation</th>
+<th>ISO limits</th>
+<th>Sheet fit table</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore</td>
+<td><code>Ø8 H8</code></td>
+<td>IT8 = 22 µm; <code>EI = 0</code></td>
+<td>8.000–8.022 mm</td>
+<td>+22/0</td>
+<td>Confirmed; agrees</td>
+</tr>
+</tbody>
+</table>
+<p>For <code>H</code>, <code>EI = 0</code> and the zone is above nominal.</p>
+<h2>Direct dimensions</h2>
+<p>Values without a tolerance carry the general ±100 µm linear / ±1° angular.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore</td>
+<td>Ø8 H8</td>
+<td>8.000–8.022</td>
+<td>Confirmed</td>
+</tr>
+<tr>
+<td>Disc diameter</td>
+<td>10 ±50</td>
+<td>9.950–10.050</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tooth-tip diameter</td>
+<td>Ø23</td>
+<td>22.900–23.100</td>
+<td>Confirmed callout (given in both the main view and the tooth-profile detail)</td>
+</tr>
+<tr>
+<td>Slot width</td>
+<td>1.1 +0.040/0</td>
+<td>1.100–1.140</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Slot-to-bore alignment</td>
+<td>"Umschlag des Schlitzes... zu Ø8-H8 max. 40 µ"</td>
+<td>max. 40 µm</td>
+<td>Confirmed note</td>
+</tr>
+<tr>
+<td>Slot angles</td>
+<td>19°, 15° (×2), 75°</td>
+<td>general ±1° unless noted</td>
+<td>Confirmed callouts</td>
+</tr>
+<tr>
+<td>Milled radius r3.5 position</td>
+<td>"Max. Abweichung der Einfräsung r3,5 zur Schlitzmitte"</td>
+<td>±30′</td>
+<td>Confirmed note</td>
+</tr>
+<tr>
+<td>Inner ring diameter</td>
+<td>6.2 ±50</td>
+<td>6.150–6.250</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Diagonal reference</td>
+<td>9.8 ±50</td>
+<td>9.750–9.850</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tooth pitch angle</td>
+<td>90°</td>
+<td>general ±1°</td>
+<td>Confirmed callout (detail view; 4 teeth around the rim)</td>
+</tr>
+<tr>
+<td>Tooth flank</td>
+<td>0.15 ±30</td>
+<td>0.120–0.180</td>
+<td>Confirmed callout (detail view)</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>4.7</td>
+<td>4.600–4.800</td>
+<td>Confirmed callout (appears twice, at two positions on the stepped hub)</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>3.2 −100/0</td>
+<td>3.100–3.200</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>1.7</td>
+<td>1.600–1.800</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>0.7 ±50</td>
+<td>0.650–0.750</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>0.4 ±50</td>
+<td>0.350–0.450</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Axial length</td>
+<td>0.8 +40/+10</td>
+<td>0.810–0.840</td>
+<td>Confirmed callout; unilateral zone entirely above nominal</td>
+</tr>
+<tr>
+<td>Diameter (×2)</td>
+<td>Ø10 ±200</td>
+<td>9.800–10.200</td>
+<td>Confirmed callouts, symmetric left/right on the hub</td>
+</tr>
+<tr>
+<td>Diameter</td>
+<td>Ø3.2 ±50</td>
+<td>3.150–3.250</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Diameter</td>
+<td>Ø19 ±300</td>
+<td>18.700–19.300</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Diameter</td>
+<td>Ø22</td>
+<td>21.900–22.100</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>5.2 +50/−100</td>
+<td>5.100–5.250</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Overall length</td>
+<td>10</td>
+<td>9.900–10.100</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<h2>3× reference</h2>
+<p>The ISO case is recalculated at the tripled basic size (8 mm × 3 = 24 mm is the top of "over 18 through 30 mm": IT8 = 33 µm).</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bore <code>Ø8 H8</code></td>
+<td>EI 0/ES+22</td>
+<td>Ø24 mm</td>
+<td>+66/0</td>
+<td><code>Ø24 H8</code>: 24.000–24.033 mm</td>
+</tr>
+<tr>
+<td>Disc Ø10; tooth-tip Ø23</td>
+<td>±50; ±100</td>
+<td>Ø30; Ø69 mm</td>
+<td>±150; ±300</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.231</code> complete bearing plate, 1 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.231</code>; already in Assembly-Links.csv</td>
+</tr>
+<tr>
+<td>Role</td>
+<td>Part of the complete zero-buffer <code>10.246</code>, itself inside <code>10.231</code></td>
+<td><code>Confirmed</code> via <span class="ref">Machine-Facts.md</span> §732</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<ol>
+<li><strong>The disc's own diameter (10 mm) vs. the toothed-rim diameter (Ø23) are two distinct, unreconciled features
+   (<code>Confirmed</code> as printed, relationship between them <code>Unverified</code>).</strong> The sheet does not show how a 10 mm disc body
+   carries a 23 mm toothed rim in one continuous piece; likely the front view's "10 ±50" is an inner feature (e.g. a hub
+   land) rather than the disc's outer edge, but this is not stated outright.</li>
+<li><strong>The mechanism the toothed rim and slot serve (<code>Unverified</code>).</strong> This is the first part read in the zero-buffer group
+   (pages 136+); its exact interaction with the pawl <code>10.113</code> and lever <code>10.114</code> (not yet read) is not yet established.</li>
+</ol>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p138_10111-4.webp">drawing 10.111-4</a>, page 138.</p>
+</main>
+</body>
+</html>
