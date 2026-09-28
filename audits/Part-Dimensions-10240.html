@@ -142,19 +142,22 @@ the setting axle <code>10.212</code>.</p>
 <tr>
 <td><code>10.139</code></td>
 <td>Backing washer (<em>Unterlagscheibe</em>), Sandvik 20 W</td>
-<td style="text-align: right;">as required</td>
-<td style="text-align: right;">not fixed</td>
-<td>BOM sheet 7: <code>Stück —</code>, remark <em>Pos. u. Stückz. nach Bedarf</em></td>
-<td><strong>Inferred</strong> (issue 240-2)</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td><code>10.139</code>'s own sheet (p174): <code>Stück p.Masch. 8</code>, the same firm title-block field every other part sheet uses</td>
+<td><strong>Confirmed</strong> (upgraded from Inferred 2026-09-28, issue 240-2 resolved)</td>
 </tr>
 </tbody>
 </table>
 <h2>Inherited component dimensions and interfaces</h2>
 <p>Each child has its own sheet; the setting axle has <a href="Part-Dimensions-10212.html">Part-Dimensions-10212.md</a>.
 The assembly adds no dimension of its own.</p>
-<p><strong>Checks (Derived).</strong> Eight knobs × one of each of <code>10.057</code>, <code>10.212</code>, <code>10.073</code>, <code>10.075</code> and the
+<p><strong>Checks (Derived).</strong> Eight knobs × one of each of <code>10.057</code>, <code>10.212</code>, <code>10.073</code>, <code>10.075</code>, <code>10.139</code> and the
 ball give the BOM's 8 per machine for each, and the balls close the 26 total with <code>10.201</code>'s 17 and
-<code>10.241</code>'s 1.</p>
+<code>10.241</code>'s 1. <strong>Correction (2026-09-28):</strong> <code>10.139</code>'s own dedicated audit (<a href="Part-Dimensions-10139.html">Part-Dimensions-10139.md</a>)
+found <code>Stück p.Masch. 8</code> on that sheet's own title block, resolving issue 240-2 in favour of 1 washer per knob (8 per
+machine) rather than a BOM-driven variable count; the BOM's <em>Pos. u. Stückz. nach Bedarf</em> note most plausibly refers
+to which of the washer's 8 graded thickness classes is selected per installation, not whether 8 are installed.</p>
 <h2>Calculated and inferred stack-ups</h2>
 <p>None can be made: the assembly prints no dimensions.</p>
 <h2>3× reference</h2>
