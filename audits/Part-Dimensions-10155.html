@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.155 Sealing Ring — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10155.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.155 Sealing Ring — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.155</code>, <em>Dichtungsring</em> (sealing ring), single-revision drawing (<code>Ersatz für —</code>, not a
+  replacement). Identity agrees with <span class="ref">Drawing-Index.md</span> and the title block on drawing-set and
+  catalog page 190 (<a href="../viewer.html?page=190&status=All&section=All">viewer page 190</a>). Scale 1:1 (the only
+  1:1-scale sheet in this pin/ring page group — every other part on pages 182–189 is drawn at 5:1 or 10:1);
+  stamped <code>Abmaße in µ = 1/1000 mm</code>. Drawn 4.12.1950; no change block entries. Read at 220 dpi on 2026-09-29.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.228</code> (complete protective sleeve, <em>Kompl. Schutzhülse</em>); <code>Stück
+  p.Masch. 1</code>. Already <code>Confirmed</code> in <span class="ref">Assembly-Links.csv</span> (<code>10.228,10.155,1</code>), corroborated
+  by the leader on assembly drawing p235.</li>
+<li><strong>Material:</strong> <em>Thermoplast L6880, weiss</em> (white thermoplastic) — a molded part, not machined: no heat-treatment,
+  surface-treatment, or surface-finish-symbol notes (all three dashes).</li>
+<li><strong>General tolerance:</strong> a dash on this sheet's own <code>Max. Abweichung nicht tolerierter Maße</code> field — both
+  dimensions on the drawing (Ø45 and the 3 mm cross-section) are shown without an explicit tolerance figure, so
+  they are read against the ±100 µm value used elsewhere on comparable sheets in this page group, flagged as an
+  inference below rather than a printed value on this specific sheet. <strong>Runout:</strong> 20 µm radial and side on marked
+  surfaces; unmarked values both dashes (not obviously applicable to a molded ring, but printed on the form
+  regardless).</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3×
+  values are geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit case</h2>
+<p>None. A molded thermoplastic ring; no ISO letter-code fit appears anywhere on the sheet.</p>
+<h2>Direct dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ring diameter (pin-to-pin)</td>
+<td>Ø45</td>
+<td>~44.9–45.1 (general ±100 µm inferred)</td>
+<td>Confirmed callout; tolerance <strong>Unverified</strong> — this sheet's own general-tolerance field is a dash</td>
+</tr>
+<tr>
+<td>Cross-section width</td>
+<td>3</td>
+<td>~2.9–3.1 (general ±100 µm inferred)</td>
+<td>Confirmed callout; tolerance <strong>Unverified</strong>, same caveat</td>
+</tr>
+</tbody>
+</table>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ring Ø45</td>
+<td>general (inferred ±100)</td>
+<td>Ø135 mm</td>
+<td>±300</td>
+<td>not applicable (no ISO fit)</td>
+</tr>
+<tr>
+<td>Cross-section 3</td>
+<td>general (inferred ±100)</td>
+<td>9 mm</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.228</code> complete protective sleeve, 1 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück p.Masch. 1</code>, <code>Kompl. Nr. 10.228</code>; leader p235</td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<ul>
+<li>This sheet's <code>Max. Abweichung nicht tolerierter Maße</code> field is a dash rather than a printed value (unlike the
+  otherwise-similar <code>10.152</code>/<code>10.153</code> sheets, which also use dashes but for different fields). Both dimensions are
+  read against the ±100 µm general tolerance seen elsewhere in this page group as the most likely intended
+  default, but this is an inference, not a printed fact on this specific sheet. <strong>Unverified.</strong></li>
+</ul>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p190_10155.webp">drawing 10.155</a>, page 190.</p>
+</main>
+</body>
+</html>
