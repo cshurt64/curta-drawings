@@ -16,6 +16,7 @@ restoring or studying the Curta calculator. It needs no server and no installati
 - **Dimensions**: for 88 parts, a full audit of the dimensions and tolerances on the current sheet, with an ISO 286
   recalculation of every hole/shaft fit (the `audits/` pages).
 - **Where-used index** (`where-used.html`): every recorded parent/child relationship in one table.
+- **Bill of materials** (`bom.html`): every part and assembly with its per-machine quantity, sortable and searchable, as a flat table or an expandable assembly tree. Each quantity is checked against the recorded parent/child links, and disagreements are marked. CSV download included.
 
 ## Things to know before relying on it
 
@@ -30,7 +31,7 @@ restoring or studying the Curta calculator. It needs no server and no installati
 
 | Path | What it is |
 |---|---|
-| `index.html`, `viewer.html`, `where-used.html` | The three pages |
+| `index.html`, `viewer.html`, `where-used.html`, `bom.html` | The four pages |
 | `pages/` | The 257 scans (grayscale WebP) |
 | `sources/` | The images the interactive guides are drawn on |
 | `audits/` | The per-part dimensional audits, rendered to HTML |
