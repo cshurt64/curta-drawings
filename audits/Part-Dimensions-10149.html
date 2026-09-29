@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>10.149 Cylindrical Pin — key measurements and tolerances</title>
+<style>
+:root { color-scheme:light dark; --bg:#f1efe9; --panel:#fff; --text:#202124; --muted:#62666c; --line:#d2cec4; --accent:#8b3f24; }
+@media (prefers-color-scheme:dark) { :root { --bg:#181816; --panel:#242421; --text:#efeee8; --muted:#b8b6ae; --line:#45443f; --accent:#f2a27f; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.5 system-ui,sans-serif; }
+header { position:sticky; top:0; z-index:5; padding:10px 18px; background:var(--panel); border-bottom:1px solid var(--line); display:flex; gap:14px; flex-wrap:wrap; align-items:center; }
+header a { color:var(--accent); text-decoration:none; }
+main { max-width:1100px; margin:18px auto 60px; padding:0 18px; }
+h1 { font-size:22px; color:var(--accent); } h2 { font-size:17px; margin-top:28px; border-bottom:1px solid var(--line); padding-bottom:4px; }
+a { color:var(--accent); }
+table { border-collapse:collapse; width:100%; font-size:13.5px; display:block; overflow-x:auto; }
+th,td { border:1px solid var(--line); padding:5px 8px; vertical-align:top; text-align:left; }
+th { background:var(--panel); }
+code { font-size:.92em; background:color-mix(in srgb,var(--text) 8%,transparent); padding:0 4px; border-radius:3px; }
+blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent); background:var(--panel); }
+</style>
+</head>
+<body>
+<header><a href="../index.html">&larr; Catalog</a><span style="color:var(--muted)">Part-Dimensions-10149.md &middot; rendered from the project's markdown</span></header>
+<main>
+<h1>10.149 Cylindrical Pin — key measurements and tolerances</h1>
+<h2>Scope and source status</h2>
+<ul>
+<li><strong>Part:</strong> <code>10.149</code>, <em>Zylindrischer Stift</em> (cylindrical pin), single-revision drawing. Identity agrees with
+  <span class="ref">Drawing-Index.md</span> and the title block on drawing-set and catalog page 183 (<a href="../viewer.html?page=183&status=All&section=All">viewer page
+  183</a>). Scale 10:1 (reference view <code>M1:1</code>); stamped
+  <code>Abmasse in µ = 1/1000 mm</code>. Drawn 3.5.1950; no change block entries; <code>Ersatz für</code> blank. Read at 220 dpi on
+  2026-09-29.</li>
+<li><strong>Parent and quantity:</strong> <code>Kompl. Nr. 10.226</code> (counter body assembly, <em>Zählwerkskörper-Gruppe</em>); <code>Stück
+  p.Masch. 2</code>. Already <code>Confirmed</code> in <span class="ref">Assembly-Links.csv</span> (<code>10.226,10.149,2</code>), corroborated
+  by the leader on assembly drawing p232, the pin's own <code>Kompl. Nr.</code> field, and BOM sheet 8's <em>Bemerkungen</em> column
+  naming <code>10'226</code> independently of the callout.</li>
+<li><strong>Material:</strong> <em>RRMD nichtrostender Stahl</em> (rustproof steel, precision ground bar), called out directly at the
+  pin's own finished diameter (<code>Ø0,8-h7</code>) rather than a separate bar-stock size. No heat-treatment or
+  surface-treatment note (both dashes) — unlike the hardened <code>10.148</code> pin from the same page group.</li>
+<li><strong>General tolerance:</strong> ±100 µm linear; angular a dash, none stated. <strong>Runout:</strong> 20 µm radial and side on marked
+  surfaces; unmarked values both a dash. <strong>Finish:</strong> ▽▽, with ▽▽▽ in brackets.</li>
+<li><strong>Labels:</strong> printed content <strong>Confirmed</strong>; calculated values <strong>Derived</strong>; unresolved readings <strong>Unverified</strong>. 3×
+  values are geometric references, not factory specifications.</li>
+</ul>
+<h2>ISO 286 fit case</h2>
+<p>ISO 286-1 defines the system; ISO 286-2 tabulates the deviations.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Case</th>
+<th>IT / fundamental deviation</th>
+<th>ISO limits</th>
+<th>Sheet fit table</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank diameter</td>
+<td><code>Ø0.8 h7</code> (up to 3 mm)</td>
+<td>IT7 = 10 µm; <code>h</code>: es = 0</td>
+<td>0/−10 µm → 0.790–0.800 mm</td>
+<td>0/−9 µm → 0.791–0.800 mm</td>
+<td>Confirmed sheet reading; <strong>Derived</strong> ISO 286-2 comparison</td>
+</tr>
+</tbody>
+</table>
+<p>Same 1 µm-narrower discrepancy against ISO 286-2's tabulated IT7 (10 µm) as <code>10.148</code> and the six-plus other
+sheets already logged with this house-table pattern.</p>
+<h2>Direct dimensions</h2>
+<p>Values without a tolerance carry the general ±100 µm.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Drawing value</th>
+<th>Limits</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shank diameter</td>
+<td>Ø0.8 h7</td>
+<td>0.791–0.800</td>
+<td>Confirmed sheet reading</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>4</td>
+<td>3.900–4.100</td>
+<td>Confirmed callout</td>
+</tr>
+<tr>
+<td>Tip radius</td>
+<td>0.8 r</td>
+<td>general</td>
+<td>Confirmed callout</td>
+</tr>
+</tbody>
+</table>
+<h2>3× reference</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Factory</th>
+<th>Scaled 3× nominal</th>
+<th>Simply scaled tolerance</th>
+<th>Newly calculated ISO tolerance at 3×</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length 4</td>
+<td>±100</td>
+<td>12 mm</td>
+<td>±300</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Shank Ø0.8 h7 (sheet)</td>
+<td>0/−9</td>
+<td>Ø2.4 mm (up to 3 mm, unchanged step)</td>
+<td>0/−27</td>
+<td>ISO 286-2 IT7 at ≤3 mm = 10 µm → 0/−10 (h: es=0); <strong>Derived</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. See the project's tolerance strategy.</p>
+<h2>Where it is used</h2>
+<table>
+<thead>
+<tr>
+<th>Relationship</th>
+<th>Result</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Parent</td>
+<td><code>10.226</code> counter body assembly, 2 per machine</td>
+<td><code>Confirmed</code>: own <code>Stück p.Masch. 2</code>, <code>Kompl. Nr. 10.226</code>; leader p232; BOM sheet 8 <em>Bemerkungen</em></td>
+</tr>
+<tr>
+<td>Children</td>
+<td>none: an individual part drawing</td>
+<td><code>Confirmed</code></td>
+</tr>
+</tbody>
+</table>
+<h2>Open points</h2>
+<p>None outstanding — every dimension carries either an explicit tolerance or the general ±100 µm, and the one ISO
+fit matches the already-documented house-table discrepancy.</p>
+<p>See <span class="ref">Assembly-Links.csv</span>, <a href="../where-used.html">Where-Used.md</a> and
+<span class="ref">Where-Used-Method.md</span>.</p>
+<p>Source: current <a href="../pages/p183_10149.webp">drawing 10.149</a>, page 183.</p>
+</main>
+</body>
+</html>
