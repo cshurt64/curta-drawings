@@ -147,50 +147,96 @@ lie behind all three; that is a reading, not a finding.</p>
 </tbody>
 </table>
 <h2>3× reference</h2>
-<p>The two ISO cases are recalculated at the tripled basic size: 5.4 mm is in "over 3 through 6", 16.5 mm in "over 10 through 18".</p>
+<p>Every factory dimension is listed. The two ISO cases are recalculated at the tripled basic size: 5.4 mm is in "over 3 through 6", 16.5 mm in
+"over 10 through 18". All other rows are simply scaled by 3 as a comparison only; none is adopted as a project tolerance.</p>
 <table>
 <thead>
 <tr>
 <th>Feature</th>
 <th>Factory</th>
 <th>Scaled 3× nominal</th>
-<th>Simply scaled tolerance</th>
+<th>Simply scaled tolerance → limits</th>
 <th>Newly calculated ISO tolerance at 3×</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Slot <code>1.8 F8</code></td>
+<td>Slot width <code>1.8 F8</code></td>
 <td>+21/+7 (sheet)</td>
 <td>5.4 mm</td>
 <td>+63/+21</td>
 <td><code>5.4 F8</code>, over 3 through 6: IT8 = 18 µm, <code>EI = +10 µm</code> → 5.410–5.428 mm</td>
 </tr>
 <tr>
-<td>Height <code>5.5 h9</code></td>
+<td>Plate height <code>5.5 h9</code></td>
 <td>0/−30</td>
 <td>16.5 mm</td>
 <td>0/−90</td>
 <td><code>16.5 h9</code>, over 10 through 18: IT9 = 43 µm → 16.457–16.500 mm</td>
 </tr>
 <tr>
-<td>Thickness <code>1 ±15</code></td>
+<td>Plate thickness <code>1 ±15</code></td>
 <td>±15</td>
 <td>3 mm</td>
-<td>±45</td>
+<td>±45 → 2.955–3.045 mm</td>
 <td>not applicable</td>
 </tr>
 <tr>
-<td>Radii r2.1 +50/0; r6.5</td>
-<td>+50/0; general</td>
-<td>r6.3; r19.5</td>
-<td>+150/0; ±300</td>
+<td>Plate length <code>5.5</code></td>
+<td>general ±100</td>
+<td>16.5 mm</td>
+<td>±300 → 16.2–16.8 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Slot length <code>2.2</code></td>
+<td>general ±100</td>
+<td>6.6 mm</td>
+<td>±300 → 6.3–6.9 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Left notch radius <code>r2.1</code></td>
+<td>+50/0</td>
+<td>r6.3 mm</td>
+<td>+150/0 → r6.300–6.450 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Right curve radius <code>r6.5</code></td>
+<td>general ±100</td>
+<td>r19.5 mm</td>
+<td>±300 → r19.2–19.8 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Length from the left edge <code>3.8</code></td>
+<td>0/−50</td>
+<td>11.4 mm</td>
+<td>0/−150 → 11.250–11.400 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Length from the left edge <code>4.8</code></td>
+<td>+50/0</td>
+<td>14.4 mm</td>
+<td>+150/0 → 14.400–14.550 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Angles</td>
+<td>none dimensioned; angular tolerance a dash</td>
+<td>none to scale</td>
+<td>angles do not scale</td>
 <td>not applicable</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Derived.</strong> A 3× table is not a factory specification. The 5.4 mm slot and 3 mm plate match the values already used in
-Machine-Facts for the 3× mating cam. See the project's tolerance strategy.</p>
+<p><strong>Derived.</strong> A 3× table is not a factory specification. Retaining the general ±100 µm on the three general-tolerance rows (as the <code>10.017</code> table does) is a
+project decision not made here; both readings are shown only where the factory value is general. The 5.4 mm slot and 3 mm plate match the values already
+used in Machine-Facts for the 3× mating cam; the 11.4 and 14.4 mm lengths and r6.3, r19.5 agree with the validated Onshape geometry in
+<span class="ref">Status.md</span> P0-5 (<strong>Unverified</strong> against the feature each length reaches, see open point 2). See
+the project's tolerance strategy.</p>
 <h2>Where it is used</h2>
 <table>
 <thead>
