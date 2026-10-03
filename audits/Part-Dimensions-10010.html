@@ -148,7 +148,7 @@ lie behind all three; that is a reading, not a finding.</p>
 </table>
 <h2>3× reference</h2>
 <p>Every factory dimension is listed. The two ISO cases are recalculated at the tripled basic size: 5.4 mm is in "over 3 through 6", 16.5 mm in
-"over 10 through 18". All other rows are simply scaled by 3 as a comparison only; none is adopted as a project tolerance.</p>
+"over 10 through 18". All other rows are simply scaled by 3 as a comparison only where the factory gives an explicit tolerance; none is adopted as a project tolerance.</p>
 <table>
 <thead>
 <tr>
@@ -185,14 +185,14 @@ lie behind all three; that is a reading, not a finding.</p>
 <td>Plate length <code>5.5</code></td>
 <td>general ±100</td>
 <td>16.5 mm</td>
-<td>±300 → 16.2–16.8 mm</td>
+<td>±100 not silently scaled</td>
 <td>not applicable</td>
 </tr>
 <tr>
 <td>Slot length <code>2.2</code></td>
 <td>general ±100</td>
 <td>6.6 mm</td>
-<td>±300 → 6.3–6.9 mm</td>
+<td>±100 not silently scaled</td>
 <td>not applicable</td>
 </tr>
 <tr>
@@ -206,7 +206,7 @@ lie behind all three; that is a reading, not a finding.</p>
 <td>Right curve radius <code>r6.5</code></td>
 <td>general ±100</td>
 <td>r19.5 mm</td>
-<td>±300 → r19.2–19.8 mm</td>
+<td>±100 not silently scaled</td>
 <td>not applicable</td>
 </tr>
 <tr>
@@ -232,8 +232,7 @@ lie behind all three; that is a reading, not a finding.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>Derived.</strong> A 3× table is not a factory specification. Retaining the general ±100 µm on the three general-tolerance rows (as the <code>10.017</code> table does) is a
-project decision not made here; both readings are shown only where the factory value is general. The 5.4 mm slot and 3 mm plate match the values already
+<p><strong>Derived.</strong> A 3× table is not a factory specification. General tolerances are not silently scaled (a project decision), so the three rows whose factory tolerance is only the general ±100 µm carry no scaled tolerance. The 5.4 mm slot and 3 mm plate match the values already
 used in Machine-Facts for the 3× mating cam; the 11.4 and 14.4 mm lengths and r6.3, r19.5 agree with the validated Onshape geometry in
 <span class="ref">Status.md</span> P0-5 (<strong>Unverified</strong> against the feature each length reaches, see open point 2). See
 the project's tolerance strategy.</p>
