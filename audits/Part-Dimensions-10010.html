@@ -133,16 +133,16 @@ lie behind all three; that is a reading, not a finding.</p>
 <td>Confirmed callout</td>
 </tr>
 <tr>
-<td>Length from the left edge</td>
+<td>Length from the left edge to the slot centre line</td>
 <td>3.8 0/−50</td>
 <td>3.750–3.800</td>
-<td>Confirmed callout; what it reaches is <strong>Unverified</strong> (drawn to the slot's centre line)</td>
+<td>Confirmed callout and extension lines (raster read 2026-10-04)</td>
 </tr>
 <tr>
-<td>Length from the left edge</td>
+<td>Length from the common arc centre to the slot centre line</td>
 <td>4.8 +50/0</td>
 <td>4.800–4.850</td>
-<td>Confirmed callout; what it reaches is <strong>Unverified</strong> (drawn to the same centre line, from the notch's centre)</td>
+<td>Confirmed callout; its left extension line stops at the centre of the <code>r2.1</code> notch, so the centre is 4.8 − 3.8 = 1.0 mm left of the plate's left edge (<strong>Derived</strong>)</td>
 </tr>
 </tbody>
 </table>
@@ -210,17 +210,24 @@ lie behind all three; that is a reading, not a finding.</p>
 <td>not applicable</td>
 </tr>
 <tr>
-<td>Length from the left edge <code>3.8</code></td>
+<td>Left edge to slot centre line <code>3.8</code></td>
 <td>0/−50</td>
 <td>11.4 mm</td>
 <td>0/−150 → 11.250–11.400 mm</td>
 <td>not applicable</td>
 </tr>
 <tr>
-<td>Length from the left edge <code>4.8</code></td>
+<td>Arc centre to slot centre line <code>4.8</code></td>
 <td>+50/0</td>
 <td>14.4 mm</td>
 <td>+150/0 → 14.400–14.550 mm</td>
+<td>not applicable</td>
+</tr>
+<tr>
+<td>Common arc centre (<code>r2.1</code>, <code>r6.5</code>) left of the left edge</td>
+<td>1.0 mm (4.8 − 3.8; Derived)</td>
+<td>3.0 mm</td>
+<td>no tolerance given</td>
 <td>not applicable</td>
 </tr>
 <tr>
@@ -261,8 +268,9 @@ the project's tolerance strategy.</p>
 <h2>Open points</h2>
 <ol>
 <li><strong><code>1.8-F8 +21/+7</code> (<code>Unverified</code>).</strong> ISO 286-2 gives +20/+6 for <code>F8</code> at 1.8 mm; the sheet is 1 µm above on both limits.</li>
-<li><strong>What <code>3.8</code> and <code>4.8</code> measure to (<code>Unverified</code>).</strong> Both run from the left edge to the vertical centre line through the slot;
-   the second seems to start at the notch's centre rather than the plate edge.</li>
+<li><strong>What <code>3.8</code> and <code>4.8</code> measure to (resolved 2026-10-04, </strong>Derived<strong> from a 220 dpi raster read).</strong> <code>3.8</code> runs from the left edge and <code>4.8</code> from the
+   notch's centre, both to the vertical centre line through the slot. The <code>r6.5</code> curve is concentric with the <code>r2.1</code> notch, centred 1.0 mm left of the left edge at
+   mid-height; its rightmost point meets the 5.5 mm overall width and its top and bottom corners fall about 2.1 mm inside it. Pixel measurements agree within about 0.05 mm.</li>
 <li><strong>The part's name.</strong> The catalog and BOM say <em>Umsteuerungsnase</em> (reversing nose); the service manual's function for it is the step
    drum positioning tongue (Machine-Facts §2a). Both names are kept.</li>
 </ol>
