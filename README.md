@@ -13,7 +13,7 @@ restoring or studying the Curta calculator. It needs no server and no installati
   Part numbers in the notes link to that part's own sheet.
 - **3× values (opt-in)**: on a sheet that has them, a *Show 3× values* switch adds each dimension multiplied by 3 to the marker text, for
   people building the 3× replica. They are derived project values, not on the scan, and are off by default.
-- **3× redraw (pilot: 10.010 and 10.041 so far)**: a third view of the sheet, redrawn with every value at 3× and the factory value in brackets. It is
+- **3× redraw (pilot: 10.010, 10.041 and 10.021 so far)**: a third view of the sheet, redrawn with every value at 3× and the factory value in brackets. It is
   labelled as a derived redraw, with the disclosure repeated inside the image; the original scan is authoritative.
 - **Used in / Contains**: which assembly a part goes into (with quantities and the evidence for them) and what an
   assembly contains.
