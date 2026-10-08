@@ -184,41 +184,49 @@ mm” step, while Ø6.900 and Ø8.100 mm use “over 6 through 10 mm.”</p>
 </thead>
 <tbody>
 <tr>
-<td>Notch ridge-crest distance (bore axis to the innermost point of the inward ridge)</td>
+<td>groove_vertex distance (bore axis to the hypothetical sharp vertex of the groove flanks)</td>
 <td style="text-align: right;">0.61 mm, subject to general ±0.100 mm</td>
-<td style="text-align: right;">1.83 mm nominal; the ridge then protrudes 1.17 mm into the 3.0 mm-radius bore (Derived); tolerance strategy not yet established</td>
-<td>Confirmed callout value; what it spans is a reading of the 30:1 detail (project author and assistant, 2026-10-07), <code>Unverified</code>; scaled value Derived</td>
+<td style="text-align: right;">1.83 mm nominal; the rounded ridge crest is then 1.57 mm from the axis (protrudes 1.43 mm into the 3.0 mm-radius bore) and the inner flank apex 1.19 mm (Derived); tolerance strategy not yet established</td>
+<td>Confirmed callout value; what it spans is the project author's reading of the 30:1 detail (2026-10-08), supported by measurement on the scan, <code>Unverified</code> against the part; scaled values Derived</td>
 </tr>
 <tr>
-<td>Notch flank angle (included angle of the V)</td>
+<td>Flank angle (included angle of the groove flanks and of the ridge flanks)</td>
 <td style="text-align: right;">90° ±10′</td>
 <td style="text-align: right;">90° ±10′ (angle is not multiplied by scale)</td>
 <td>Confirmed</td>
 </tr>
 <tr>
-<td>Max radius at the bottom of the outer V groove (arrow comes in from outside)</td>
+<td>groove_bottom radius (arrow comes in from outside)</td>
 <td style="text-align: right;">max 0.15 mm</td>
 <td style="text-align: right;">0.45 mm geometric scale; acceptance limit not yet established</td>
 <td>Confirmed callout value; location is a reading, <code>Unverified</code>; scaled value Derived</td>
 </tr>
 <tr>
-<td>Max radius on the bore side where the wall turns into the ridge flank</td>
+<td>ridge_foot radius (bore wall to ridge flank)</td>
 <td style="text-align: right;">max 0.05 mm (arrow on the lower corner)</td>
 <td style="text-align: right;">0.15 mm geometric scale; acceptance limit not yet established</td>
 <td>Confirmed callout value; location is a reading, <code>Unverified</code>; the upper corner is <code>Inferred</code> by symmetry; scaled value Derived</td>
 </tr>
 </tbody>
 </table>
+<p>Feature names (project vocabulary, not factory terms): <code>outer_land</code>, <code>groove_shoulder</code>, <code>groove_flank</code>, <code>groove_bottom</code>, <code>groove_vertex</code>,
+<code>wall</code>, <code>ridge_crest</code>, <code>ridge_flank</code>, <code>ridge_foot</code>, <code>ridge_apex</code>, <code>bore_wall</code>; they are defined and labelled on the 3× reference sheet.
+The measured rows take their scale from the <code>0,61</code> dimension itself (400 dpi scan, about ±0.01 mm at 1×).</p>
 <p>The 30:1 detail shows the lower wall bent into a V: a groove on the outside and a matching ridge pushing into the
 bore. The wall there is only 0.15 mm thick (1×) against a 0.61 mm notch dimension, which is why the notch is read as a
 displaced wall rather than a cut. The scan prints no radius at the outer corners (where the OD meets the groove
 flanks) or at the ridge crest. The project's local 3× reference sheet
 (an unpublished reading aid) draws the notch with these callouts at their maxima and a
 constant wall; the rows above that are <code>Inferred</code> or <code>Unverified</code> are what that drawing assumes beyond the scan.
-| Wall thickness through the bend (not printed) | Not printed in the notch detail; the straight lower wall is (Ø2.3 − Ø2.0)/2 = 0.15 mm | 0.45 mm held constant through the bend in the 3× reference sheet | <code>Inferred</code> (constant wall); the real wall may thin in the bend; no other source available |
-| Inner crest radius, ridge tip (not called out) | Not printed | R0.9 mm: follows from the constant wall and the outer groove bottom at max R0.45 | <code>Inferred</code>; Derived from the assumptions above |
-| Outer corner radius, where the OD meets the groove flanks (not called out) | Not printed | R0.6 mm: follows from the constant wall and the bore-side corners at max R0.15 | <code>Inferred</code>; Derived from the assumptions above |
-| Groove width at the OD | Not printed; the scan's 30:1 detail is not exactly to scale and no proportion was measured from it | The 3× model groove comes out about 20–40 % wider than the scan's rough drawing | <code>Unverified</code>; suggests the wall thins in the bend or the crest is sharper |
+| wall thickness through the bend (not printed) | Not printed in the notch detail; the straight lower wall is (Ø2.3 − Ø2.0)/2 = 0.15 mm; measured on the 30:1 detail the flank vertices are 0.214 mm apart (a 90° V in a 0.15 mm wall predicts 0.212) and the crests 0.145 mm apart | 0.45 mm through the bend in the 3× reference sheet | <code>Derived</code> from measurement on the scan (about ±0.01 mm at 1×); not a printed callout |
+| ridge_crest radius (not called out) | Not printed | R0.9 mm: follows from the constant wall and the outer groove bottom at max R0.45 | <code>Inferred</code>; Derived from the assumptions above |
+| groove_shoulder radius (not called out) | Not printed | R0.6 mm: follows from the constant wall and the bore-side corners at max R0.15 | <code>Inferred</code>; Derived from the assumptions above |
+| Groove width at the OD | Not printed; the scan's 30:1 detail is not exactly to scale and no proportion was measured from it | With the radii at their maxima the 3× groove mouth at the OD is about 3.5 mm (1.18 mm at 1×); with sharp corners about 2.7 mm (0.90 mm); the scan's rough drawing shows about 0.74 mm | <code>Unverified</code>; the radii are maxima, so the real corners are probably smaller, and the scan's detail is not exactly to scale |
+| Measured position: ridge_apex (sharp apex of the thin 90° arms) from the bore axis | 0.396 mm | 1.19 mm; the 3× sheet draws 1.194 mm | Measured on the scan, not a printed callout; Derived at 3× |
+| Measured position: ridge_crest (rounded tip of the ridge) from the bore axis | 0.519 mm | 1.56 mm; the 3× sheet draws 1.566 mm | Measured on the scan, not a printed callout; Derived at 3× |
+| Measured position: groove_bottom (rounded tip of the groove) from the bore axis | 0.664 mm | 1.99 mm; the 3× sheet draws 2.016 mm | Measured on the scan, not a printed callout; Derived at 3× |
+| Measured gap (a difference, not a position): between groove_vertex (0.61 from the axis) and ridge_apex (0.396 from the axis) | 0.214 mm; a 90° V in a 0.15 mm wall predicts √2 × 0.15 = 0.212 mm | 0.64 mm; predicted 0.636 mm | Measured on the scan, not a printed callout; Derived at 3× |
+| Measured gap (a difference, not a position): between groove_bottom (0.664) and ridge_crest (0.519), i.e. the wall at the notch centre line | 0.145 mm; the straight wall is 0.15 mm | 0.44 mm; the wall is 0.45 mm | Measured on the scan, not a printed callout; Derived at 3× |
 | Notch centering/location | ±20 µm | Scaling convention not yet established | Confirmed original |
 | Non-toleranced linear dimensions | ±100 µm | Retained as ±100 µm in the working table above | Confirmed original; scaled use is a project convention |
 | Runout | max 20 µm | Scaling convention not yet established | Confirmed original |
