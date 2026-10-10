@@ -35,8 +35,8 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <li><strong>3× values:</strong> <strong>Derived geometric references</strong>, not adopted fabrication
   tolerances or factory specifications</li>
 </ul>
-<p>Unlike 10.017 and 10.041, this sheet does not assign ISO 286 letter/grade fits.
-Its tolerances are explicit micron deviations. The 3× table below multiplies
+<p>The bore is the one ISO letter fit on this sheet (<code>* 2,3-J8</code>, fit table <code>2,3-J8 ± 7</code>);
+the other tolerances are explicit micron deviations. The 3× table below multiplies
 both geometry and tolerance magnitudes by three so the result is mathematically
 unambiguous; the project still needs to decide which tolerances should instead
 be retained or replaced with manufacturing-process targets.</p>
@@ -62,12 +62,12 @@ be retained or replaced with manufacturing-process targets.</p>
 <td>Confirmed</td>
 </tr>
 <tr>
-<td>Bore fit diameter</td>
+<td>Bore fit diameter (marked <code>*</code>, runout-controlled)</td>
 <td style="text-align: right;">Ø2.300 mm</td>
-<td style="text-align: right;">mean deviation −38 µm, tolerance about mean ±7 µm</td>
-<td style="text-align: right;">−45/−31 µm</td>
-<td style="text-align: right;">Ø2.255–2.269 mm</td>
-<td>Confirmed notation; Derived limits</td>
+<td style="text-align: right;"><code>J8</code>; fit table <code>2,3-J8 ±7</code> µm</td>
+<td style="text-align: right;">−7/+7 µm</td>
+<td style="text-align: right;">Ø2.293–2.307 mm</td>
+<td>Confirmed (fit-table entry and dimension re-read at 400 dpi 2026-10-10); Derived limits</td>
 </tr>
 <tr>
 <td>Inner reference diameter</td>
@@ -94,42 +94,40 @@ be retained or replaced with manufacturing-process targets.</p>
 <td>Confirmed</td>
 </tr>
 <tr>
-<td>Keying-lug width/location dimension</td>
+<td>Keying-lug location (<code>lug_apex_offset</code>, <code>0,611 ±10</code>)</td>
 <td style="text-align: right;">0.611 mm</td>
 <td style="text-align: right;">±10 µm</td>
 <td style="text-align: right;">−10/+10 µm</td>
 <td style="text-align: right;">0.601–0.621 mm</td>
-<td>Confirmed</td>
+<td>Confirmed value; read as the distance from the vertical axis to the lug's virtual sharp apex (<code>Inferred</code>)</td>
 </tr>
 <tr>
-<td>Lug/profile construction dimension</td>
-<td style="text-align: right;">0.750 mm</td>
+<td>Tooth-tip radius (<code>tooth_tip_radius</code>, <code>0,75 r ±20</code>)</td>
+<td style="text-align: right;">R0.750 mm</td>
 <td style="text-align: right;">±20 µm</td>
 <td style="text-align: right;">−20/+20 µm</td>
 <td style="text-align: right;">0.730–0.770 mm</td>
-<td>Confirmed</td>
+<td>Confirmed; the leader lands on the arc at the upper-left tooth tip</td>
 </tr>
 <tr>
-<td>Root-relief construction dimension</td>
-<td style="text-align: right;">0.200 mm</td>
+<td>Lug-tip radius (<code>lug_tip_radius</code>, <code>0,2 r ±20</code>)</td>
+<td style="text-align: right;">R0.200 mm</td>
 <td style="text-align: right;">±20 µm</td>
 <td style="text-align: right;">−20/+20 µm</td>
 <td style="text-align: right;">0.180–0.220 mm</td>
-<td>Confirmed</td>
+<td>Confirmed; the leader lands on the rounded tip of the lug</td>
 </tr>
 <tr>
-<td>Construction offset</td>
+<td>Tooth end-facet width (<code>tooth_end_facet_width</code>, <code>0,4</code>, <code>Konstruktionsmass</code>)</td>
 <td style="text-align: right;">0.400 mm</td>
 <td style="text-align: right;">general ±50 µm</td>
 <td style="text-align: right;">−50/+50 µm</td>
 <td style="text-align: right;">0.350–0.450 mm</td>
-<td>Confirmed</td>
+<td>Confirmed value; read as the width of the short end flat of the upper-left tooth (the traced corners are 0.40 mm apart); what it spans is <code>Unverified</code></td>
 </tr>
 </tbody>
 </table>
-<p>The Ø2.3 entry uses the title block's fit notation: a −38 µm mean deviation
-with ±7 µm tolerance about that displaced center, producing deviations of
-−45/−31 µm rather than a symmetric tolerance about nominal.</p>
+<p>The Ø2.3 entry is a <code>J8</code> bore whose fit-table entry gives a symmetric ±7 µm, which is <code>JS8</code> (IT8 = 14 µm at this size); the same entry appears on <code>10.049</code> and <code>10.053</code>. As on <code>10.049</code>, the letter and the tabulated numbers are not the same ISO zone and the numbers govern. An earlier version of this audit read the entry as a −38 µm mean deviation with ±7 µm (−45/−31 µm); that reading does not match the current sheet and was corrected on 2026-10-10.</p>
 <h2>Direct geometric 3× reference</h2>
 <table>
 <thead>
@@ -152,8 +150,8 @@ with ±7 µm tolerance about that displaced center, producing deviations of
 <tr>
 <td>Bore fit diameter</td>
 <td style="text-align: right;">Ø6.900 mm</td>
-<td style="text-align: right;">deviations −135/−93 µm</td>
-<td style="text-align: right;">Ø6.765–6.807 mm</td>
+<td style="text-align: right;">±21 µm (geometric scaling; comparison only)</td>
+<td style="text-align: right;">Ø6.879–6.921 mm</td>
 <td>Derived geometric reference</td>
 </tr>
 <tr>
@@ -178,28 +176,28 @@ with ±7 µm tolerance about that displaced center, producing deviations of
 <td>Derived geometric reference</td>
 </tr>
 <tr>
-<td>Keying-lug width/location dimension</td>
+<td>Keying-lug location (<code>lug_apex_offset</code>)</td>
 <td style="text-align: right;">1.833 mm</td>
 <td style="text-align: right;">±30 µm</td>
 <td style="text-align: right;">1.803–1.863 mm</td>
 <td>Derived geometric reference</td>
 </tr>
 <tr>
-<td>Lug/profile construction dimension</td>
-<td style="text-align: right;">2.250 mm</td>
+<td>Tooth-tip radius (<code>tooth_tip_radius</code>)</td>
+<td style="text-align: right;">R2.250 mm</td>
 <td style="text-align: right;">±60 µm</td>
 <td style="text-align: right;">2.190–2.310 mm</td>
 <td>Derived geometric reference</td>
 </tr>
 <tr>
-<td>Root-relief construction dimension</td>
-<td style="text-align: right;">0.600 mm</td>
+<td>Lug-tip radius (<code>lug_tip_radius</code>)</td>
+<td style="text-align: right;">R0.600 mm</td>
 <td style="text-align: right;">±60 µm</td>
 <td style="text-align: right;">0.540–0.660 mm</td>
 <td>Derived geometric reference</td>
 </tr>
 <tr>
-<td>Construction offset</td>
+<td>Tooth end-facet width (<code>tooth_end_facet_width</code>)</td>
 <td style="text-align: right;">1.200 mm</td>
 <td style="text-align: right;">±150 µm</td>
 <td style="text-align: right;">1.050–1.350 mm</td>
@@ -222,16 +220,22 @@ would be a separate, tighter project choice rather than a consequence of scale.<
 </thead>
 <tbody>
 <tr>
-<td>Root-relief radius</td>
+<td>Lug-base radius (<code>lug_base_radius_max</code>, <code>max. 0,1</code>)</td>
 <td style="text-align: right;">max 0.10 mm</td>
 <td style="text-align: right;">max 0.30 mm by geometric scale</td>
-<td>Confirmed original; Derived scaled geometry</td>
+<td>Confirmed original; Derived scaled geometry; which corner it belongs to is read from the leader (<code>Inferred</code>)</td>
 </tr>
 <tr>
-<td>Construction angle</td>
+<td>Lug angle reference (<code>lug_angle_ref</code>)</td>
 <td style="text-align: right;">90° ±10′</td>
 <td style="text-align: right;">unchanged by geometric scale</td>
-<td>Confirmed</td>
+<td>Confirmed value; read as the angle between the two outer construction rays from the lug apex, symmetric about the horizontal axis (<code>Unverified</code>)</td>
+</tr>
+<tr>
+<td>Facet ray angle (<code>facet_ray_angle</code>, <code>9°</code>, <code>Konstruktionsmass</code>)</td>
+<td style="text-align: right;">9°</td>
+<td style="text-align: right;">unchanged by geometric scale</td>
+<td>Confirmed value; read as the angle between the horizontal axis and a ray from the lug apex to the upper left; what the ray constructs is <code>Unverified</code></td>
 </tr>
 <tr>
 <td>Internal profile angle</td>
