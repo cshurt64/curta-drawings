@@ -283,6 +283,47 @@ would be a separate, tighter project choice rather than a consequence of scale.<
 </table>
 <p>The drawing specifies 20 pieces per machine. It calls for high-quality
 hardenable 0.5 ±0.020 mm strip steel, hardened to Brinell 230–240.</p>
+<h2>Names for the edges of one tooth</h2>
+<p>One tooth is three edges and a corner. The two open ends join the neighbouring teeth, and there is no
+fourth closing edge. The edge letters A–C below are not the assumption tags A1–A10.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>What it is</th>
+<th>Parameter</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Edge A, straight flank</td>
+<td>The straight side, from the valley corner out to the Ø4.4 envelope (vertical for the 0° tooth)</td>
+<td>none; its length (1.697 mm at 1×, 5.091 mm at 3×) follows from the rings</td>
+<td>Inferred (A1, A2)</td>
+</tr>
+<tr>
+<td>Edge B, end facet</td>
+<td>The short edge at the tip, 0.4 wide, on the Ø4.4 envelope</td>
+<td><code>tooth_end_facet_width</code> (a reference value in the model since A9: 0.384 mm)</td>
+<td>Decision (A3)</td>
+</tr>
+<tr>
+<td>Edge C, curved flank</td>
+<td>The R0.75 curved side from the end facet back to the next valley corner</td>
+<td><code>tooth_tip_radius</code> (the name is historical; the radius belongs to this edge)</td>
+<td>Confirmed value; centre placement Decision (A9)</td>
+</tr>
+<tr>
+<td>Valley corner</td>
+<td>Where Edge C of one tooth meets Edge A of the next, on the Ø2.8 ring at 0°, ±72°, ±144°</td>
+<td><code>inner_ref_diameter</code>, <code>internal_profile_angle</code></td>
+<td>Inferred (A7)</td>
+</tr>
+</tbody>
+</table>
+<p>"Tip arc" was considered for Edge B and rejected, because <code>tooth_tip_radius</code> is the radius of Edge C
+and the two names would collide.</p>
 <h2>Assumptions made in the FreeCAD model</h2>
 <p>The author's learning FreeCAD model of this part builds some geometry that
 no callout on the scan states. These are the author's and the assistant's readings and modelling
@@ -314,7 +355,7 @@ on the 3× reference sheet. <code>Inferred</code> = a reading of the scan; <code
 <tr>
 <td>A3</td>
 <td>The <code>0,4</code> end facet is an arc on the envelope circle, arc length 0.4 mm (1.2 mm at 3×).</td>
-<td>A straight tangent flat would differ by about 9 µm at 1× (27 µm at 3×); the scan cannot tell them apart. What <code>0,4</code> spans is itself <code>Unverified</code></td>
+<td>A straight tangent flat would differ by about 9 µm at 1× (27 µm at 3×); the scan cannot tell them apart. What <code>0,4</code> spans is itself <code>Unverified</code>. Since A9 was applied (2026-10-11) this width is a reference value in the model: 0.384 mm at 1× (1.152 mm at 3×), 16 µm under the printed 0.4 and inside its ±50 µm</td>
 <td>Decision</td>
 </tr>
 <tr>
@@ -344,14 +385,14 @@ on the 3× reference sheet. <code>Inferred</code> = a reading of the scan; <code
 <tr>
 <td>A8</td>
 <td>The other four teeth are exact 72° copies of the first.</td>
-<td>Built 2026-10-11 with the Sketcher polar transform; each copy is tied to the original by Equal constraints and by <code>s_</code>-bound tip-length and flank-direction expressions. Overlaid on the 300 dpi trace of the scan (421 points, 1× trace good to about 0.03 mm), all five cycles lie within 0.14 mm of the model at 3× (rms 0.03–0.08 mm, mean offset 0.00 ± 0.01 mm): about the accuracy of the trace, and comparable to the ±30′ the drawing allows lug to tooth (0.06 mm at the tip at 3×). Identical by construction, supported by the overlay, not measured on a part</td>
+<td>Built 2026-10-11 with the Sketcher polar transform; each copy is tied to the original by Equal constraints and by <code>s_</code>-bound tip-length and flank-direction expressions. Overlaid on the 300 dpi trace of the scan (421 points, 1× trace good to about 0.03 mm), all five cycles lie within 0.17 mm of the model at 3× (rms 0.04–0.09 mm, mean offset 0.01 ± 0.02 mm): about the accuracy of the trace, and comparable to the ±30′ the drawing allows lug to tooth (0.06 mm at the tip at 3×). Identical by construction, supported by the overlay, not measured on a part</td>
 <td>Inferred (supported)</td>
 </tr>
 <tr>
 <td>A9</td>
-<td>The R0.75 tooth curve runs from the facet end to the corner on the −72° ray at the Ø2.8 ring, bulging outward; the model derives its centre from the two end points and the radius. The centre lands 4.975 mm from the axis at 3× (Ø9.95), against Ø9.9 for the Ø3.3 circle. The valley corners lie at Ø2.8, so the name "tooth-root reference diameter" for Ø3.3 is doubtful.</td>
-<td>Built and read from the saved model 2026-10-11 (0 degrees of freedom); the 0.025 mm (8 µm at 1×) offset is inside the ±40 µm on Ø3.3, so Ø3.3 is not used as a driving constraint. A consistency check on A1–A3 and the corner position, not a confirmation</td>
-<td>Inferred (consistent)</td>
+<td>Edge C (the R0.75 curved flank) has its centre on the Ø3.3 circle. <strong>Decision (author, 2026-10-11), applied in the model the same day.</strong> The saved model (read 14:34) puts all five centres 4.950 mm from the axis at 3× (exactly Ø9.9); R2.25 and the corner on the Ø2.8 ring drive the arc. The valley corners lie at Ø2.8, so the name "tooth-root reference diameter" for Ø3.3 is doubtful.</td>
+<td>The earlier consistency check was weak: the drawing's own tolerances on the inputs (facet width ±50 µm, corner ring +0/−100 µm, envelope +50/0 µm, arc against flat) move the centre radius from 1.619 to 1.735 mm, 116 µm against the 40 µm band; only 10 of 32 corner combinations land inside it. Adding the decision over-constrained the arc, so the end-facet width (<code>0,4</code>, general ±50 µm, <code>Konstruktionsmass</code>) and its four copies became reference values, which read 0.384 mm at 1× (1.152 mm at 3×, −16 µm, inside its band). Releasing the radius instead has no solution at facet 0.400 and swings R by 100 µm for a 30 µm facet change. Saved model: 0 degrees of freedom, no conflicts, 1 valid solid, volume 82.366 mm³ (−0.41 %), scale 2 and 6 pass. Against the traced scan the overlay is no better and no worse (max 0.17 mm at 3× against 0.14)</td>
+<td>Decision, not a drawing fact</td>
 </tr>
 <tr>
 <td>A10</td>
