@@ -86,7 +86,7 @@ be retained or replaced with manufacturing-process targets.</p>
 <td>Confirmed</td>
 </tr>
 <tr>
-<td>Outside tooth envelope</td>
+<td>Outside tooth envelope (marked <code>*</code>, runout-controlled)</td>
 <td style="text-align: right;">Ø4.400 mm</td>
 <td style="text-align: right;">+50/0 µm</td>
 <td style="text-align: right;">0/+50 µm</td>
@@ -283,6 +283,86 @@ would be a separate, tighter project choice rather than a consequence of scale.<
 </table>
 <p>The drawing specifies 20 pieces per machine. It calls for high-quality
 hardenable 0.5 ±0.020 mm strip steel, hardened to Brinell 230–240.</p>
+<h2>Assumptions made in the FreeCAD model</h2>
+<p>The author's learning FreeCAD model of this part builds some geometry that
+no callout on the scan states. These are the author's and the assistant's readings and modelling
+choices, listed so that none of them is mistaken for a drawing fact. The same tags <code>[A1]</code>–<code>[A10]</code> are
+on the 3× reference sheet. <code>Inferred</code> = a reading of the scan; <code>Decision</code> = a modelling choice;
+<code>Unverified</code> = not settled.</p>
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Assumption</th>
+<th>Basis</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>Each straight flank is tangent to the Ø2.8 reference ring at 0°, ±72°, ±144°; the model builds the 0° flank as a vertical line from (4.2, 0) at 3×.</td>
+<td>The scan prints no tangent or vertical callout. Measured at 400 dpi (2026-10-11): flank 1.42 mm from the centre against 1.400 mm for the Ø2.8 ring (0.02 mm, within hand-drafting accuracy at 20:1), 0.4° off the image vertical (not separable from scan skew); the traced gap bottoms read Ø2.83</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>The flank runs out to the Ø4.4 envelope; its 1× length √(2.2² − 1.4²) = 1.697 mm (5.091 mm at 3×) is a consequence.</td>
+<td>Measured end on the envelope; no length is printed</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>The <code>0,4</code> end facet is an arc on the envelope circle, arc length 0.4 mm (1.2 mm at 3×).</td>
+<td>A straight tangent flat would differ by about 9 µm at 1× (27 µm at 3×); the scan cannot tell them apart. What <code>0,4</code> spans is itself <code>Unverified</code></td>
+<td>Decision</td>
+</tr>
+<tr>
+<td>A4</td>
+<td>The lug flanks are the 90° ±10′ construction rays from the virtual apex.</td>
+<td>Consistent with the 90° groove of the mating guide sleeve <code>10.017</code> (vertex 0.61 from the axis), but the sleeve's <code>groove_vertex</code> is itself marked <code>Unverified</code>; the author's reading</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A5</td>
+<td><code>lug_base_radius_max</code> is drawn at its limit (R0.1; R0.3 at 3×) as if it were a nominal.</td>
+<td><code>max. 0,1</code> is a limit, not a nominal</td>
+<td>Decision</td>
+</tr>
+<tr>
+<td>A6</td>
+<td><code>0,611 ±10</code> is the distance from the vertical axis through the bore centre to the lug's virtual sharp apex.</td>
+<td>Rounded tip lies 0.083 mm (1×) beyond the apex</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A7</td>
+<td><code>72°</code> runs from the +X axis (opposite the lug) to the ray through the next gap corner; corners at 0°, ±72°, ±144°, lug at 180°.</td>
+<td>Measured corner positions at 200 dpi</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A8</td>
+<td>The other four teeth are the first tooth rotated in 72° steps.</td>
+<td>Five congruent teeth on the scan; not built yet</td>
+<td>Inferred</td>
+</tr>
+<tr>
+<td>A9</td>
+<td>The R0.75 tooth curve runs from the facet end to the corner on the −72° ray at the Ø2.8 ring, bulging outward; the model derives its centre from the two end points and the radius. The centre lands 4.975 mm from the axis at 3× (Ø9.95), against Ø9.9 for the Ø3.3 circle. The valley corners lie at Ø2.8, so the name "tooth-root reference diameter" for Ø3.3 is doubtful.</td>
+<td>Built and read from the saved model 2026-10-11 (0 degrees of freedom); the 0.025 mm (8 µm at 1×) offset is inside the ±40 µm on Ø3.3, so Ø3.3 is not used as a driving constraint. A consistency check on A1–A3 and the corner position, not a confirmation</td>
+<td>Inferred (consistent)</td>
+</tr>
+<tr>
+<td>A10</td>
+<td><code>facet_ray_angle</code> (9°) is kept as a parameter only; what the ray constructs is not known.</td>
+<td>A reconstruction of the upper-left facet from the A1–A3 geometry puts its ends at about 20° and 33° from the apex (15° and 25° from the centre), so the ray is not simply the direction to a facet end</td>
+<td><code>Unverified</code></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>*</code> marks on <code>2,3-J8</code> and <code>4,4</code> are the scan's runout-controlled diameters (max 20 µm); the
+reference sheet now carries them.</p>
 <h2>Assembly relevance</h2>
 <p>The title block lists complete assemblies 10.217, 10.218, 10.219 and 10.230.
 In those assemblies, wheel thickness contributes to the axial stack, the bore
