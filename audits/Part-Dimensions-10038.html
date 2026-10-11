@@ -78,12 +78,12 @@ be retained or replaced with manufacturing-process targets.</p>
 <td>Confirmed</td>
 </tr>
 <tr>
-<td>Tooth-root reference diameter</td>
+<td>Curved-flank centre circle (<code>curved_flank_center_diameter</code>; printed as a plain Ø3.3 ±40, role is decision A9)</td>
 <td style="text-align: right;">Ø3.300 mm</td>
 <td style="text-align: right;">±40 µm</td>
 <td style="text-align: right;">−40/+40 µm</td>
 <td style="text-align: right;">Ø3.260–3.340 mm</td>
-<td>Confirmed</td>
+<td>Confirmed value</td>
 </tr>
 <tr>
 <td>Outside tooth envelope (marked <code>*</code>, runout-controlled)</td>
@@ -162,7 +162,7 @@ be retained or replaced with manufacturing-process targets.</p>
 <td>Derived geometric reference</td>
 </tr>
 <tr>
-<td>Tooth-root reference diameter</td>
+<td>Curved-flank centre circle (<code>curved_flank_center_diameter</code>)</td>
 <td style="text-align: right;">Ø9.900 mm</td>
 <td style="text-align: right;">±120 µm</td>
 <td style="text-align: right;">Ø9.780–10.020 mm</td>
@@ -390,7 +390,7 @@ on the 3× reference sheet. <code>Inferred</code> = a reading of the scan; <code
 </tr>
 <tr>
 <td>A9</td>
-<td>Edge C (the R0.75 curved flank) has its centre on the Ø3.3 circle. <strong>Decision (author, 2026-10-11), applied in the model the same day.</strong> The saved model (read 14:34) puts all five centres 4.950 mm from the axis at 3× (exactly Ø9.9); R2.25 and the corner on the Ø2.8 ring drive the arc. The valley corners lie at Ø2.8, so the name "tooth-root reference diameter" for Ø3.3 is doubtful.</td>
+<td>Edge C (the R0.75 curved flank) has its centre on the Ø3.3 circle. <strong>Decision (author, 2026-10-11), applied in the model the same day.</strong> The saved model (read 14:34) puts all five centres 4.950 mm from the axis at 3× (exactly Ø9.9); R2.25 and the corner on the Ø2.8 ring drive the arc. The parameter was renamed <code>curved_flank_center_diameter</code> on 2026-10-11; it was "tooth-root reference diameter", but the valley corners lie at Ø2.8, so "root" was wrong.</td>
 <td>The earlier consistency check was weak: the drawing's own tolerances on the inputs (facet width ±50 µm, corner ring +0/−100 µm, envelope +50/0 µm, arc against flat) move the centre radius from 1.619 to 1.735 mm, 116 µm against the 40 µm band; only 10 of 32 corner combinations land inside it. Adding the decision over-constrained the arc, so the end-facet width (<code>0,4</code>, general ±50 µm, <code>Konstruktionsmass</code>) and its four copies became reference values, which read 0.384 mm at 1× (1.152 mm at 3×, −16 µm, inside its band). Releasing the radius instead has no solution at facet 0.400 and swings R by 100 µm for a 30 µm facet change. Saved model: 0 degrees of freedom, no conflicts, 1 valid solid, volume 82.366 mm³ (−0.41 %), scale 2 and 6 pass. Against the traced scan the overlay is no better and no worse (max 0.17 mm at 3× against 0.14)</td>
 <td>Decision, not a drawing fact</td>
 </tr>
