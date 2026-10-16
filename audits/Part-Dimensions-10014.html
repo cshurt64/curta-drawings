@@ -89,11 +89,18 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td>Confirmed callout</td>
 </tr>
 <tr>
+<td>End taper slope (<code>4%</code>, with a slope marker beside it)</td>
+<td style="text-align: right;">4 % per side</td>
+<td style="text-align: right;">none stated</td>
+<td style="text-align: right;">half-angle 2.2906°; small end Ø1.656 mm</td>
+<td>Printed <code>4%</code> Confirmed callout; the per-side reading is <code>Inferred</code> (author's reading of the marker, supported by the drawn flanks) and the small-end size and angle are <code>Derived</code> from it</td>
+</tr>
+<tr>
 <td>Straightening check diameter (<code>Richtmass</code>, marked <code>*</code>)</td>
 <td style="text-align: right;">Ø1.96 mm</td>
 <td style="text-align: right;">none stated</td>
 <td style="text-align: right;">—</td>
-<td>Confirmed callout; where along the taper is not stated (Unverified)</td>
+<td>Confirmed callout; where along the taper is not stated (Unverified); on the per-side reading 0.5 mm from the start of the taper (Derived)</td>
 </tr>
 <tr>
 <td>End chamfer</td>
@@ -164,15 +171,20 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 </tr>
 <tr>
 <td>End taper</td>
-<td style="text-align: right;">4 %</td>
-<td>meaning of the percentage Unverified</td>
+<td style="text-align: right;">4 % per side</td>
+<td>per-side slope reading <code>Inferred</code> (see below); half-angle 2.2906° <code>Derived</code></td>
 </tr>
 </tbody>
 </table>
 <h2>Axle and star: the two 4 % tapers (Inferred)</h2>
 <p>This axle ends in a 4 % taper 4.3 ±0.400 mm long, and the finished star's blank (<code>10.052-4</code>, <a href="Part-Dimensions-10052.html">Part-Dimensions-10052.md</a>) has a Ø2 0/−0.020 bore with a 4 % taper. Two matching
-4 % tapers suggest the star is pressed onto the tapered end of the axle as a cone fit, and the <code>Richtmass</code> Ø1.96 (0.04 below Ø2) is consistent with a 4 % taper 1 mm along the cone; if 4 % means 0.04 mm of diameter
-per mm of length, the small end would be about Ø1.83 mm (<code>Derived</code> under that reading; the percentage definition is <code>Unverified</code>). No sheet states the pairing.</p>
+4 % tapers suggest the star is pressed onto the tapered end of the axle as a cone fit. No sheet states the pairing. A caution (<code>Unverified</code>): the star blank's sheet carries the same slope marker, but its bore walls as drawn (page 71, 400 dpi) measure only about 2.7 % of the diameter over the 7.2 mm length (the left wall nearly vertical, the right about 2.5 %), not the 8 % on the diameter that 4 % per side gives, so either that sheet is not drawn to scale or the two tapers do not match.</p>
+<p><strong>What the 4 % means on the axle (<code>Inferred</code>, the author's reading).</strong> The <code>4%</code> note carries a small slope marker (a line parallel to the axis next to an inclined line), so it is the slope of each flank against the
+axis, not a taper on the diameter and not 4°. Each side drops 0.04 mm per mm, so over the 4.3 mm taper each side drops 0.172 mm and the small end is <strong>Ø1.656 mm</strong> (Ø4.968 mm at 3×); the half-angle is atan 0.04 = 2.2906°
+and the included angle 4.58°. Support from the scan itself (<code>Derived</code>, 300 dpi raster, ±a few pixels): the drawn flanks, which the sheet draws at true 5:1, slope about 4.2 % (right) and 3.4 % (left), average
+3.8 %, against 2 % for the other reading (a taper on the diameter) and 7 % for 4°; the drawn end width is about Ø1.69 mm against Ø1.656 (this reading), Ø1.828 (diameter reading) and Ø1.40 (4°). The <code>Richtmass</code> Ø1.96
+(0.04 below Ø2) would then sit 0.5 mm from the start of the taper (<code>Derived</code>; its position is not stated). This reading was first taken as 4 % on the diameter (Ø1.828) and corrected on 2026-10-16 after the author
+pointed to the marker; the author's FreeCAD model uses the per-side slope.</p>
 <p>The 90° V-groove along the axle is the key that the ratchet wheels' and drive wheels' 90° notches ('nose') ride in; its centering (±20 µm) and its own taper (0.1 ‰) are tighter than anything else on
 the sheet. The revision history has two entries (indices 5→6 and 6→7); the index-7 change of 18.9.50 is not identified on the sheet.</p>
 <p>Machine-Facts §4 listed this axle as <code>Stainless Ø2 h7</code>, which the sheet confirms (<code>Ø2-h7 profiliert</code>), so no correction is needed there.</p>
@@ -210,6 +222,20 @@ silently carried over, and a 3× table is not a factory specification. ISO codes
 <td style="text-align: right;">simply scaled -1200/+1200 µm (comparison only)</td>
 <td style="text-align: right;">—</td>
 <td>Derived; not adopted</td>
+</tr>
+<tr>
+<td>End taper slope</td>
+<td style="text-align: right;">4 % per side (a ratio, unchanged)</td>
+<td style="text-align: right;">does not scale</td>
+<td style="text-align: right;">half-angle 2.2906°</td>
+<td>Derived; reading <code>Inferred</code></td>
+</tr>
+<tr>
+<td>End taper small-end diameter</td>
+<td style="text-align: right;">Ø4.968 mm</td>
+<td style="text-align: right;">not silently scaled</td>
+<td style="text-align: right;">—</td>
+<td>Derived geometric reference; not adopted; reading <code>Inferred</code></td>
 </tr>
 <tr>
 <td>Straightening check diameter (<code>Richtmass</code>, marked <code>*</code>)</td>
