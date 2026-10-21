@@ -84,11 +84,11 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td>Confirmed callout</td>
 </tr>
 <tr>
-<td>Raw outer tab/tip radius (9.2 + 2.9)</td>
-<td style="text-align: right;">12.1 mm</td>
-<td style="text-align: right;">sum of two toleranced callouts: 12.03–12.12 mm (Derived)</td>
-<td style="text-align: right;">—</td>
-<td>Derived</td>
+<td>Raw outer circle radius (tab edge and, per the user's reading, tooth tips), stack of <code>9,2r ±20</code> + <code>2,9 0/−50</code> (not a callout)</td>
+<td style="text-align: right;">12.1 mm (stack nominal)</td>
+<td style="text-align: right;">worst-case stack of the two rows above, each keeping its own tolerance: 12.030–12.120 mm; the stack is one-sided, so 12.1 is not its midpoint (12.075)</td>
+<td style="text-align: right;">12.030–12.120 mm</td>
+<td>Derived; that the 2.9 starts on the 9.2 arc is Inferred</td>
 </tr>
 <tr>
 <td>Tab corner radius</td>
@@ -105,7 +105,7 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td>Confirmed callout</td>
 </tr>
 <tr>
-<td>Root fillet</td>
+<td>Tooth root fillet</td>
 <td style="text-align: right;">0.5 mm</td>
 <td style="text-align: right;"><code>0,5r</code></td>
 <td style="text-align: right;">—</td>
@@ -152,13 +152,13 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 </thead>
 <tbody>
 <tr>
-<td>Tooth pitch</td>
-<td style="text-align: right;">11°15′</td>
+<td>Single tooth pitch (one tooth arc, between adjacent teeth; printed <code>11°15′ ±15′</code>)</td>
+<td style="text-align: right;">11°15′ (11.25°)</td>
 <td>±15′</td>
 </tr>
 <tr>
-<td>Tooth-covered arc (9 × 11°15′)</td>
-<td style="text-align: right;">101°15′</td>
+<td>Total tooth arc, first to last tooth (10 teeth, 9 pitches; printed <code>9 × 11°15′ = 101°15′ ±15′</code>)</td>
+<td style="text-align: right;">101°15′ (101.25°)</td>
 <td>±15′</td>
 </tr>
 <tr>
@@ -172,9 +172,9 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td>±30′; the last tooth's deviation from it ±15′</td>
 </tr>
 <tr>
-<td>End-face angles (two)</td>
+<td>55° callouts (two identical, one at each end of the tooth run; left one measured as the release-ramp line against a radial ray, right one Unverified)</td>
 <td style="text-align: right;">55°</td>
-<td>general ±30′</td>
+<td>general ±30′ (none printed)</td>
 </tr>
 <tr>
 <td>Angular general tolerance</td>
@@ -183,6 +183,10 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 </tr>
 </tbody>
 </table>
+<p><strong>What the 55° callouts measure (<code>Derived</code>, measured on the 400 dpi scan by <code>tools/measure_55deg_10076.py</code>; 2026-10-21).</strong> <em>Left callout:</em> the lower thin line of the arc lies on a ray from the bore centre (it passes 0.09 mm from the fitted centre and is within 0.4° of radial; it is 28.0° from straight down). The upper thin line runs out of the end tooth's long release ramp and makes <strong>55.7°</strong> with that ray (printed 55°). It makes 67.5° with the heavy drive face, so the 55° is <strong>not</strong> the angle between the two flanks bounding a tooth gap, and the lower line is not an extension of a tooth flank (the drive face of that tooth is about 12° off the ray). The 55° is therefore the release ramp's angle to a radial ray through the end tooth's corner. What the ray itself is (an end ray of the <code>60°</code> construction angle, 28.0° against 30° nominal; or the end ray of the 101°15′ span, which would put the last tooth 101°15′ from the first and has not been checked) is <code>Unverified</code>. <em>Right callout</em> (<code>tools/measure_55deg_right_10076.py</code>): one side is a radial ray from the bore centre (0.11 mm from the centre, 51.2° from straight down); the other is a near-vertical thin line (4.6° from vertical, 8.8 mm from the centre, so not radial) that is collinear with a heavy near-vertical outline face under the right-hand tab (0.00 mm off its extension, 1.3° apart). They make <strong>55.8°</strong> (printed 55°). So the right callout also pairs an extended heavy outline face with a radial ray, but the face is a near-vertical face at the segment's right end, about 45° off the local radial, and is not shown to be a tooth flank (the traced drive faces are about 8° off radial); whether it is the segment's end face is <code>Unverified</code>. The two rays sit 28.0° left and 51.2° right of straight down, 79.2° apart, so they are not the two ends of the 101°15′ span. Earlier notes called both callouts end/dovetail-face angles (Drum-Assembly-10213.md, Machine-Facts.md); that is contradicted for the left callout by this measurement. A 2026-10-21 working reading, "the angle between tooth 7's and tooth 8's flanks", is retracted: the user's own suspicion that the line came from the nine-pitch dimension's ray was the right one to test, and the line is a radial ray, not a flank.</p>
+<p><strong>Terms used here (not printed on the sheet).</strong> <em>Flank</em>: either face of a tooth. <em>Drive face</em>: the steep flank, on the left of each tooth as drawn (traced 7.6° off radial). <em>Release ramp</em>: the long flank, on the right of each tooth as drawn (traced 49.8° off radial on average; the 55° callout reads the end tooth's ramp against the ray). <em>Tooth gap</em>: the space between adjacent teeth. "Leading" and "trailing" are avoided because they depend on the (unverified) direction of travel.</p>
+<p><strong>Tooth root fillet.</strong> <code>0,5r</code> is a 0.5 mm radius (1.5 mm at 3×) with no tolerance printed. Its arrow points at the concave corner between teeth, where the flank meets the land. Check on the trace (<code>Derived</code>): the eight root corners of the ten-tooth outline fit local radii of 0.46–0.61 mm (mean 0.52), at r ≈ 10.9 mm, i.e. the land radius.</p>
+<p><strong>The single pitch and the total are separate dimensions.</strong> The single pitch is the angle between matching features of two adjacent teeth; the total runs from a feature on the first tooth to the same feature on the last. Ten teeth have nine gaps, so the total is 9 pitches, not 10 (<code>Confirmed</code>, both printed). The ±15′ is printed on each, so the nine-pitch span is held to ±15′ as a whole: pitch errors may not accumulate along the arc, and in CAD the teeth should come from one polar pattern (10 occurrences over 9 × 11.25° = 101.25°), not from chained angles. Which two edges the single-pitch arrows touch is not stated on the sheet (<code>Unverified</code>; the project's reading is matching, e.g. trailing, edges of adjacent teeth). The remaining 23°45′ of the 125° blank is <code>Derived</code> (125 − 101.25); the 12.5° lead-in reading that accounts for part of it is worked in <span class="ref">Drum-Assembly-10213.md</span>.</p>
 <p>Where the tolerance column says "general", the limits column applies the sheet's general tolerance (a Derived reading of a printed general note).</p>
 <h2>Radial geometry (Derived from the callouts)</h2>
 <table>
@@ -195,9 +199,9 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 </thead>
 <tbody>
 <tr>
-<td>Raw outer tab radius</td>
+<td>Raw outer circle radius (stack, not a callout; the 2.9 ends on a thin circle measured at R12.07–12.10)</td>
 <td>9.2 + 2.9 (bore arc + tab width)</td>
-<td style="text-align: right;">12.1 mm (12.03–12.12 with both tolerances)</td>
+<td style="text-align: right;">12.1 mm nominal; 12.030–12.120 mm worst case (9.180 + 2.850 to 9.220 + 2.900)</td>
 </tr>
 <tr>
 <td>Bore relief depth</td>
@@ -205,7 +209,7 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td style="text-align: right;">0.1 mm</td>
 </tr>
 <tr>
-<td>Tooth height (land to raw tab radius)</td>
+<td>Land to raw outer circle (stack nominal)</td>
 <td>12.1 − 10.9</td>
 <td style="text-align: right;">1.2 mm</td>
 </tr>
@@ -215,13 +219,19 @@ blockquote { margin:12px 0; padding:8px 14px; border-left:4px solid var(--accent
 <td style="text-align: right;">2.14 mm</td>
 </tr>
 <tr>
-<td>Angular span of ten pitches</td>
-<td>10 × 11°15′</td>
-<td style="text-align: right;">112°30′ (blank arc 125°)</td>
+<td>First-to-last-tooth span (10 teeth, 9 pitches)</td>
+<td>9 × 11°15′</td>
+<td style="text-align: right;">101°15′ (printed)</td>
+</tr>
+<tr>
+<td>Blank arc not covered by that span</td>
+<td>125° − 101°15′</td>
+<td style="text-align: right;">23°45′ (Derived; see below)</td>
 </tr>
 </tbody>
 </table>
-<p>The 2.9 dimension is a second, indirect statement of the <strong>raw tooth-tip radius</strong>: Machine-Facts §2 says no raw-tip radius is called out and takes 12.04–12.10 mm from the scan; 9.2 + 2.9 = 12.1 mm agrees with that scan value (<code>Derived</code>; the assumption that the 2.9 arrows meet the bore arc is <code>Inferred</code> from the drawing). The finished tooth-tip envelope is the Ø24 ±20 µm on <code>10.213-2</code>, i.e. r 12.0; the difference between 12.1 and 12.0 is the finishing allowance discussed in Machine-Facts §2.</p>
+<p><strong>Why the two callouts are kept separate.</strong> The sheet prints <code>9,2r ±20</code> (symmetric) and <code>2,9 0/−50</code> (one-sided) as independent dimensions. No sum is dimensioned or toleranced on the sheet, so the 12.030–12.120 mm range above is a worst-case stack-up of two callouts, not a drawing requirement. It also assumes the 2.9 arrows start on the 9.2 arc, which is <code>Inferred</code> from the drawing.</p>
+<p><strong>What the 2.9 controls (the user's reading, now supported by a measurement).</strong> The <code>2,9 0/−50</code> dimension line runs along the same line as the <code>9,2r ±20</code> bore radius and its outer arrowhead ends on a thin circle. Measured on the 400 dpi scan, where that thin arc is clear of heavy strokes (−72° to −64.5° from straight down), it lies at <strong>R12.07–12.10 mm</strong> (median 12.09), which matches 9.2 + 2.9 = 12.1 (<code>Derived</code>). The user reads that circle as the one the tooth tips lie on, so the stack is the raw tip-circle radius (12.030–12.120 mm). On the scan the tips visibly touch that circle. The user also points to the thin arc that runs along the bottom tips (straight below the origin, above the 10 chord) and continues beyond the last tip; at 400 dpi it lies at R12.06 mm (median of 16 clear samples, noisy) with the two lowest tip strokes lying just inside it, their outer edges on it. The outline trace puts the tip stroke centre-lines at R12.004 (11.993–12.020), 0.06–0.09 mm inside the thin circle, i.e. about half a stroke width: the tooth outline is drawn up to the circle, not centred on it. Taken together the tips lie on the R12.1 circle (9.2 + 2.9) to within about 0.05 mm (<code>Inferred</code>, supported by two independent places: the tab end of the 2.9 and the bottom tips). The finished tooth envelope is the Ø24 ±20 µm on <code>10.213-2</code>, i.e. R12.0, which would be a finishing allowance of about 0.1 mm in radius below the raw circle (Machine-Facts §2).</p>
 <h2>The family this sheet defines</h2>
 <p>Nine other RW sheets (<code>10.078</code>–<code>10.090</code>, except <code>10.076</code>) and the two UW sheets say <code>Aus 10.076-3 angefertigt</code> ("made from 10.076-3"); each has its own audit. The derived segments keep the master's bore, tabs and outline and drop the first (10 − n) teeth. This is the only sheet with the full tolerance set.</p>
 <h2>Plate thickness</h2>
@@ -278,7 +288,7 @@ tolerances are not silently carried over, and a 3× table is not a factory speci
 <td>Derived; not adopted</td>
 </tr>
 <tr>
-<td>Raw outer tab/tip radius (9.2 + 2.9)</td>
+<td>Raw outer circle radius (stack of 9.2 + 2.9, not a callout)</td>
 <td style="text-align: right;">36.3 mm</td>
 <td style="text-align: right;">not silently scaled</td>
 <td style="text-align: right;">—</td>
@@ -299,7 +309,7 @@ tolerances are not silently carried over, and a 3× table is not a factory speci
 <td>Derived; not adopted</td>
 </tr>
 <tr>
-<td>Root fillet</td>
+<td>Tooth root fillet</td>
 <td style="text-align: right;">1.5 mm</td>
 <td style="text-align: right;">not silently scaled</td>
 <td style="text-align: right;">—</td>
